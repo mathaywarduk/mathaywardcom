@@ -1,9 +1,0 @@
-url: "https://mathayward.com" # the base hostname & protocol for your site, e.g. http://example.com
-title: "Mat Hayward" # the name of your site, e.g. ACME Corp.
-permalink: /journal/:title
-plugins:
-  - jekyll-postcss
-collections:
-  photography:
-    output: true
-image_base:  https://mathaywarduk.imgix.net/
