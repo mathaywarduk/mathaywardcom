@@ -8,6 +8,9 @@ intro: "A post-lockdown weekend in Coniston brought much needed outdoor times an
 seo:
     title: "Travel Photography - Southern Lake District"
     description: "Photography from the England's southern Lake District including Stickle Tarn, Langdale and Loughrigg Fell."
+    image:
+        url: "Lakes-010.jpg"
+        alt: "Stickle Tarn"
 hero:
     image: "Lakes-010.jpg"
     alt: "Stickle Tarn"

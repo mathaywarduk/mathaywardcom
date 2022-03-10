@@ -8,6 +8,9 @@ intro: "The Isle of Skye is a popular place these days, but the landscapes can s
 seo:
     title: "Travel Photography - Skye"
     description: "Photography from around Skye, including the Quiraing, Camasunary Bay, the Cuillin range, Neist Point and Talisker Bay."
+    image:
+        url: "Skye-043.jpg"
+        alt: "Elgol"
 hero:
     image: "Skye-043.jpg"
     alt: "Elgol"

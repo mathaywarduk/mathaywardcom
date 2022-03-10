@@ -3,6 +3,7 @@ title: "Mat Hayward" # the name of your site, e.g. ACME Corp.
 permalink: /journal/:title
 plugins:
   - jekyll-postcss
+  - jekyll-minifier
 collections:
   photography:
     output: true
