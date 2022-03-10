@@ -1,0 +1,397 @@
+tenerife:
+  - type: double
+    images:
+      - url: "Tenerife-008.jpg"
+        alt: "The road through Anaga"
+      - url: "Tenerife-004.jpg"
+        alt: "Masca Valley road"
+  - type: single
+    images:
+      - url: "Tenerife-003.jpg"
+        alt: "Masca valley - sunset in the mist"
+  - type: double
+    images:
+      - url: "Tenerife-001.jpg"
+        alt: "Guajara"
+      - url: "Tenerife-002.jpg"
+        alt: "Mount Teide and Roques de García in the last of the sun"
+  - type: single
+    images:
+      - url: "Tenerife-012.jpg"
+        alt: "Mount Teide"
+  - type: double
+    images:
+      - url: "Tenerife-013.jpg"
+        alt: "Looking out over El Sombrero"
+      - url: "Tenerife-011.jpg"
+        alt: "El Sombrero at sunset"
+  - type: double
+    images:
+      - url: "Tenerife-010.jpg"
+        alt: "Howard at Teide National Park"
+      - url: "Tenerife-014.jpg"
+        alt: "Kerry at Playa de Benijo"
+north-coast-500:
+  - type: double
+    images:
+      - url: "NC500-012.jpg"
+        alt: "Upper Loch Torridon"
+      - url: "NC500-043.jpg"
+        alt: "Golden Hour at Upper Loch Torridon"
+  - type: single
+    images:
+      - url: "NC500-013.jpg"
+        alt: "Howard in Torridon"
+  - type: double
+    images:
+      - url: "NC500-030.jpg"
+        alt: "Blue layers of Assynt"
+      - url: "NC500-014.jpg"
+        alt: "Night clouds from Shieldag"
+  - type: double
+    images:
+      - url: "NC500-041.jpg"
+        alt: "Plockton harbour"
+      - url: "NC500-040.jpg"
+        alt: "Plockton harbour"
+  - type: double
+    images:
+      - url: "NC500-037.jpg"
+        alt: "Plockton"
+      - url: "NC500-036.jpg"
+        alt: "Rudi in Plockton"
+  - type: double
+    images:
+      - url: "NC500-038.jpg"
+        alt: "Private cove near Plockton"
+      - url: "NC500-033.jpg"
+        alt: "Private cove near Plockton"
+  - type: double
+    images:
+      - url: "NC500-035.jpg"
+        alt: "Private cove near Plockton"
+      - url: "NC500-034.jpg"
+        alt: "Private cove near Plockton"
+  - type: single
+    images:
+      - url: "NC500-047.jpg"
+        alt: "Stac Pollaidh between Cul Beag and Cul Mor"
+  - type: double
+    images:
+      - url: "NC500-052.jpg"
+        alt: "Canisp and Suilven"
+      - url: "NC500-053.jpg"
+        alt: "Coastal roads in Assynt"
+  - type: double
+    images:
+      - url: "NC500-017.jpg"
+        alt: "Suilven"
+      - url: "NC500-016.jpg"
+        alt: "Suilven over Cam Loch"
+  - type: single
+    images:
+      - url: "NC500-010.jpg"
+        alt: "Assynt"
+  - type: single
+    images:
+      - url: "NC500-020.jpg"
+        alt: "Cam Loch"
+  - type: double
+    images:
+      - url: "NC500-027.jpg"
+        alt: "Cloud layers from Stac Pollaidh"
+      - url: "NC500-025.jpg"
+        alt: "Sarah on Stac Pollaidh"
+  - type: double
+    images:
+      - url: "NC500-028.jpg"
+        alt: "Howard on Stac Pollaidh"
+      - url: "NC500-024.jpg"
+        alt: "Kerry and Rudi on Stac Pollaidh"
+  - type: double
+    images:
+      - url: "NC500-031.jpg"
+        alt: "Durness Beach"
+      - url: "NC500-032.jpg"
+        alt: "Surfer at Durness Beach"
+  - type: single
+    images:
+      - url: "NC500-001.jpg"
+        alt: "Duncansby Stacks"
+alberta:
+  - type: single
+    images:
+      - url: "Canada-002.jpg"
+        alt: "Sunshine on Mount Lorette"
+  - type: single
+    images:
+      - url: "Canada-005.jpg"
+        alt: "Peyto Lake"
+  - type: double
+    images:
+      - url: "Canada-008.jpg"
+        alt: "Maligne Lake"
+      - url: "Canada-007.jpg"
+        alt: "Maligne Lake"
+  - type: double
+    images:
+      - url: "Canada-018.jpg"
+        alt: "Kananaskis Country"
+      - url: "Canada-014.jpg"
+        alt: "Vermillion Lakes"
+  - type: single
+    images:
+      - url: "Canada-004.jpg"
+        alt: "Stellers Jay"
+  - type: double
+    images:
+      - url: "Canada-001.jpg"
+        alt: "Bow Glacier"
+      - url: "Canada-012.jpg"
+        alt: "Bow Glacier"
+  - type: single
+    images:
+      - url: "Canada-016.jpg"
+        alt: "Canadian Rockies"
+  - type: double
+    images:
+      - url: "Canada-017.jpg"
+        alt: "Canadian Rockies"
+      - url: "Canada-013.jpg"
+        alt: "Bow Glacier"
+  - type: single
+    images:
+      - url: "Canada-003.jpg"
+        alt: "Sundance Lodges"
+  - type: single
+    images:
+      - url: "Canada-015.jpg"
+        alt: "Jasper National Park"
+iceland:
+  - type: double
+    images:
+      - url: "Iceland-012.jpg"
+        alt: "Stokksnes Beach"
+      - url: "Iceland-014.jpg"
+        alt: "Stokksnes Beach"
+  - type: double
+    images:
+      - url: "Iceland-004.jpg"
+        alt: "Around Þórsmörk on the F261"
+      - url: "Iceland-003.jpg"
+        alt: "Around Þórsmörk on the F261"
+  - type: single
+    images:
+      - url: "Iceland-010.jpg"
+        alt: "Black sand beach near Hjörleifshöfði"
+  - type: double
+    images:
+      - url: "Iceland-005.jpg"
+        alt: "Sunrise at Reynisfjara"
+      - url: "Iceland-006.jpg"
+        alt: "Sunrise at Reynisfjara"
+  - type: double
+    images:
+      - url: "Iceland-017.jpg"
+        alt: "Vestrahorn from Stokksnes"
+      - url: "Iceland-015.jpg"
+        alt: "Vestrahorn from Stokksnes"
+  - type: double
+    images:
+      - url: "Iceland-002.jpg"
+        alt: "Around Þórsmörk on the F261"
+      - url: "Iceland-016.jpg"
+        alt: "Vatnajokull Glacier"
+  - type: single
+    images:
+      - url: "Iceland-007.jpg"
+        alt: "Sunrise at Reynisfjara"
+  - type: double
+    images:
+      - url: "Iceland-008.jpg"
+        alt: "Sunrise at Reynisfjara"
+      - url: "Iceland-009.jpg"
+        alt: "Sunrise at Reynisfjara"
+scottish-highlands:
+  - type: single
+    images:
+      - url: "Highlands-005.jpg"
+        alt: "Kerry and Ben A'an sunset"
+  - type: double
+    images:
+      - url: "Highlands-003.jpg"
+        alt: "Sarah, Kerry and the dogs on Ben A'an summit"
+      - url: "Highlands-006.jpg"
+        alt: "Sunset over Loch Katrine"
+  - type: double
+    images:
+      - url: "Highlands-002.jpg"
+        alt: "Sarah and Vinnie on Ben A'an Summit"
+      - url: "Highlands-001.jpg"
+        alt: "Howard looking over Loch Katrine"
+  - type: single
+    images:
+      - url: "Highlands-023.jpg"
+        alt: "View east from Stob Binnein"
+  - type: single
+    images:
+      - url: "Highlands-018.jpg"
+        alt: "Inverlochlarig glen"
+  - type: double
+    images:
+      - url: "Highlands-017.jpg"
+        alt: "Cloud inversion in Inverlochlarig glen"
+      - url: "Highlands-028.jpg"
+        alt: "Spey Valley from Glentruim"
+  - type: single
+    images:
+      - url: "Highlands-008.jpg"
+        alt: "Mist on Ben Ledi"
+  - type: double
+    images:
+      - url: "Highlands-009.jpg"
+        alt: "Loch Lubnaig from Ben Ledi"
+      - url: "Highlands-013.jpg"
+        alt: "Stob Dearg before sunrise"
+  - type: single
+    images:
+      - url: "NC500-011.jpg"
+        alt: "View from Stob Dearg"
+  - type: double
+    images:
+      - url: "Highlands-012.jpg"
+        alt: "Boats on Loch Dochart"
+      - url: "Highlands-010.jpg"
+        alt: "Clouds over Loch Dochart"
+  - type: double
+    images:
+      - url: "Highlands-014.jpg"
+        alt: "First light through Glen Coe"
+      - url: "Highlands-007.jpg"
+        alt: "Last light at Monachlye Glen"
+  - type: single
+    images:
+      - url: "Highlands-027.jpg"
+        alt: "Loch Katrine and Ben Venue"
+skye:
+  - type: single
+    images:
+      - url: "Skye-032.jpg"
+        alt: "Neist Point"
+  - type: double
+    images:
+      - url: "Skye-034.jpg"
+        alt: "Howard at Neist Point"
+      - url: "Skye-036.jpg"
+        alt: "Neist Point Lighthouse"
+  - type: single
+    images:
+      - url: "Skye-033.jpg"
+        alt: "Neist Point"
+  - type: double
+    images:
+      - url: "Skye-046.jpg"
+        alt: "Sunset on Skye near Tarskavaig"
+      - url: "Skye-007.jpg"
+        alt: "Sunset on Skye near Tarskavaig"
+  - type: single
+    images:
+      - url: "Skye-027.jpg"
+        alt: "Sunset on Skye near Tarskavaig"
+  - type: double
+    images:
+      - url: "Skye-015.jpg"
+        alt: "Sgurr na Stri and the Cuillin from Camasunary Bay"
+      - url: "Skye-012.jpg"
+        alt: "The Cuillin from Camasunary Bay"
+  - type: double
+    images:
+      - url: "Skye-006.jpg"
+        alt: "Kerry and Rudi in Blue hour"
+      - url: "Skye-002.jpg"
+        alt: "Sarah and Vinnie on the Quiraing"
+  - type: single
+    images:
+      - url: "Skye-003.jpg"
+        alt: "The Quiraing"
+  - type: single
+    images:
+      - url: "Skye-008.jpg"
+        alt: "Pinnacle Ridge and Loch na Creitheach"
+  - type: double
+    images:
+      - url: "Skye-021.jpg"
+        alt: "The Quiraing"
+      - url: "Skye-020.jpg"
+        alt: "Howard at The Quiraing"
+  - type: single
+    images:
+      - url: "Skye-037.jpg"
+        alt: "The Cuillin"
+  - type: double
+    images:
+      - url: "Skye-026.jpg"
+        alt: "Blue hour moon over Skye"
+      - url: "Skye-010.jpg"
+        alt: "Hut on Camasunary Bay"
+  - type: single
+    images:
+      - url: "Skye-042.jpg"
+        alt: "The Old Man of Storr"
+  - type: single
+    images:
+      - url: "Skye-013.jpg"
+        alt: "Loch na Creitheach"
+  - type: double
+    images:
+      - url: "Skye-039.jpg"
+        alt: "Kerry, Sarah and the dogs on Talisker Bay beach"
+      - url: "Skye-038.jpg"
+        alt: "Sunset at Talisker Bay"
+  - type: single
+    images:
+      - url: "Skye-018.jpg"
+        alt: "Kerry at The Quiraing"
+  - type: double
+    images:
+      - url: "Skye-014.jpg"
+        alt: "Howard looking over Loch Creitheach"
+      - url: "Skye-011.jpg"
+        alt: "Hut on Camasunary Bay"
+  - type: single
+    images:
+      - url: "Skye-001.jpg"
+        alt: "Kayaking blue hour below the Cuillin"
+lake-district:
+  - type: single
+    images:
+      - url: "Lakes-007.jpg"
+        alt: "Stickle Tarn"
+  - type: single
+    images:
+      - url: "Lakes-009.jpg"
+        alt: "Stickle Tarn, Wetherlam and Swirl How"
+  - type: double
+    images:
+      - url: "Lakes-001.jpg"
+        alt: "Vinnie in Tarn Howss"
+      - url: "Lakes-012.jpg"
+        alt: "A mountain sheep"
+  - type: single
+    images:
+      - url: "Lakes-002.jpg"
+        alt: "Lingmoor Fell"
+  - type: single
+    images:
+      - url: "Lakes-004.jpg"
+        alt: "Stickle Tarn and Harrison Stickle"
+  - type: double
+    images:
+      - url: "Lakes-003.jpg"
+        alt: "View over Langdale"
+      - url: "Lakes-011.jpg"
+        alt: "View over Langdale"
+  - type: single
+    images:
+      - url: "Lakes-005.jpg"
+        alt: "Howard and Stickle Tarn"
