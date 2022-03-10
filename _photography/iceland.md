@@ -8,6 +8,9 @@ intro: "Iceland has the most incredibly bizarre landscapes. In just 3 days I fel
 seo:
     title: "Travel Photography - Iceland"
     description: "Photography from Southern Iceland, including Stokksnes, Þórsmörk and Reynisfjara."
+    image:
+        url: "Iceland-013.jpg"
+        alt: "Howard on Stokksnes beach"
 hero:
     image: "Iceland-013.jpg"
     alt: "Howard on Stokksnes beach"

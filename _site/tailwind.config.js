@@ -17,7 +17,7 @@ module.exports = {
       xl: "1.25rem", // 20px
       "2xl": "1.625rem", // 26px
       "3xl": "1.875rem", // 30px
-      "4xl": "2.5rem", // 40px
+      "4xl": "2.675rem", // 44px
       "5xl": "3.75rem", // 60px
       "6xl": "4.5rem", // 72px
       "7xl": "7.5rem", // 120px
@@ -26,8 +26,8 @@ module.exports = {
       sm: "375px",
       md: "768px",
       lg: "1024px",
-      xl: "1600px",
-      xxl: "1920px",
+      xl: "1280px",
+      xxl: "1600px",
     },
     extend: {
       lineHeight: {

@@ -8,6 +8,9 @@ intro: "Alberta is one of those places you never want to leave. Home to national
 seo:
     title: "Travel Photography - Alberta"
     description: "Photography from around Alberta, Canada, including Banff, Jasper, Kananaskis, Maligne Lake and Peyto Lake."
+    image:
+        url: "Canada-009.jpg"
+        alt: "Medicine Lake"
 hero:
     image: "Canada-009.jpg"
     alt: "Medicine Lake"

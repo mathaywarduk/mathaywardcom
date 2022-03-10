@@ -8,6 +8,9 @@ intro: "An island of amazing diversity and one of the most underrated places I'v
 seo:
     title: "Travel Photography - Tenerife"
     description: "Photography from around Tenerife, Canary Islands including Mount Teide, Masca Valley, Anaga and Playa de Benijo."
+    image:
+        url: "Tenerife-005.jpg"
+        alt: "The road through Anaga"
 hero:
     image: "Tenerife-005.jpg"
     alt: "The road through Anaga"
