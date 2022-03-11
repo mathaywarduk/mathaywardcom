@@ -1,6 +1,6 @@
 ---
 layout: photography
-title:  "Highlands"
+title:  "Southern Highlands"
 region: "Scotland"
 year: 2019
 id: highlands
