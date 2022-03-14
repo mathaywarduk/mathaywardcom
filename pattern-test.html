@@ -1,0 +1,122 @@
+<html>
+<head>
+  <script type="text/javascript">
+
+    function getContentWidth(element) {
+      var styles = getComputedStyle(element);
+
+      return element.clientWidth
+        - parseFloat(styles.paddingLeft)
+        - parseFloat(styles.paddingRight);
+    }
+
+    function getContentHeight(element) {
+      var styles = getComputedStyle(element);
+
+      return element.clientHeight
+        - parseFloat(styles.paddingTop)
+        - parseFloat(styles.paddingBottom);
+    }
+
+    function setPattern(patternBlock) {
+      let patternHeight = 30;
+      let patternWidth = 30;
+      let patternGap = 15;
+      let width = getContentWidth(patternBlock);
+      let height = getContentHeight(patternBlock);
+
+
+      patternBlock.setAttribute("style", `gap:${patternGap}px`);
+
+      let cols = Math.floor(((width - patternWidth) / (patternWidth + patternGap)) + 1);
+      let rows = Math.floor(((height - patternHeight) / (patternHeight + patternGap)) + 1);
+      let total = cols * rows;
+
+      for (var i = 0; i < total; i++) {
+        let span = document.createElement("span");
+        let innerSpan = document.createElement("span");
+
+        let row = parseInt(i / cols);
+        let col = i % cols;
+        let midrow = Math.floor(rows / 2);
+        let midcol = Math.floor(cols / 2);
+        let angleBase = 90;
+        let columnMultiplier = col;
+
+        if (col > midcol) {
+          columnMultiplier = col - midcol;
+        }
+
+
+        // rotate based on col position and quadrant
+        let angle = (row * (angleBase / rows)) + ((angleBase / cols) * columnMultiplier);
+
+        if (row > midrow) {
+          angle = angleBase - ((angleBase / cols) * columnMultiplier) - (row * (angleBase / rows));
+        }
+
+
+
+        span.setAttribute("style", `transform:rotate(${angle}deg);width:${patternWidth};height:${patternHeight};`);
+
+
+
+        // thickness based on relative row
+        let lineWidth = row > midrow ? (midrow - (row - midrow)) + 2 : row + 2;
+        innerSpan.setAttribute("style", `width:${lineWidth}px`);
+
+
+
+        span.append(innerSpan);
+        patternBlock.append(span);
+      }
+    }
+
+    function resetPattern(patternBlock) {
+      patternBlock.innerHTML = "";
+    }
+
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const patternBlock = document.querySelector(".pattern");
+      setPattern(patternBlock);
+
+      window.addEventListener('resize', (event) => {
+        resetPattern(patternBlock);
+        setPattern(patternBlock);
+      });
+    });
+
+  </script>
+  <style type="text/css">
+    .pattern {
+      background: #002345;
+      width: 80vw;
+      height: 80vh;
+      padding: 20px;
+      margin: 10vh auto;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-evenly;
+      justify-content: space-evenly;
+    }
+
+    .pattern span {
+      position: relative;
+    }
+
+    .pattern span > span {
+      content: "";
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      background-color: #9DEEF2;
+    }
+  </style>
+</head>
+<body>
+  <div class="pattern">
+  </div>
+</body>
+</html>
