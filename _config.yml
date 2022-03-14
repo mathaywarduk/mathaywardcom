@@ -7,4 +7,12 @@ plugins:
 collections:
   photography:
     output: true
+    order:
+      - iceland.md
+      - north-coast-500.md
+      - lake-district.md
+      - southern-highlands.md
+      - tenerife.md
+      - skye.md
+      - alberta.md
 image_base:  https://mathaywarduk.imgix.net/
