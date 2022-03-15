@@ -375,9 +375,6 @@ p a:hover, p a:focus { color: #BF5700; }
 @media (min-width: 1024px) { .feature-nav-item { margin-bottom: 2.5rem; } .feature-nav-item { font-size: 4.5rem; } }
 
 .feature-nav-item:hover, .feature-nav-item:focus { color: #BF5700; }
-
-@media (min-width: 1024px) { .feature-nav-item:hover, .feature-nav-item:focus { font-size: 7.5rem; } }
-
 .fade-up { opacity: 0; -webkit-animation: 1s ease-out 0s 1 fadeUp; animation: 1s ease-out 0s 1 fadeUp; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
 .fade-up:nth-child(2) { -webkit-animation-delay: 100ms; animation-delay: 100ms; }
