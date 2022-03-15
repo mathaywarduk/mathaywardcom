@@ -14,4 +14,7 @@ seo:
 hero:
     image: "Canada-009.jpg"
     alt: "Medicine Lake"
+thumb:
+    image: "Canada-008.jpg"
+    alt: "Maligne Lake"
 ---

@@ -14,4 +14,7 @@ seo:
 hero:
     image: "NC500-026.jpg"
     alt: "Howard on Stac Pollaidh"
+thumb:
+    image: "NC500-038.jpg"
+    alt: "Private cove near Plockton"
 ---

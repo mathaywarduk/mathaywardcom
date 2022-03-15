@@ -14,4 +14,7 @@ seo:
 hero:
     image: "Highlands-026.jpg"
     alt: "Ben Vorlich summit"
+thumb:
+    image: "Highlands-024.jpg"
+    alt: "View east from Stob Binnein"
 ---

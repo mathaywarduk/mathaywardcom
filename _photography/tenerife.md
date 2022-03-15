@@ -14,4 +14,7 @@ seo:
 hero:
     image: "Tenerife-005.jpg"
     alt: "The road through Anaga"
+thumb:
+    image: "Tenerife-013.jpg"
+    alt: "Looking out over El Sombrero"
 ---

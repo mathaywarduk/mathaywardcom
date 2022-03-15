@@ -41,8 +41,7 @@
     relative
     inline-block
     transition-all
-    delay-75
-    duration-300
+    duration-500
     ease-in-out
     leading-none
     tracking-wide
@@ -60,12 +59,9 @@
     hover:opacity-100
     focus:opacity-100
   ;
+}
 
-  &:hover,
-  &:focus {
-    color: #BF5700;
-    @apply
-      lg:text-7xl
-    ;
-  }
+li:hover .feature-nav-item,
+li:focus .feature-nav-item {
+  color: #BF5700;
 }

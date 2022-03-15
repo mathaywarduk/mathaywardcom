@@ -14,4 +14,7 @@ seo:
 hero:
     image: "Lakes-010.jpg"
     alt: "Stickle Tarn"
+thumb:
+    image: "Lakes-006.jpg"
+    alt: "Howard and Stickle Tarn"
 ---

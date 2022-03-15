@@ -14,4 +14,7 @@ seo:
 hero:
     image: "Skye-043.jpg"
     alt: "Elgol"
+thumb:
+    image: "Skye-008.jpg"
+    alt: "Pinnacle Ridge and Loch na Creitheach"
 ---

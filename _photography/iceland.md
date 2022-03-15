@@ -14,4 +14,7 @@ seo:
 hero:
     image: "Iceland-013.jpg"
     alt: "Howard on Stokksnes beach"
+thumb:
+    image: "Iceland-005.jpg"
+    alt: "Sunrise at Reynisfjara"
 ---
