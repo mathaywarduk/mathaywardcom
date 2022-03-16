@@ -17,8 +17,8 @@ hero:
 thumb:
   - url: "Tenerife-013.jpg"
     alt: "Looking out over El Sombrero"
-  - url: "Tenerife-014.jpg"
-    alt: "Looking out over El Sombrero"
-  - url: "Tenerife-012.jpg"
-    alt: "Looking out over El Sombrero"
+  - url: "Tenerife-002.jpg"
+    alt: "Mount Teide and Roques de García in the last of the sun"
+  - url: "Tenerife-004.jpg"
+    alt: "Masca Valley road"
 ---

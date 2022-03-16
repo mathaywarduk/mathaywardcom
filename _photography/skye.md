@@ -17,8 +17,8 @@ hero:
 thumb:
   - url: "Skye-008.jpg"
     alt: "Pinnacle Ridge and Loch na Creitheach"
-  - url: "Skye-009.jpg"
-    alt: "Pinnacle Ridge and Loch na Creitheach"
-  - url: "Skye-010.jpg"
-    alt: "Pinnacle Ridge and Loch na Creitheach"
+  - url: "Skye-036.jpg"
+    alt: "Neist Point Lighthouse"
+  - url: "Skye-046.jpg"
+    alt: "Sunset on Skye near Tarskavaig"
 ---

@@ -17,8 +17,8 @@ hero:
 thumb:
   - url: "Lakes-006.jpg"
     alt: "Howard and Stickle Tarn"
-  - url: "Lakes-007.jpg"
-    alt: "Howard and Stickle Tarn"
-  - url: "Lakes-008.jpg"
-    alt: "Howard and Stickle Tarn"
+  - url: "Lakes-003.jpg"
+    alt: "View over Langdale"
+  - url: "Lakes-012.jpg"
+    alt: "A mountain sheep"
 ---

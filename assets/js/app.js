@@ -1,25 +1,21 @@
-const showClass = "fade-up";
-const hideClass = "opacity-0";
+const showClasses = ["fade-up"];
+const hideClasses = ["opacity-0"];
 
 function Hoverer(el) {
   const targetSelector = el.dataset.hoverTarget;
   const targets = document.querySelectorAll(targetSelector);
 
   el.addEventListener("mouseover", function() {
-    console.log('mouseover');
-
     targets.forEach(function(el) {
-      el.classList.add(showClass);
-      el.classList.remove(hideClass);
+      el.classList.add(...showClasses);
+      el.classList.remove(...hideClasses);
     });
   });
 
   el.addEventListener("mouseout", function() {
-    console.log('mouseout');
-
     targets.forEach(function(el) {
-      el.classList.add(hideClass);
-      el.classList.remove(showClass);
+      el.classList.add(...hideClasses);
+      el.classList.remove(...showClasses);
     });
   });
 }

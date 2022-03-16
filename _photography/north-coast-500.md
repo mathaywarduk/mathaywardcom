@@ -17,8 +17,8 @@ hero:
 thumb:
   - url: "NC500-038.jpg"
     alt: "Private cove near Plockton"
-  - url: "NC500-039.jpg"
-    alt: "Private cove near Plockton"
-  - url: "NC500-040.jpg"
-    alt: "Private cove near Plockton"
+  - url: "NC500-017.jpg"
+    alt: "Suilven"
+  - url: "NC500-043.jpg"
+    alt: "Golden Hour at Upper Loch Torridon"
 ---

@@ -17,8 +17,8 @@ hero:
 thumb:
   - url: "Canada-008.jpg"
     alt: "Maligne Lake"
-  - url: "Canada-009.jpg"
+  - url: "Canada-018.jpg"
     alt: "Maligne Lake"
-  - url: "Canada-010.jpg"
+  - url: "Canada-013.jpg"
     alt: "Maligne Lake"
 ---

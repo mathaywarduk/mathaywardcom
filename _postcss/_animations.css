@@ -1,6 +1,18 @@
 .fade-up {
-  opacity: 0;
   animation: 1s ease-out 0s 1 fadeUp;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fade-down {
+  animation: 1s ease-out 0s 1 fadeDown;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fade-static {
+  animation: 1s ease-out 0s 1 fadeStatic;
+  opacity: 0;
   animation-fill-mode: forwards;
 }
 
@@ -30,12 +42,6 @@
     animation-delay: 800ms;
   }
 
-}
-
-.fade-static {
-  opacity: 0;
-  animation: 1s ease-out 0s 1 fadeStatic;
-  animation-fill-mode: forwards;
 }
 
 @keyframes fadeUp {
