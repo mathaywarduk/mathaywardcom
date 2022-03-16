@@ -17,3 +17,7 @@ collections:
       - skye.md
       - alberta.md
 image_base:  https://mathaywarduk.imgix.net/
+exclude:
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js
