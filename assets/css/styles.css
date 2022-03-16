@@ -1,3 +1,5 @@
+@font-face { font-family: "SuisseIntl"; src: url("/assets/fonts/SuisseIntl-Book.woff2") format("woff2"), url("/assets/fonts/SuisseIntl-Book.woff") format("woff"); }
+
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
@@ -15,7 +17,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 */
-html { line-height: 1.5; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -moz-tab-size: 4; /* 3 */ -o-tab-size: 4; tab-size: 4; /* 3 */ font-family: rustica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */ }
+html { line-height: 1.5; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -moz-tab-size: 4; /* 3 */ -o-tab-size: 4; tab-size: 4; /* 3 */ font-family: SuisseIntl, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */ }
 
 /*
 1. Remove the margin in all browsers.
@@ -200,6 +202,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .left-0 { left: 0px; }
 
+.top-1\/2 { top: 50%; }
+
+.-right-10 { right: -2.5rem; }
+
+.-top-80 { top: -20rem; }
+
+.left-1\/2 { left: 50%; }
+
 .top-0 { top: 0px; }
 
 .-bottom-3 { bottom: -0.75rem; }
@@ -219,6 +229,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-12 { margin-bottom: 3rem; }
 
 .mt-2 { margin-top: 0.5rem; }
+
+.-mt-80 { margin-top: -20rem; }
+
+.-ml-60 { margin-left: -15rem; }
 
 .-mt-12 { margin-top: -3rem; }
 
@@ -259,6 +273,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-full { width: 100%; }
 
 .w-1\/4 { width: 25%; }
+
+.w-1\/6 { width: 16.666667%; }
 
 .w-8\/12 { width: 66.666667%; }
 
@@ -302,7 +318,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-display { font-family: freight-big-pro; }
 
-.font-sans { font-family: rustica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+.font-sans { font-family: SuisseIntl, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .text-3xl { font-size: 1.875rem; }
 
@@ -328,12 +344,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-0 { opacity: 0; }
 
-.transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
-
-.duration-500 { transition-duration: 500ms; }
-
-.ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
-
 .upright { -ms-writing-mode: tb-rl; writing-mode: vertical-rl; text-orientation: sideways-right; transform: rotate(180deg); }
 
 p { margin-bottom: 2rem; font-family: abril-text, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; font-size: 1.125rem; }
@@ -348,11 +358,11 @@ p a:hover, p a:focus { color: #BF5700; }
 
 .link--pretty:hover, .link--pretty:focus { color: #BF5700; background-image: linear-gradient(0deg, transparent 20%, #BF5700 20%, #BF5700 22%, transparent 22%); }
 
-.meta { margin-bottom: 0.75rem; font-family: rustica, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size: 0.625rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.meta { margin-bottom: 0.75rem; font-family: SuisseIntl, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size: 0.625rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
 
 .meta-date { position: relative; }
 
-.meta-date:before { content: ""; position: absolute; top: 0; left: 0; width: .75rem; height: 1px; background-color: black; margin-left: -1rem; margin-top: 0.6875rem; }
+.meta-date:before { content: ""; position: absolute; top: 0; left: 0; width: .75rem; height: 1px; background-color: black; margin-left: -1rem; margin-top: 0.5rem; }
 
 .nav-item { transition-property: all; transition-duration: 300ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
@@ -392,25 +402,27 @@ p a:hover, p a:focus { color: #BF5700; }
 
 li:hover .feature-nav-item, li:focus .feature-nav-item { color: #BF5700; }
 
-.fade-up { opacity: 0; -webkit-animation: 1s ease-out 0s 1 fadeUp; animation: 1s ease-out 0s 1 fadeUp; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.fade-up { -webkit-animation: 1s ease-out 0s 1 fadeUp; animation: 1s ease-out 0s 1 fadeUp; opacity: 0; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
-.fade-up:nth-child(2) { -webkit-animation-delay: 100ms; animation-delay: 100ms; }
+.fade-down { -webkit-animation: 1s ease-out 0s 1 fadeDown; animation: 1s ease-out 0s 1 fadeDown; opacity: 0; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
-.fade-up:nth-child(3) { -webkit-animation-delay: 200ms; animation-delay: 200ms; }
+.fade-static { -webkit-animation: 1s ease-out 0s 1 fadeStatic; animation: 1s ease-out 0s 1 fadeStatic; opacity: 0; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
-.fade-up:nth-child(4) { -webkit-animation-delay: 300ms; animation-delay: 300ms; }
+.animate-stepped:nth-child(2) { -webkit-animation-delay: 100ms; animation-delay: 100ms; }
 
-.fade-up:nth-child(5) { -webkit-animation-delay: 400ms; animation-delay: 400ms; }
+.animate-stepped:nth-child(3) { -webkit-animation-delay: 200ms; animation-delay: 200ms; }
 
-.fade-up:nth-child(6) { -webkit-animation-delay: 500ms; animation-delay: 500ms; }
+.animate-stepped:nth-child(4) { -webkit-animation-delay: 300ms; animation-delay: 300ms; }
 
-.fade-up:nth-child(7) { -webkit-animation-delay: 600ms; animation-delay: 600ms; }
+.animate-stepped:nth-child(5) { -webkit-animation-delay: 400ms; animation-delay: 400ms; }
 
-.fade-up:nth-child(8) { -webkit-animation-delay: 700ms; animation-delay: 700ms; }
+.animate-stepped:nth-child(6) { -webkit-animation-delay: 500ms; animation-delay: 500ms; }
 
-.fade-up:nth-child(9) { -webkit-animation-delay: 800ms; animation-delay: 800ms; }
+.animate-stepped:nth-child(7) { -webkit-animation-delay: 600ms; animation-delay: 600ms; }
 
-.fade-static { opacity: 0; -webkit-animation: 1s ease-out 0s 1 fadeStatic; animation: 1s ease-out 0s 1 fadeStatic; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.animate-stepped:nth-child(8) { -webkit-animation-delay: 700ms; animation-delay: 700ms; }
+
+.animate-stepped:nth-child(9) { -webkit-animation-delay: 800ms; animation-delay: 800ms; }
 
 @-webkit-keyframes fadeUp { 0% { transform: translateY(10%);
     opacity: 0; }
@@ -432,6 +444,8 @@ li:hover .feature-nav-item, li:focus .feature-nav-item { color: #BF5700; }
 
 @media (min-width: 1024px) { .lg\:-ml-5 { margin-left: -1.25rem; } .lg\:p-16 { padding: 4rem; } .lg\:pr-28 { padding-right: 7rem; } .lg\:pb-56 { padding-bottom: 14rem; } .lg\:text-2xl { font-size: 1.625rem; } .lg\:text-7xl { font-size: 7.5rem; } .lg\:text-4xl { font-size: 2.675rem; } }
 
-@media (min-width: 1280px) { .xl\:-mx-8 { margin-left: -2rem; margin-right: -2rem; } .xl\:-mt-30 { margin-top: -7.5rem; } .xl\:-mr-64 { margin-right: -16rem; } .xl\:mb-16 { margin-bottom: 4rem; } .xl\:w-auto { width: auto; } .xl\:px-8 { padding-left: 2rem; padding-right: 2rem; } .xl\:text-6xl { font-size: 4.5rem; } }
+@media (min-width: 1280px) { .xl\:-mx-8 { margin-left: -2rem; margin-right: -2rem; } .xl\:-mt-30 { margin-top: -7.5rem; } .xl\:-mr-64 { margin-right: -16rem; } .xl\:mb-16 { margin-bottom: 4rem; } .xl\:block { display: block; } .xl\:w-auto { width: auto; } .xl\:px-8 { padding-left: 2rem; padding-right: 2rem; } .xl\:text-6xl { font-size: 4.5rem; } }
+
+@media (min-width: 1600px) { .xxl\:block { display: block; } }
 
 /*# sourceMappingURL=styles.css.map */
