@@ -9,8 +9,8 @@ seo:
   title: "Travel Photography - Tenerife"
   description: "Photography from around Tenerife, Canary Islands including Mount Teide, Masca Valley, Anaga and Playa de Benijo."
   image:
-    url: "Tenerife-005.jpg"
-    alt: "The road through Anaga"
+    url: "Tenerife-003.jpg"
+    alt: "Masca valley - sunset in the mist"
 hero:
   image: "Tenerife-005.jpg"
   alt: "The road through Anaga"
@@ -19,6 +19,4 @@ thumb:
     alt: "Looking out over El Sombrero"
   - url: "Tenerife-002.jpg"
     alt: "Mount Teide and Roques de García in the last of the sun"
-  - url: "Tenerife-004.jpg"
-    alt: "Masca Valley road"
 ---

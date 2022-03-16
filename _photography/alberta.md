@@ -9,8 +9,8 @@ seo:
   title: "Travel Photography - Alberta"
   description: "Photography from around Alberta, Canada, including Banff, Jasper, Kananaskis, Maligne Lake and Peyto Lake."
   image:
-    url: "Canada-009.jpg"
-    alt: "Medicine Lake"
+    url: "Canada-016.jpg"
+    alt: "Canadian Rockies"
 hero:
   image: "Canada-009.jpg"
   alt: "Medicine Lake"
@@ -18,7 +18,5 @@ thumb:
   - url: "Canada-008.jpg"
     alt: "Maligne Lake"
   - url: "Canada-018.jpg"
-    alt: "Maligne Lake"
-  - url: "Canada-013.jpg"
     alt: "Maligne Lake"
 ---

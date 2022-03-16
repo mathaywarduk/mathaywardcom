@@ -44,70 +44,34 @@ north-coast-500:
         alt: "Howard in Torridon"
   - type: double
     images:
-      - url: "NC500-030.jpg"
-        alt: "Blue layers of Assynt"
-      - url: "NC500-014.jpg"
-        alt: "Night clouds from Shieldag"
-  - type: double
-    images:
       - url: "NC500-041.jpg"
         alt: "Plockton harbour"
-      - url: "NC500-040.jpg"
-        alt: "Plockton harbour"
+      - url: "NC500-039.jpg"
+        alt: "Big Sand"
   - type: double
     images:
       - url: "NC500-037.jpg"
         alt: "Plockton"
-      - url: "NC500-036.jpg"
-        alt: "Rudi in Plockton"
-  - type: double
-    images:
       - url: "NC500-038.jpg"
         alt: "Private cove near Plockton"
+  - type: double
+    images:
       - url: "NC500-033.jpg"
         alt: "Private cove near Plockton"
-  - type: double
-    images:
       - url: "NC500-035.jpg"
         alt: "Private cove near Plockton"
+  - type: double
+    images:
       - url: "NC500-034.jpg"
         alt: "Private cove near Plockton"
-  - type: single
-    images:
-      - url: "NC500-047.jpg"
-        alt: "Stac Pollaidh between Cul Beag and Cul Mor"
+      - url: "NC500-014.jpg"
+        alt: "Night clouds from Shieldag"
   - type: double
     images:
-      - url: "NC500-052.jpg"
-        alt: "Canisp and Suilven"
-      - url: "NC500-053.jpg"
-        alt: "Coastal roads in Assynt"
-  - type: double
-    images:
-      - url: "NC500-017.jpg"
-        alt: "Suilven"
-      - url: "NC500-016.jpg"
-        alt: "Suilven over Cam Loch"
-  - type: single
-    images:
-      - url: "NC500-010.jpg"
-        alt: "Assynt"
-  - type: single
-    images:
-      - url: "NC500-020.jpg"
-        alt: "Cam Loch"
-  - type: double
-    images:
-      - url: "NC500-027.jpg"
-        alt: "Cloud layers from Stac Pollaidh"
-      - url: "NC500-025.jpg"
-        alt: "Sarah on Stac Pollaidh"
-  - type: double
-    images:
-      - url: "NC500-028.jpg"
-        alt: "Howard on Stac Pollaidh"
-      - url: "NC500-024.jpg"
-        alt: "Kerry and Rudi on Stac Pollaidh"
+      - url: "NC500-056.jpg"
+        alt: "Sandwood Bay"
+      - url: "NC500-057.jpg"
+        alt: "Sandwood Bay"
   - type: double
     images:
       - url: "NC500-031.jpg"
@@ -395,3 +359,64 @@ lake-district:
     images:
       - url: "Lakes-005.jpg"
         alt: "Howard and Stickle Tarn"
+assynt:
+  - type: single
+    images:
+      - url: "NC500-047.jpg"
+        alt: "Stac Pollaidh between Cul Beag and Cul Mor"
+  - type: double
+    images:
+      - url: "NC500-052.jpg"
+        alt: "Canisp and Suilven"
+      - url: "NC500-053.jpg"
+        alt: "Coastal roads in Assynt"
+  - type: double
+    images:
+      - url: "NC500-017.jpg"
+        alt: "Suilven"
+      - url: "NC500-016.jpg"
+        alt: "Suilven over Cam Loch"
+  - type: single
+    images:
+      - url: "NC500-020.jpg"
+        alt: "Cam Loch"
+  - type: double
+    images:
+      - url: "NC500-006.jpg"
+        alt: "Sunrise in the Assynt"
+      - url: "NC500-055.jpg"
+        alt: "Sunset in the Assynt"
+  - type: double
+    images:
+      - url: "NC500-009.jpg"
+        alt: "Howard on Stac Pollaidh"
+      - url: "NC500-003.jpg"
+        alt: "Howard on Stac Pollaidh"
+  - type: double
+    images:
+      - url: "NC500-027.jpg"
+        alt: "Cloud layers from Stac Pollaidh"
+      - url: "NC500-025.jpg"
+        alt: "Sarah on Stac Pollaidh"
+  - type: double
+    images:
+      - url: "NC500-028.jpg"
+        alt: "Howard on Stac Pollaidh"
+      - url: "NC500-024.jpg"
+        alt: "Kerry and Rudi on Stac Pollaidh"
+  - type: double
+    images:
+      - url: "NC500-058.jpg"
+        alt: "Suilven"
+      - url: "NC500-059.jpg"
+        alt: "Suilven"
+  - type: single
+    images:
+      - url: "NC500-010.jpg"
+        alt: "Assynt"
+  - type: double
+    images:
+      - url: "NC500-030.jpg"
+        alt: "Blue layers of Assynt"
+      - url: "NC500-015.jpg"
+        alt: "Layers of Cul Mor"

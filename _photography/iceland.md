@@ -9,8 +9,8 @@ seo:
   title: "Travel Photography - Iceland"
   description: "Photography from Southern Iceland, including Stokksnes, Þórsmörk and Reynisfjara."
   image:
-    url: "Iceland-013.jpg"
-    alt: "Howard on Stokksnes beach"
+    url: "Iceland-007.jpg"
+    alt: "Sunrise at Reynisfjara"
 hero:
   image: "Iceland-013.jpg"
   alt: "Howard on Stokksnes beach"
@@ -19,6 +19,4 @@ thumb:
     alt: "Sunrise at Reynisfjara"
   - url: "Iceland-004.jpg"
     alt: "Around Þórsmörk on the F261"
-  - url: "Iceland-014.jpg"
-    alt: "Stokksnes Beach"
 ---

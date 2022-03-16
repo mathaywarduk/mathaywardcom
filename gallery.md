@@ -52,7 +52,7 @@ layout: default
 <h2>North Coast 500</h2>
 
 <div class="flex flex-wrap">
-  {% for i in (1..54) %}
+  {% for i in (1..59) %}
     {% assign num = i %}
     {% if i < 10 %}
         {% assign num = "0" | append: i %}
@@ -82,7 +82,7 @@ layout: default
 <h2>Skye</h2>
 
 <div class="flex flex-wrap">
-  {% for i in (1..45) %}
+  {% for i in (1..46) %}
     {% assign num = i %}
     {% if i < 10 %}
         {% assign num = "0" | append: i %}

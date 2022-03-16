@@ -9,8 +9,8 @@ seo:
   title: "Travel Photography - Scottish Highlands"
   description: "Photography from the southern Scottish Highlands including Stob Dearg, Stob Binnein, The Trossachs, Glen Coe and Loch Dochart."
   image:
-    url: "Highlands-026.jpg"
-    alt: "Ben Vorlich summit"
+    url: "Highlands-005.jpg"
+    alt: "Sunset from Ben A'an"
 hero:
   image: "Highlands-026.jpg"
   alt: "Ben Vorlich summit"
@@ -19,6 +19,4 @@ thumb:
     alt: "Sarah and Vinnie on Ben A'an Summit"
   - url: "Highlands-024.jpg"
     alt: "View east from Stob Binnein"
-  - url: "Highlands-014.jpg"
-    alt: "First light through Glen Coe"
 ---

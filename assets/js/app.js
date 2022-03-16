@@ -1,4 +1,4 @@
-const showClasses = ["fade-up"];
+const showClasses = ["fade-up", "fade-down"];
 const hideClasses = ["opacity-0"];
 
 function Hoverer(el) {
@@ -6,16 +6,16 @@ function Hoverer(el) {
   const targets = document.querySelectorAll(targetSelector);
 
   el.addEventListener("mouseover", function() {
-    targets.forEach(function(el) {
-      el.classList.add(...showClasses);
+    targets.forEach(function(el, i) {
+      el.classList.add(showClasses[i % 2]);
       el.classList.remove(...hideClasses);
     });
   });
 
   el.addEventListener("mouseout", function() {
-    targets.forEach(function(el) {
+    targets.forEach(function(el, i) {
       el.classList.add(...hideClasses);
-      el.classList.remove(...showClasses);
+      el.classList.remove(showClasses[i % 2]);
     });
   });
 }

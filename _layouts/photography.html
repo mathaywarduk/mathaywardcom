@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% assign image_group = site.data.images[page.slug] %}
-{% assign more = site.photography | where_exp:"post","post.url != page.url" %}
+{% assign more = site.photography | where_exp:"post","post.url != page.url" | sample: 3 %}
 
 <div class="pt-10 md:pt-0 pb-10 md:pb-0">
   <div class="w-full ml-auto flex flex-wrap md:h-screen px-8 md:px-0 mb-12 md:mb-24">
@@ -14,7 +14,7 @@ layout: default
 
     <div class="w-full md:w-7/12 h-full flex flex-wrap relative order-2 md:order-1 mt-5 md:mt-0">
       <div class="w-full md:w-7/12 ml-auto self-center md:pr-14 lg:pr-28">
-        <div class="fade-up">
+        <div class="fade-down">
           <span class="meta block">Info</span>
           <p>{{ page.intro }}</p>
         </div>
@@ -49,7 +49,7 @@ layout: default
     <span class="meta block mb-2 md:mb-0">Other Locations</span>
 
     <ul class="w-full xl:w-auto flex flex-wrap gap-5">
-      {% for item in more limit:3 %}
+      {% for item in more %}
         <li><a class="font-display text-2xl lg:text-4xl link--pretty" href="{{ item.url }}">{{ item.title }}</a></li>
       {% endfor %}
     </ul>
