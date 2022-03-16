@@ -39,7 +39,6 @@
     text-4xl
     font-display
     relative
-    inline-block
     transition-all
     duration-500
     ease-in-out
@@ -51,17 +50,17 @@
     md:text-5xl
     md:opacity-30
     md:mb-8
-    md:flex
-    md:items-start
-    md:justify-start
+    inline-flex
+    items-start
+    justify-start
     lg:text-6xl
     lg:mb-10
     hover:opacity-100
     focus:opacity-100
   ;
-}
 
-li:hover .feature-nav-item,
-li:focus .feature-nav-item {
-  color: #BF5700;
+  &:hover,
+  &:focus {
+    color: #BF5700;
+  }
 }

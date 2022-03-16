@@ -13,7 +13,7 @@ seo:
       <li class="fade-up animate-stepped">
         <a href="{{ item.url }}" class="feature-nav-item" data-hover-show data-hover-target=".thumb-{{ item.slug }}">
           {{ item.title }}
-          <span class="meta text-3xs block mt-2 text-left no-underline md:mt-4 md:ml-2">{{ item.year }} / {{ item.region }}</span>
+          <span class="text-xl block mt-2 text-left no-underline font-serif md:mt-4 ml-2">({{ site.data.images[item.slug].size }})</span>
         </a>
       </li>
       {% endfor %}
