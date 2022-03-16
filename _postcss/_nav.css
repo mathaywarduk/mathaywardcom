@@ -46,13 +46,13 @@
     tracking-wide
     border-b
     border-transparent
-    mb-1
-    md:text-5xl
-    md:opacity-30
-    md:mb-8
+    mb-4
     inline-flex
     items-start
     justify-start
+    md:text-5xl
+    md:opacity-30
+    md:mb-8
     lg:text-6xl
     lg:mb-10
     hover:opacity-100
