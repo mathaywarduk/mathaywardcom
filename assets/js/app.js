@@ -1,4 +1,4 @@
-const showClass = "opacity-100";
+const showClass = "fade-up";
 const hideClass = "opacity-0";
 
 function Hoverer(el) {
