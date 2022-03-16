@@ -396,7 +396,7 @@ p a:hover, p a:focus { color: #BF5700; }
 
 .nav-item.is-active:after { background-color: #000; content: " "; margin-top: 7px; }
 
-.feature-nav-item { position: relative; margin-bottom: 0.25rem; display: inline-flex; align-items: flex-start; justify-content: flex-start; border-bottom-width: 1px; border-color: transparent; font-family: freight-big-pro; font-size: 2.675rem; line-height: 1; letter-spacing: 0.025em; transition-property: all; transition-duration: 500ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.feature-nav-item { position: relative; margin-bottom: 1rem; display: inline-flex; align-items: flex-start; justify-content: flex-start; border-bottom-width: 1px; border-color: transparent; font-family: freight-big-pro; font-size: 2.675rem; line-height: 1; letter-spacing: 0.025em; transition-property: all; transition-duration: 500ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
 .feature-nav-item:hover { opacity: 1; }
 
