@@ -198,6 +198,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .relative { position: relative; }
 
+.left-full { left: 100%; }
+
 .bottom-20 { bottom: 5rem; }
 
 .left-0 { left: 0px; }
@@ -406,7 +408,9 @@ p a:hover, p a:focus { color: #BF5700; }
 
 @media (min-width: 1024px) { .feature-nav-item { margin-bottom: 2.5rem; } .feature-nav-item { font-size: 4.5rem; } }
 
-.feature-nav-item:hover, .feature-nav-item:focus { color: #BF5700; }
+.feature-nav-item { background-image: linear-gradient(0deg, transparent 14%, transparent 14%, transparent 15%, transparent 15%); }
+
+.feature-nav-item:hover, .feature-nav-item:focus { color: #BF5700; background-image: linear-gradient(0deg, transparent 14%, #BF5700 14%, #BF5700 15%, transparent 15%); }
 
 .fade-up { -webkit-animation: 1s ease-out 0s 1 fadeUp; animation: 1s ease-out 0s 1 fadeUp; opacity: 0; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
