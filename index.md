@@ -1,7 +1,7 @@
 ---
 layout: bio
 title:  "Biography"
-long_title: "Exploring the great outdoors and capturing it’s awesome landscapes."
+long_title: "Exploring the great outdoors and capturing its awesome landscapes."
 hero: 
     image: hero.jpg
     alt: "Looking at Suilven"

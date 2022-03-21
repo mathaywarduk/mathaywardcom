@@ -59,8 +59,12 @@
     focus:opacity-100
   ;
 
+    background-image: linear-gradient(0deg, transparent 14%, transparent 14%, transparent 15%, transparent 15%);
+
+
   &:hover,
   &:focus {
     color: #BF5700;
+    background-image: linear-gradient(0deg, transparent 14%, #BF5700 14%, #BF5700 15%, transparent 15%);
   }
 }
