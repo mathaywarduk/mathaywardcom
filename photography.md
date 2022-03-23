@@ -10,10 +10,18 @@ seo:
   <nav class="w-full md:w-7/10 md:ml-3/10 relative mb-12 px-8 md:px-0">
     <ul>
       {% for item in site.photography %}
+        {% assign group_size = 0 %}
+        {% for block in site.data.images[item.slug] %}
+          {% if block.type == "single" %}
+            {% assign group_size = group_size | plus: 1 %}
+          {% else %}
+            {% assign group_size = group_size | plus: 2 %}
+          {% endif %}
+        {% endfor %}
       <li class="fade-up animate-stepped">
         <a href="{{ item.url }}" class="feature-nav-item" data-hover-show data-hover-target=".thumb-{{ item.slug }}">
           {{ item.title }}
-          <span class="text-xl block mt-2 text-left no-underline font-serif md:mt-4 ml-2 absolute left-full">({{ site.data.images[item.slug].size }})</span>
+          <span class="text-xl block mt-2 text-left no-underline font-serif md:mt-4 ml-2 absolute left-full">({{ group_size | plus:1 }})</span>
         </a>
       </li>
       {% endfor %}
