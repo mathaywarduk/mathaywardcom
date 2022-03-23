@@ -162,8 +162,8 @@ iceland:
         alt: "Vestrahorn from Stokksnes"
   - type: double
     images:
-      - url: "Iceland-002.jpg"
-        alt: "Around Þórsmörk on the F261"
+      - url: "Iceland-018.jpg"
+        alt: "Múlagljúfur Canyon"
       - url: "Iceland-016.jpg"
         alt: "Vatnajokull Glacier"
   - type: single
@@ -284,8 +284,8 @@ skye:
         alt: "Pinnacle Ridge and Loch na Creitheach"
   - type: double
     images:
-      - url: "Skye-021.jpg"
-        alt: "The Quiraing"
+      - url: "Skye-048.JPG"
+        alt: "Howard at Sgurr na Stri"
       - url: "Skye-020.jpg"
         alt: "Howard at The Quiraing"
   - type: single
@@ -296,8 +296,8 @@ skye:
     images:
       - url: "Skye-026.jpg"
         alt: "Blue hour moon over Skye"
-      - url: "Skye-010.jpg"
-        alt: "Hut on Camasunary Bay"
+      - url: "Skye-014.jpg"
+        alt: "Howard looking over Loch Creitheach"
   - type: single
     images:
       - url: "Skye-042.jpg"
@@ -306,20 +306,14 @@ skye:
     images:
       - url: "Skye-013.jpg"
         alt: "Loch na Creitheach"
-  - type: double
-    images:
-      - url: "Skye-039.jpg"
-        alt: "Kerry, Sarah and the dogs on Talisker Bay beach"
-      - url: "Skye-038.jpg"
-        alt: "Sunset at Talisker Bay"
   - type: single
     images:
       - url: "Skye-018.jpg"
         alt: "Kerry at The Quiraing"
   - type: double
     images:
-      - url: "Skye-014.jpg"
-        alt: "Howard looking over Loch Creitheach"
+      - url: "Skye-010.jpg"
+        alt: "Hut on Camasunary Bay"
       - url: "Skye-011.jpg"
         alt: "Hut on Camasunary Bay"
   - type: single
@@ -404,6 +398,12 @@ assynt:
         alt: "Howard on Stac Pollaidh"
       - url: "NC500-024.jpg"
         alt: "Kerry and Rudi on Stac Pollaidh"
+  - type: double
+    images:
+      - url: "Assynt-001.jpg"
+        alt: "Kerry on Cul Mor"
+      - url: "Assynt-002.jpg"
+        alt: "View of Suilven from Cul Mor"
   - type: double
     images:
       - url: "NC500-058.jpg"
