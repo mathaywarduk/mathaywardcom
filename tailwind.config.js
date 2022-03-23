@@ -39,7 +39,7 @@ module.exports = {
       fontFamily: {
         display: ["freight-big-pro"],
         serif: ["abril-text", ...defaultTheme.fontFamily.serif],
-        sans: ["rustica", ...defaultTheme.fontFamily.sans],
+        sans: ["SuisseIntl", ...defaultTheme.fontFamily.sans],
       },
       spacing: {
         30: "7.5rem",

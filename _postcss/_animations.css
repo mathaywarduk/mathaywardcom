@@ -1,8 +1,22 @@
 .fade-up {
-  opacity: 0;
   animation: 1s ease-out 0s 1 fadeUp;
+  opacity: 0;
   animation-fill-mode: forwards;
+}
 
+.fade-down {
+  animation: 1s ease-out 0s 1 fadeDown;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fade-static {
+  animation: 1s ease-out 0s 1 fadeStatic;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.animate-stepped {
   &:nth-child(2) {
     animation-delay: 100ms;
   }
@@ -30,15 +44,21 @@
 
 }
 
-.fade-static {
-  opacity: 0;
-  animation: 1s ease-out 0s 1 fadeStatic;
-  animation-fill-mode: forwards;
-}
-
 @keyframes fadeUp {
   0% {
     transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-10%);
     opacity: 0;
   }
   100% {

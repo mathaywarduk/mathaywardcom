@@ -10,9 +10,14 @@ collections:
     order:
       - iceland.md
       - north-coast-500.md
+      - assynt.md
       - lake-district.md
       - southern-highlands.md
       - tenerife.md
       - skye.md
       - alberta.md
 image_base:  https://mathaywarduk.imgix.net/
+exclude:
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js

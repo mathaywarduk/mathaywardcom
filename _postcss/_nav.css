@@ -39,33 +39,32 @@
     text-4xl
     font-display
     relative
-    inline-block
     transition-all
-    delay-75
-    duration-300
+    duration-500
     ease-in-out
     leading-none
     tracking-wide
     border-b
     border-transparent
-    mb-1
+    mb-4
+    inline-flex
+    items-start
+    justify-start
     md:text-5xl
     md:opacity-30
     md:mb-8
-    md:flex
-    md:items-start
-    md:justify-start
     lg:text-6xl
     lg:mb-10
     hover:opacity-100
     focus:opacity-100
   ;
 
+    background-image: linear-gradient(0deg, transparent 14%, transparent 14%, transparent 15%, transparent 15%);
+
+
   &:hover,
   &:focus {
     color: #BF5700;
-    @apply
-      lg:text-7xl
-    ;
+    background-image: linear-gradient(0deg, transparent 14%, #BF5700 14%, #BF5700 15%, transparent 15%);
   }
 }
