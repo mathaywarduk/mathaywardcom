@@ -221,12 +221,20 @@ southern-highlands:
     images:
       - url: "NC500-011.jpg"
         alt: "View from Stob Dearg"
+  - type: single
+    images:
+      - url: "Wild-Camp-002.jpg"
+        alt: "View from Beinn Each of Stob Binnein and Ben More"
   - type: double
     images:
-      - url: "Highlands-012.jpg"
-        alt: "Boats on Loch Dochart"
-      - url: "Highlands-010.jpg"
-        alt: "Clouds over Loch Dochart"
+      - url: "Wild-Camp-008.jpg"
+        alt: "Beinn Each sunset"
+      - url: "Wild-Camp-009.jpg"
+        alt: "Kerry and Rudi in the last light on Beinn Each"
+  - type: single
+    images:
+      - url: "Wild-Camp-004.jpg"
+        alt: "Beinn Each wild camp"
   - type: double
     images:
       - url: "Highlands-014.jpg"
