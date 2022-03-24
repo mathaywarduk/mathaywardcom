@@ -17,6 +17,6 @@ hero:
 thumb:
   - url: "Highlands-002.jpg"
     alt: "Sarah and Vinnie on Ben A'an Summit"
-  - url: "Highlands-024.jpg"
-    alt: "View east from Stob Binnein"
+  - url: "Wild-Camp-008.jpg"
+    alt: "Beinn Each sunset"
 ---
