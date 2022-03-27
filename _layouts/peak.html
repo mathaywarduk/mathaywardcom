@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="animate-stepped">
+  <div class="pt-10 md:pt-40 md:w-9/12 md:ml-auto px-8 md:pl-0 fade-up">
+    <span class="text-base block text-left no-underline font-sans">
+      <a href="/40-peaks" class="underline nav-item">40 Peaks</a>
+      &nbsp;&bull;&nbsp;
+      {{ page.date | date: "%d %B %Y" }}
+      &nbsp;&bull;&nbsp;
+      {{ page.region }}
+    </span>
+    <h1 class="font-display text-4xl md:text-6xl lg:text-7xl mb-4 lg:mb-8 pb-0 leading-tight">{{ page.title }}</h1>
+  </div>
+
+  <div class="md:w-9/12 md:ml-auto px-8 md:pl-0 fade-static border-b border-t br-grey py-4 xl:py-8">
+    <h2 class="meta">Peaks</h2>
+    <ul class="flex flex-wrap gap-8">
+      {% for peak in page.peaks %}
+        <li>
+          <h3 class="text-lg font-bold">{{ peak.name }}</h3>
+          {{ peak.category }}
+          &nbsp;&bull;&nbsp;
+          {{ peak.elevation}}m
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+
+  <div class="md:w-9/12 md:ml-auto md:pr-1/4 py-12 px-8 md:pl-0 fade-up">
+    {{ content }}
+  </div>
+
+  <div class="overflow-hidden animate-stepped">
+  {% for group in page.images %}
+    <div class="flex flex-wrap {% if group.images.size == 2 %} md:-mx-4 xl:-mx-8 {% endif %} fade-up {% if forloop.last != true %} mb-8 xl:mb-16 {% endif %}">
+     {% for image in group.images %}
+      <div class="w-full {% if group.images.size == 2 %} md:w-1/2 md:px-4 xl:px-8 {% endif %}">
+        {% include image.html url=image.url alt=image.alt %}
+      </div>
+     {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
+</div>

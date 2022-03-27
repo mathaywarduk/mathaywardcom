@@ -1,0 +1,52 @@
+:root {
+  --orange: #bf5700;
+  --grey: #b8aba0;
+}
+
+.b-orange {
+  background-color: var(--orange);
+}
+
+.c-orange {
+  color: var(--orange);
+}
+
+.br-orange {
+  border-color: var(--orange);
+}
+
+.b-grey {
+  background-color: var(--grey);
+}
+
+.c-grey {
+  color: var(--grey);
+}
+
+.br-grey {
+  border-color: var(--grey);
+}
+
+.b-black {
+  background-color: black;
+}
+
+.b-white {
+  background-color: white;
+}
+
+.c-black {
+  color: black;
+}
+
+.c-white {
+  color: white;
+}
+
+.br-white {
+  border-color: white;
+}
+
+.br-black {
+  border-color: black;
+}

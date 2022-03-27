@@ -2,6 +2,8 @@
   url: "/"
 - title: Photography
   url: "/photography"
+- title: 40 Peaks
+  url: "/40-peaks"
 - title: Unsplash
   url: "https://unsplash.com/mathaywarduk"
   target: "_blank"

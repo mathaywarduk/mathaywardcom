@@ -16,6 +16,10 @@ collections:
       - tenerife.md
       - skye.md
       - alberta.md
+  peaks:
+    output: true
+    order: 
+      - beinn_each_wild_camp.md
 image_base:  https://mathaywarduk.imgix.net/
 exclude:
   - package-lock.json
