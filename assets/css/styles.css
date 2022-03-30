@@ -358,7 +358,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-none { line-height: 1; }
 
-.leading-tight { line-height: 1.25; }
+.leading-tight { line-height: 0.7; }
 
 .tracking-wide { letter-spacing: 0.025em; }
 
@@ -500,6 +500,8 @@ p a:hover, p a:focus { color: var(--orange); }
 
 .fade-static { -webkit-animation: 1s ease-out 0s 1 fadeStatic; animation: 1s ease-out 0s 1 fadeStatic; opacity: 0; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
+.text-slide-up { -webkit-animation: 1s ease-out 0s 1 textSlideUp; animation: 1s ease-out 0s 1 textSlideUp; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; transform: translateY(-100%); }
+
 .animate-stepped:nth-child(2) { -webkit-animation-delay: 100ms; animation-delay: 100ms; }
 
 .animate-stepped:nth-child(3) { -webkit-animation-delay: 200ms; animation-delay: 200ms; }
@@ -541,6 +543,12 @@ p a:hover, p a:focus { color: var(--orange); }
 
 @keyframes fadeStatic { 0% { opacity: 0; }
   100% { opacity: 1; } }
+
+@-webkit-keyframes textSlideUp { 0% { transform: translateY(100%); }
+  100% { transform: translateY(0%); } }
+
+@keyframes textSlideUp { 0% { transform: translateY(100%); }
+  100% { transform: translateY(0%); } }
 
 @media (min-width: 768px) { .md\:fixed { position: fixed; } .md\:left-auto { left: auto; } .md\:right-0 { right: 0px; } .md\:bottom-24 { bottom: 6rem; } .md\:right-auto { right: auto; } .md\:left-0 { left: 0px; } .md\:bottom-auto { bottom: auto; } .md\:top-0 { top: 0px; } .md\:order-1 { order: 1; } .md\:order-2 { order: 2; } .md\:mx-auto { margin-left: auto; margin-right: auto; } .md\:-mx-4 { margin-left: -1rem; margin-right: -1rem; } .md\:ml-3\/10 { margin-left: 30%; } .md\:mt-4 { margin-top: 1rem; } .md\:mb-20 { margin-bottom: 5rem; } .md\:-mt-16 { margin-top: -4rem; } .md\:ml-0 { margin-left: 0px; } .md\:-mr-40 { margin-right: -10rem; } .md\:mb-10 { margin-bottom: 2.5rem; } .md\:mr-0 { margin-right: 0px; } .md\:-ml-4 { margin-left: -1rem; } .md\:mb-12 { margin-bottom: 3rem; } .md\:ml-auto { margin-left: auto; } .md\:mb-24 { margin-bottom: 6rem; } .md\:mt-0 { margin-top: 0px; } .md\:mt-16 { margin-top: 4rem; } .md\:-mr-0 { margin-right: -0px; } .md\:mb-0 { margin-bottom: 0px; } .md\:block { display: block; } .md\:hidden { display: none; } .md\:h-screen { height: 100vh; } .md\:h-full { height: 100%; } .md\:w-7\/12 { width: 58.333333%; } .md\:w-2\/3 { width: 66.666667%; } .md\:w-7\/10 { width: 70%; } .md\:w-5\/12 { width: 41.666667%; } .md\:w-10\/12 { width: 83.333333%; } .md\:w-9\/12 { width: 75%; } .md\:w-1\/2 { width: 50%; } .md\:p-12 { padding: 3rem; } .md\:px-0 { padding-left: 0px; padding-right: 0px; } .md\:px-4 { padding-left: 1rem; padding-right: 1rem; } .md\:pt-12 { padding-top: 3rem; } .md\:pb-40 { padding-bottom: 10rem; } .md\:pt-40 { padding-top: 10rem; } .md\:pt-88 { padding-top: 22rem; } .md\:pl-0 { padding-left: 0px; } .md\:pr-1\/4 { padding-right: 25%; } .md\:pt-0 { padding-top: 0px; } .md\:pb-0 { padding-bottom: 0px; } .md\:pr-14 { padding-right: 3.5rem; } .md\:pb-24 { padding-bottom: 6rem; } .md\:pr-0 { padding-right: 0px; } .md\:text-left { text-align: left; } .md\:text-6xl { font-size: 4.5rem; } .md\:text-3xl { font-size: 1.875rem; } .md\:text-4xl { font-size: 2.675rem; } .md\:text-xl { font-size: 1.25rem; } .md\:upright { -ms-writing-mode: tb-rl; writing-mode: vertical-rl; text-orientation: sideways-right; transform: rotate(180deg); } }
 
