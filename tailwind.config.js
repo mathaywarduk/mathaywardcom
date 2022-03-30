@@ -31,6 +31,7 @@ module.exports = {
     },
     extend: {
       lineHeight: {
+        tight: "0.7",
         default: "1.5",
       },
       width: {
