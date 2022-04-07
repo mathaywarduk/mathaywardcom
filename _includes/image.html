@@ -1,12 +1,13 @@
 <picture class="{{ include.block_classes }}">
   <img alt="{{ include.alt }}" loading="lazy" sizes="(max-width: 1600px) 100vw, 1600px"
-    src="{{ site.image_base }}{{ include.url }}?w=2000"
-    srcset="{{ site.image_base }}{{ include.url }}?w=2000 2000w,
+    src="{{ site.image_base }}{{ include.url }}?w=10"
+    data-srcset="{{ site.image_base }}{{ include.url }}?w=2000 2000w,
     {{ site.image_base }}{{ include.url }}?w=1600 1600w,
     {{ site.image_base }}{{ include.url }}?w=1280 1280w,
     {{ site.image_base }}{{ include.url }}?w=1024 1024w,
     {{ site.image_base }}{{ include.url }}?w=768 768w,
     {{ site.image_base }}{{ include.url }}?w=480 480w,
     {{ site.image_base }}{{ include.url }}?w=300 300w"
-    class="{{ include.classes }}" width="2000" height="2000">
+    class="{{ include.classes }}" width="2000" height="2000"
+    data-blur-load data-src="{{ site.image_base }}{{ include.url }}?w=2000">
 </picture>
