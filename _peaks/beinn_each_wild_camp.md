@@ -17,7 +17,7 @@ number: 1
 peaks:
     - name: Beinn Each
       elevation: 813
-      category: Corbett
+      category: corbett
 images:
   - type: single
     images:
