@@ -19,6 +19,7 @@ collections:
   peaks:
     output: true
     order: 
+      - loch_long_arrochar.md
       - beinn_each_wild_camp.md
 image_base:  https://mathaywarduk.imgix.net/
 exclude:

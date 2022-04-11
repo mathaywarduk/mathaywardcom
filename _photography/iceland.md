@@ -12,7 +12,7 @@ seo:
     url: "Iceland-007.jpg"
     alt: "Sunrise at Reynisfjara"
 hero:
-  image: "Iceland-013.jpg"
+  url: "Iceland-013.jpg"
   alt: "Howard on Stokksnes beach"
 thumb:
   - url: "Iceland-006.jpg"

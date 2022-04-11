@@ -12,7 +12,7 @@ seo:
     url: "Highlands-005.jpg"
     alt: "Sunset from Ben A'an"
 hero:
-  image: "Highlands-026.jpg"
+  url: "Highlands-026.jpg"
   alt: "Ben Vorlich summit"
 thumb:
   - url: "Highlands-002.jpg"

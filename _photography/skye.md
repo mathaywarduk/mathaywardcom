@@ -12,7 +12,7 @@ seo:
     url: "Skye-043.jpg"
     alt: "Elgol"
 hero:
-  image: "Skye-043.jpg"
+  url: "Skye-043.jpg"
   alt: "Elgol"
 thumb:
   - url: "Skye-008.jpg"

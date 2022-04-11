@@ -11,7 +11,7 @@ seo:
     url: "Wild-Camp-004.jpg"
     alt: "Wild Camping on Beinn Each"
 hero:
-  image: "Wild-Camp-004.jpg"
+  url: "Wild-Camp-004.jpg"
   alt: "Wild Camping on Beinn Each"
 number: 1
 peaks:
@@ -22,25 +22,25 @@ images:
   - type: single
     images:
       - url: "Wild-Camp-001.jpg"
-        alt: ""
+        alt: "View over to Cruach Ardrain, Stob Binnein and Ben More"
   - type: single
     images:
       - url: "Wild-Camp-003.jpg"
-        alt: ""
+        alt: "Our wild camp spot on Beinn Each"
   - type: single
     images:
       - url: "Wild-Camp-006.jpg"
-        alt: ""
+        alt: "Kerry and Rudi in the last light with the Trossachs behind"
   - type: double
     images:
       - url: "Wild-Camp-008.jpg"
-        alt: ""
+        alt: "Sunset in the Trossachs"
       - url: "Wild-Camp-009.jpg"
-        alt: ""
+        alt: "Kerry and Rudi in the last light with the Trossachs behind"
   - type: single
     images:
       - url: "Wild-Camp-004.jpg"
-        alt: ""
+        alt: "Kerry looking down to our tent on Beinn Each"
 
 ---
 

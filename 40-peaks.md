@@ -21,7 +21,7 @@ seo:
     <li class="fade-left animate-stepped border-b br-grey py-4 xl:py-8">
       <a href="{{ item.url }}" class="flex flex-wrap peak-nav-item">
         <div class="w-full md:w-2/3 xl:w-1/3 {% cycle '', 'xl:order-2'%} mb-4 xl:mb-0">
-          {% include image.html url=item.hero.image alt=item.hero.alt %}
+          {% include image.html url=item.hero.url alt=item.hero.alt %}
         </div>
         <div class="w-full xl:w-2/3 {% cycle 'xl:pl-4', 'xl:pr-4' %}">
           <span class="text-base block text-left no-underline font-sans mb-2">
