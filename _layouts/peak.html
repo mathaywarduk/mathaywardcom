@@ -54,7 +54,7 @@ layout: default
 
 <div class="overflow-hidden animate-stepped">
 {% for group in page.images %}
-  <div class="flex flex-wrap {% if group.images.size == 2 %} md:-mx-4 xl:-mx-8 {% endif %} fade-up {% if forloop.last != true %} md:mb-8 xl:mb-16 {% endif %}">
+  <div class="flex flex-wrap {% if group.images.size == 2 %} md:-mx-4 xl:-mx-8 {% endif %} fade-up {% if forloop.last != true %} mb-1 md:mb-8 xl:mb-16 {% endif %}">
    {% for image in group.images %}
     <div class="w-full {% if group.images.size == 2 %} md:w-1/2 md:px-4 xl:px-8 {% endif %}">
       {% include image.html url=image.url alt=image.alt %}
