@@ -258,11 +258,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-auto { margin-left: auto; }
 
+.mb-1 { margin-bottom: 0.25rem; }
+
 .mt-5 { margin-top: 1.25rem; }
 
 .mr-3 { margin-right: 0.75rem; }
-
-.mb-1 { margin-bottom: 0.25rem; }
 
 .block { display: block; }
 
