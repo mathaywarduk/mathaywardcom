@@ -12,11 +12,11 @@ seo:
     url: "Highlands-005.jpg"
     alt: "Sunset from Ben A'an"
 hero:
-  image: "Highlands-026.jpg"
+  url: "Highlands-026.jpg"
   alt: "Ben Vorlich summit"
 thumb:
   - url: "Highlands-002.jpg"
     alt: "Sarah and Vinnie on Ben A'an Summit"
-  - url: "Highlands-024.jpg"
-    alt: "View east from Stob Binnein"
+  - url: "Wild-Camp-008.jpg"
+    alt: "Beinn Each sunset"
 ---

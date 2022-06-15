@@ -3,7 +3,7 @@ layout: bio
 title:  "Biography"
 long_title: "Exploring the great outdoors and capturing its awesome landscapes."
 hero: 
-    image: hero.jpg
+    url: hero.jpg
     alt: "Looking at Suilven"
 seo:
     title: "Biography"

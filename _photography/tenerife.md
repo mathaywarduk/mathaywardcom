@@ -12,7 +12,7 @@ seo:
     url: "Tenerife-003.jpg"
     alt: "Masca valley - sunset in the mist"
 hero:
-  image: "Tenerife-005.jpg"
+  url: "Tenerife-005.jpg"
   alt: "The road through Anaga"
 thumb:
   - url: "Tenerife-013.jpg"

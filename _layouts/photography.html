@@ -6,46 +6,48 @@ layout: default
 {% assign more = site.photography | where_exp:"post","post.url != page.url" | sample: 3 %}
 
 <div class="pt-10 md:pt-0 pb-10 md:pb-0">
-  <div class="w-full ml-auto flex flex-wrap md:h-screen px-8 md:px-0 mb-12 md:mb-24">
+  <div class="w-full ml-auto flex flex-wrap md:h-screen mb-12 md:mb-24">
 
-    <div class="block md:hidden pb-2 fade-up">
+    <div class="block px-8 md:hidden pb-2 fade-up">
       <span class="font-display text-4xl md:text-6xl lg:text-7xl mb-0 pb-0">{{ page.title }}</span>
     </div>
 
-    <div class="w-full md:w-7/12 h-full flex flex-wrap relative order-2 md:order-1 mt-5 md:mt-0">
+    <div class="w-full md:w-7/12 h-full flex flex-wrap relative order-2 md:order-1 mt-5 md:mt-0 px-8 md:px-0">
       <div class="w-full md:w-7/12 ml-auto self-center md:pr-14 lg:pr-28">
-        <div class="fade-down">
-          <span class="meta block">Info</span>
-          <p>{{ page.intro }}</p>
+        <div class="overflow-hidden">
+          <h2 class="meta text-slide-down">Info</h2>
         </div>
+        <p class="fade-down">{{ page.intro }}</p>
       </div>
 
       <div class="hidden md:block md:fixed z-10 bottom-0 left-0 pb-0 md:p-12 lg:p-16">
-        <h1 class="font-display text-4xl md:text-6xl lg:text-7xl mb-0 pb-0 fade-up">{{ page.title }}</h1>
+        <div class="overflow-hidden">
+          <h1 class="font-display text-4xl md:text-6xl lg:text-7xl mb-0 pb-0 leading-tight text-slide-up">{{ page.title }}</h1>
+        </div>
       </div>
 
     </div>
 
     <div class="w-full md:w-5/12 h-72 md:h-full relative order-1 md:order-2 fade-static">
-      {% include image.html url=page.hero.image alt=page.hero.alt classes="object-cover w-full h-full" %}
-      <span class="text-lg md:text-xl lg:text-2xl uppercase font-sans tracking-widest upright absolute bottom-0 md:bottom-auto md:top-0 right-0 md:right-auto md:left-0 md:mt-16 md:-ml-4 lg:-ml-5 z-10 -mr-3 md:-mr-0 mb-12 md:mb-0">{{ page.region }} &bull; {{ page.year }}</span>
+      {% include image.html url=page.hero.url alt=page.hero.alt classes="object-cover w-full h-full" %}
+        <p class="text-lg md:text-xl lg:text-2xl uppercase font-sans tracking-widest upright absolute bottom-0 md:bottom-auto md:top-0 right-0 md:right-auto md:left-0 md:mt-16 md:-ml-4 lg:-ml-5 z-10 mr-3 md:mr-0 mb-12 md:mb-0 fade-static anim-delay-400">{{ page.region }} &bull; {{ page.year }}</p>
     </div>
 
   </div>
 </div>
 
-<div class="md:w-9/12 md:ml-auto pb-12 md:pb-24 px-8 md:pr-0 md:mr-0 overflow-hidden">
+<div class="md:w-9/12 md:ml-auto md:pb-24 md:pl-8 md:pr-0 md:mr-0 overflow-hidden">
   {% for group in image_group %}
     <div class="flex flex-wrap {% if group.images.size == 2 %} md:-mx-4 xl:-mx-8 {% endif %}">
      {% for image in group.images %}
-      <div class="w-full {% if group.images.size == 2 %} md:w-1/2 md:px-4 xl:px-8 {% endif %} mb-8 xl:mb-16">
+      <div class="w-full {% if group.images.size == 2 %} md:w-1/2 md:px-4 xl:px-8 {% endif %} mb-1 md:mb-8 xl:mb-16">
         {% include image.html url=image.url alt=image.alt %}
       </div>
      {% endfor %}
     </div>
   {% endfor %}
 
-  <div class="py-8 md:pt-0 md:pb-24 lg:pb-56">
+  <div class="p-8 md:pt-0 md:pb-12 lg:pb-32">
     <span class="meta block mb-2 md:mb-0">Other Locations</span>
 
     <ul class="w-full xl:w-auto flex flex-wrap gap-5">

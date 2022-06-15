@@ -16,6 +16,12 @@ collections:
       - tenerife.md
       - skye.md
       - alberta.md
+  peaks:
+    output: true
+    order: 
+      - fairfield_horseshoe.md
+      - loch_long_arrochar.md
+      - beinn_each_wild_camp.md
 image_base:  https://mathaywarduk.imgix.net/
 exclude:
   - package-lock.json

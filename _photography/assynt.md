@@ -12,7 +12,7 @@ seo:
     url: "NC500-047.jpg"
     alt: "Stac Pollaidh"
 hero:
-  image: "NC500-026.jpg"
+  url: "NC500-026.jpg"
   alt: "Howard on Stac Pollaidh"
 thumb:
   - url: "NC500-003.jpg"

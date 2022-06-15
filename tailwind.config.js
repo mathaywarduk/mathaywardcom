@@ -31,6 +31,7 @@ module.exports = {
     },
     extend: {
       lineHeight: {
+        tight: "0.7",
         default: "1.5",
       },
       width: {
@@ -44,6 +45,7 @@ module.exports = {
       spacing: {
         30: "7.5rem",
         88: "22rem",
+        "1/4": "25%",
         "3/10": "30%",
       }
     },

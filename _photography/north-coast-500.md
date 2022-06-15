@@ -12,7 +12,7 @@ seo:
     url: "NC500-013.jpg"
     alt: "Howard in Plockton"
 hero:
-  image: "NC500-036.jpg"
+  url: "NC500-036.jpg"
   alt: "Rudi in Plockton"
 thumb:
   - url: "NC500-038.jpg"

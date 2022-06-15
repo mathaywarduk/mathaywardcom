@@ -12,7 +12,7 @@ seo:
     url: "Lakes-010.jpg"
     alt: "Stickle Tarn"
 hero:
-  image: "Lakes-010.jpg"
+  url: "Lakes-010.jpg"
   alt: "Stickle Tarn"
 thumb:
   - url: "Lakes-006.jpg"

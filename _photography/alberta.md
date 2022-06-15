@@ -12,7 +12,7 @@ seo:
     url: "Canada-016.jpg"
     alt: "Canadian Rockies"
 hero:
-  image: "Canada-009.jpg"
+  url: "Canada-009.jpg"
   alt: "Medicine Lake"
 thumb:
   - url: "Canada-008.jpg"
