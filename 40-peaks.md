@@ -49,6 +49,7 @@ seo:
   {% assign munros = "" | split: ',' %}
   {% assign corbetts = "" | split: ',' %}
   {% assign grahams = "" | split: ',' %}
+  {% assign wainwrights = "" | split: ',' %}
 
   {% for item in site.peaks %}
     {% for peak in item.peaks %}
@@ -60,6 +61,9 @@ seo:
       {% endif %}
       {% if peak.category == 'graham' %}
         {% assign grahams = grahams | push: peak %}
+      {% endif %}
+      {% if peak.category == 'wainwright' %}
+        {% assign wainwrights = wainwrights | push: peak %}
       {% endif %}
     {% endfor %}
   {% endfor %}
@@ -108,6 +112,23 @@ seo:
     </div>
     <ul class="flex flex-wrap gap-8 mb-8">
       {% for item in grahams %}
+        <li>
+          <div class="overflow-hidden">
+            <h3 class="text-xl font-bold mb-4 text-slide-up">{{ item.name }}</h3>
+          </div>
+          <div class="overflow-hidden">
+            <span class="p-1 text-slide-up block">{{ item.elevation }}m</span>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if wainwrights.size > 0 %}
+    <div class="overflow-hidden">
+      <h3 class="meta text-slide-up">Wainwrights</h3>
+    </div>
+    <ul class="flex flex-wrap gap-8 mb-8">
+      {% for item in wainwrights %}
         <li>
           <div class="overflow-hidden">
             <h3 class="text-xl font-bold mb-4 text-slide-up">{{ item.name }}</h3>
