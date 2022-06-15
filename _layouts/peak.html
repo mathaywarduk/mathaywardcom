@@ -20,14 +20,22 @@ layout: default
 
 
 <div class="pt-10 md:pt-40 md:w-9/12 md:ml-auto px-8 md:pl-0">
+  <div class="overflow-hidden">
+    <div class="text-slide-up anim-delay-500 flex items-center gap-2 relative z-10">
+      <span>&lsaquo;</span>
+      <a href="/40-peaks" class="underline nav-item">40 Peaks</a>
+    </div>
+  </div>
   <h1 class="font-display text-4xl md:text-6xl lg:text-7xl mb-4 lg:mb-8 pb-0 leading-none fade-down">{{ page.title }}</h1>
   <div class="overflow-hidden">
     <div class="text-base text-left no-underline font-sans mb-4 text-slide-up anim-delay-1000">
-      <a href="/40-peaks" class="underline nav-item">40 Peaks</a>
-      &nbsp;&bull;&nbsp;
       {{ page.date | date: "%d %B %Y" }}
       &nbsp;&bull;&nbsp;
       {{ page.region }}
+      &nbsp;&bull;&nbsp;
+      {{ page.distance }}km
+      &nbsp;&bull;&nbsp;
+      {{ page.ascent }}m ascent
     </div>
   </div>
 </div>

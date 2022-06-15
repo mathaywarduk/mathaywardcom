@@ -4,6 +4,8 @@ date: 2022-04-09
 title: Loch Long and Arrochar
 description: "A wild camp in the woods around Loch Long followed by a walk up The Cobbler on a beautifully clear day."
 region: Scotland
+distance: 11
+ascent: 920
 seo:
   title: "Loch Long and Arrochar"
   description: "A wild camp in the woods around Loch Long followed by a walk up The Cobbler on a beautifully clear day."
