@@ -1,103 +1,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-      <loc>https://mathayward.com</loc>
+      <loc>http://localhost:4000</loc>
       <lastmod>2022-03-29T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>https://mathayward.com/photography</loc>
+      <loc>http://localhost:4000/photography</loc>
       <lastmod>2022-03-29T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>https://mathayward.com/40-peaks</loc>
+      <loc>http://localhost:4000/40-peaks</loc>
       <lastmod>2022-03-29T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/photography/lofoten</loc>
-      <lastmod>2022-06-16T16:21:26+01:00</lastmod>
+      <loc>http://localhost:4000/photography/lofoten</loc>
+      <lastmod>2022-06-20T13:43:43+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/photography/iceland</loc>
-      <lastmod>2022-06-16T16:21:26+01:00</lastmod>
+      <loc>http://localhost:4000/photography/iceland</loc>
+      <lastmod>2022-06-20T13:43:43+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/photography/north-coast-500</loc>
-      <lastmod>2022-06-16T16:21:26+01:00</lastmod>
+      <loc>http://localhost:4000/photography/north-coast-500</loc>
+      <lastmod>2022-06-20T13:43:43+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/photography/assynt</loc>
-      <lastmod>2022-06-16T16:21:26+01:00</lastmod>
+      <loc>http://localhost:4000/photography/assynt</loc>
+      <lastmod>2022-06-20T13:43:43+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/photography/lake-district</loc>
-      <lastmod>2022-06-16T16:21:26+01:00</lastmod>
+      <loc>http://localhost:4000/photography/lake-district</loc>
+      <lastmod>2022-06-20T13:43:43+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/photography/southern-highlands</loc>
-      <lastmod>2022-06-16T16:21:26+01:00</lastmod>
+      <loc>http://localhost:4000/photography/southern-highlands</loc>
+      <lastmod>2022-06-20T13:43:43+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/photography/tenerife</loc>
-      <lastmod>2022-06-16T16:21:26+01:00</lastmod>
+      <loc>http://localhost:4000/photography/tenerife</loc>
+      <lastmod>2022-06-20T13:43:43+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/photography/skye</loc>
-      <lastmod>2022-06-16T16:21:26+01:00</lastmod>
+      <loc>http://localhost:4000/photography/skye</loc>
+      <lastmod>2022-06-20T13:43:43+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/photography/alberta</loc>
-      <lastmod>2022-06-16T16:21:26+01:00</lastmod>
+      <loc>http://localhost:4000/photography/alberta</loc>
+      <lastmod>2022-06-20T13:43:43+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
   
     <url>
-      <loc>https://mathayward.com/peaks/fairfield_horseshoe</loc>
+      <loc>http://localhost:4000/peaks/fairfield_horseshoe</loc>
       <lastmod>2022-05-12T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/peaks/loch_long_arrochar</loc>
+      <loc>http://localhost:4000/peaks/loch_long_arrochar</loc>
       <lastmod>2022-04-09T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/peaks/beinn_each_wild_camp</loc>
+      <loc>http://localhost:4000/peaks/beinn_each_wild_camp</loc>
       <lastmod>2022-03-19T00:00:00+00:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
