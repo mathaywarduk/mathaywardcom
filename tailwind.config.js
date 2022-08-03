@@ -37,6 +37,9 @@ module.exports = {
       width: {
         "7/10": "70%",
       },
+      height: {
+        "2": "2px",
+      },
       fontFamily: {
         display: ["freight-big-pro"],
         serif: ["abril-text", ...defaultTheme.fontFamily.serif],

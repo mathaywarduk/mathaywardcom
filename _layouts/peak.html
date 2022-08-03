@@ -76,7 +76,7 @@ layout: default
 
   <div class="flex flex-wrap justify-between">
     {% if prevurl %}
-    <div class="w-full {% if next and next.url %}md:w-1/2{% endif %} px-1 pb-4 md:pb-0">
+    <div class="w-full {% if next and next.url %} md:w-auto {% endif %} px-1 pb-4 md:pb-0">
       <span class="meta block mb-2 md:mb-0">Previous</span>
 
       <a class="font-display text-2xl lg:text-4xl link--pretty" href="{{ prevurl }}">{{ prevtitle }}</a>
@@ -84,7 +84,7 @@ layout: default
     {% endif %}
 
     {% if nexturl %}
-    <div class="w-full {% if prev and prevurl %} md:w-1/2 {% endif %} px-1 text-right">
+    <div class="w-full {% if prev and prevurl %} md:w-auto {% endif %} px-1 text-right">
       <span class="meta block mb-2 md:mb-0">Next</span>
 
       <a class="font-display text-2xl lg:text-4xl link--pretty" href="{{ nexturl }}">{{ nexttitle }}</a>

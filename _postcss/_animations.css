@@ -67,6 +67,9 @@
   &:nth-child(9) {
     animation-delay: 1000ms;
   }
+  &:nth-child(10) {
+    animation-delay: 1000ms;
+  }
 
 }
 
