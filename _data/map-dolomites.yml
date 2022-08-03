@@ -1,0 +1,18 @@
+- title: Tri Cime di Lavaredo
+  image: 
+    url: ".jpg"
+    alt: ""
+  description: ""
+  url: 
+  lat: 46.618057
+  lng: 12.300531
+  category: hike
+- title: Lago di Braies
+  image: 
+    url: ".jpg"
+    alt: ""
+  description: ""
+  url: 
+  lat: 46.694078
+  lng: 12.084384
+  category: view

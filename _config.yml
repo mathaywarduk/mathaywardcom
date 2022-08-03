@@ -17,6 +17,10 @@ collections:
       - tenerife.md
       - skye.md
       - alberta.md
+  maps:
+    output: true
+    order:
+      - dolomites.md
   peaks:
     output: true
     order: 

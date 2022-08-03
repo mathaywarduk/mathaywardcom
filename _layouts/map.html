@@ -1,0 +1,82 @@
+---
+layout: default
+isMap: true
+---
+
+<div id="map" class="w-screen md:ml-64 md:w-auto h-screen"></div>
+
+<div class="absolute bottom-0 left-0 right-0 b-white p-8 md:p-12" id="mapContent">
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV3uTC8stNqMKRlJhpZDo6c5YBha1VTY4&amp;libraries=&amp;v=weekly&amp;callback=initMap" defer></script>
+
+
+<script>
+
+  function initMap() {
+
+    let bounds = new google.maps.LatLngBounds();
+    let mapContainer = document.getElementById("map");
+    let contentContainer = document.getElementById("mapContent");
+    let locations = {{ site.data.map-dolomites | jsonify }};
+    let allMarkers = [];
+
+    const map = new google.maps.Map(mapContainer, {
+      zoom: 4,
+      center: new google.maps.LatLng(52.978945, -0.987937),
+      styles: {{ site.data.mapstyles | jsonify }},
+      mapTypeControl: false,
+      streetViewControl: false,
+      fullscreenControl: false,
+    });
+
+    for (let i = 0; i < locations.length; i++) {
+      let title = locations[i].title;
+      let lat = locations[i].lat;
+      let long = locations[i].lng;
+      let category = locations[i].category;
+
+      let marker = new google.maps.Marker({
+        position: new google.maps.LatLng(lat, long),
+        map: map,
+        category: category,
+        a: category,
+        icon: {
+          url: `/assets/images/icons/${category}_off.svg`,
+          scaledSize: new google.maps.Size(32, 32)
+        },
+      });
+      allMarkers.push(marker);
+      
+      bounds.extend(marker.position);
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+
+          // change all markers
+          allMarkers.forEach((element) => {
+            element.setIcon(`/assets/images/icons/${element.category}_off.svg`);
+          });
+
+          // change this marker
+          marker.setIcon(`/assets/images/icons/${marker.category}_on.svg`);
+
+          // change map center to current marker
+          map.setCenter({
+            lat : lat,
+            lng : long
+          });
+
+          // update HTML
+          contentContainer.innerHTML = title;
+        }
+      })(marker, i));
+
+    }
+    
+
+    map.fitBounds(bounds);
+  }
+
+</script>
