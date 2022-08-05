@@ -3,17 +3,17 @@ layout: bio
 title:  "Biography"
 long_title: "Exploring the great outdoors and capturing its awesome landscapes."
 hero: 
-    url: hero.jpg
+    url: Dolomiti-9219.jpg
     alt: "Looking at Suilven"
 seo:
     title: "Biography"
     description: "I'm a photography enthusiast from Nottingham. Like a lot of people, I'm happiest when I'm outside."
     image:
-        url: hero.jpg
-        alt: "Mat Hayward, photographer, looking at Suilven"
+        url: Skye-008.jpg
+        alt: "Pinnacle Ridge and Loch na Creitheach"
 ---
 
-I'm a photography enthusiast from Nottingham, pictured above (shot by my good friend [George Ell](https://www.instagram.com/george_ell/)).
+I'm a photography enthusiast from Nottingham, pictured above (shot by my wife).
 
 Like a lot of people, I'm happiest when I'm outside. And nothing makes me happier than hiking to a great vantage point and being made to feel small by the enormity of everything.
 
