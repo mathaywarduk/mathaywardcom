@@ -37,7 +37,7 @@ seo:
           <h2 class="text-2xl font-display leading-none tracking-wide mb-4 md:text-3xl lg:text-4xl inline-block">
             {{ item.title }}
           </h2>
-          <p class="mb-0">{{ item.description }}</p>
+          <p class="mt-4 mb-0">{{ item.description }}</p>
         </div>
       </a>
     </li>
