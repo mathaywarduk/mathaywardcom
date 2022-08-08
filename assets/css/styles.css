@@ -516,15 +516,15 @@ p a:hover, p a:focus { color: var(--orange); }
 
 .feature-nav-item > span.text:hover:after, .feature-nav-item > span.text:focus:after { width: 100%; }
 
+.peak-nav-item h2 { display: inline; }
+
 .peak-nav-item h2 { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
 
 .peak-nav-item h2 { transition-duration: 500ms; }
 
 .peak-nav-item h2 { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
-.peak-nav-item h2 { background-image: linear-gradient(0deg, transparent 14%, black 14%, black 15%, transparent 15%); }
-
-@media (min-width: 1024px) { .peak-nav-item h2 { background-image: linear-gradient(0deg, transparent 14%, transparent 14%, transparent 15%, transparent 15%); } }
+.peak-nav-item h2 { /*background-image: linear-gradient(0deg, transparent 14%, black 14%, black 15%, transparent 15%); @screen lg { background-image: linear-gradient(0deg, transparent 14%, transparent 14%, transparent 15%, transparent 15%); }*/ }
 
 .peak-nav-item:hover h2, .peak-nav-item:focus h2 { color: var(--orange); }
 
