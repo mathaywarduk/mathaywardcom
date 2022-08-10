@@ -2,13 +2,21 @@
 
   @apply
     transition-all
-    duration-300
+    duration-500
     ease-in-out
   ;
+
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(var(--orange), var(--orange));
+    background-size: 0 2px, 0 2px;
+    background-position: 0 100%, 0 100%;
+    background-repeat: no-repeat;
 
   &:hover,
   &:focus {
     @apply c-orange;
+        background-size: 0 2px, 100% 2px;
+        background-position: 100% 100%, 0 100%;
   }
 
   &.is-active {
@@ -56,17 +64,20 @@
     lg:text-6xl
     lg:mb-10
   ;
-    /*background-image: linear-gradient(0deg, transparent 14%, transparent 14%, transparent 15%, transparent 15%);*/
     
     &:hover,
     &:focus {
-      /*background-image: linear-gradient(0deg, transparent 14%, #BF5700 14%, #BF5700 15%, transparent 15%);*/
 
       > span {
         @apply
           c-orange
           opacity-100
         ;
+      }
+
+      > span.text {
+        background-size: 0 2px, 100% 2px;
+        background-position: 100% 100%, 0 100%;
       }
     }
 }
@@ -82,27 +93,13 @@
 
 .feature-nav-item > span.text {
 
-  &:after {
-    content: "";
-    @apply
-      absolute
-      left-0
-      h-2
-      w-0
-      b-orange
-      bottom-1.5
-      transition-all
-      duration-300
-      ease-in-out
-    ;
-  }
-  
-  &:hover,
-  &:focus {
-    &:after {
-      @apply w-full;
-    }
-  }
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(var(--orange), var(--orange));
+    background-size: 0 2px, 0 2px;
+    background-position: 0 100%, 0 100%;
+    background-repeat: no-repeat;
+
+
 }
 
 .peak-nav-item {
@@ -115,14 +112,19 @@
       inline
     ;
 
-    background-image: linear-gradient(0deg, transparent 14%, transparent 14%, transparent 17%, transparent 17%);
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(var(--orange), var(--orange));
+    background-size: 0 2px, 0 2px;
+    background-position: 0 85%, 0 85%;
+    background-repeat: no-repeat;
 
   }
 
   &:hover h2 ,
   &:focus h2 {
     @apply c-orange;
-    background-image: linear-gradient(0deg, transparent 14%, #BF5700 14%, #BF5700 17%, transparent 17%);
+    background-size: 0 2px, 100% 2px;
+    background-position: 100% 85%, 0 85%;
   }
 
 }
