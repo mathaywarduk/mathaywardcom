@@ -4,7 +4,7 @@ read v
 bundle exec jekyll build
 git checkout _site
 mv _site ..
-rm -rfq ./*
+rm -rf ./*
 mv ../_site/* .
 rm -rf ../_site
 git commit -am "$v"
