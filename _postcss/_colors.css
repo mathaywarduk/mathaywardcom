@@ -1,6 +1,8 @@
 :root {
-  --orange: #bf5700;
+  --orange: #ff9729;
   --grey: #b8aba0;
+  --orange-light: #ff9729;
+  --grey-light: #f4f4f4;
 }
 
 .b-orange {
@@ -15,6 +17,18 @@
   border-color: var(--orange);
 }
 
+.b-orange-light {
+  background-color: var(--orange-light);
+}
+
+.c-orange-light{
+  color: var(--orange-light);
+}
+
+.br-orange-light {
+  border-color: var(--orange-light);
+}
+
 .b-grey {
   background-color: var(--grey);
 }
@@ -25,6 +39,18 @@
 
 .br-grey {
   border-color: var(--grey);
+}
+
+.b-grey-light {
+  background-color: var(--grey-light);
+}
+
+.c-grey-light {
+  color: var(--grey-light);
+}
+
+.br-grey-light {
+  border-color: var(--grey-light);
 }
 
 .b-black {

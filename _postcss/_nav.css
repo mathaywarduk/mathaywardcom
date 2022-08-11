@@ -14,7 +14,7 @@
 
   &:hover,
   &:focus {
-    @apply c-orange;
+    @apply c-orange-light;
         background-size: 0 2px, 100% 2px;
         background-position: 100% 100%, 0 100%;
   }
@@ -33,7 +33,7 @@
         -mr-3
         w-1.5
         h-1.5
-        b-black
+        b-white
       ;
       content: " ";
       margin-top: 7px;
@@ -55,7 +55,7 @@
     border-b
     border-transparent
     mb-4
-    c-black
+    c-white
     inline-flex
     items-start
     justify-start
@@ -125,6 +125,23 @@
     @apply c-orange;
     background-size: 0 2px, 100% 2px;
     background-position: 100% 85%, 0 85%;
+  }
+
+}
+
+@media screen and (prefers-color-scheme: light) {
+
+  .nav-item {
+    &:hover,
+    &:focus {
+      @apply c-orange;
+    }
+
+    &.is-active {
+      &:after {
+        @apply b-black;
+      }
+    }
   }
 
 }
