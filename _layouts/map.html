@@ -3,7 +3,8 @@ layout: default
 isMap: true
 ---
 
-{% assign image_groups = site.data.images[page.slug] %}
+{% assign locations = site.data.maps[page.slug] %}
+{% assign images_group = site.data.images[page.slug] %}
 
 <div id="map" class="w-screen md:ml-64 md:w-auto h-screen"></div>
 
@@ -21,8 +22,8 @@ isMap: true
     let bounds = new google.maps.LatLngBounds();
     let mapContainer = document.getElementById("map");
     let contentContainer = document.getElementById("mapContent");
-    let imageGroups = {{ image_groups | jsonify }};
-    let locations = [];
+    let locations = {{ locations | jsonify }};
+    let imageGroups = {{ images_group | jsonify }};
     let allMarkers = [];
     let baseURL = "{{ site.image_base }}";
 
@@ -35,30 +36,42 @@ isMap: true
       fullscreenControl: false,
     });
 
-    for (let i = 0; i < imageGroups.length; i++) {
-        for (let x = 0; x < imageGroups[i].images.length; x++) {
-          let location = {
-            title: imageGroups[i].images[x].title,
-            alt: imageGroups[i].images[x].alt,
-            description: imageGroups[i].images[x].description,
-            lat: imageGroups[i].images[x].lat,
-            lng: imageGroups[i].images[x].lng,
-            category: imageGroups[i].images[x].category,
-            image: imageGroups[i].images[x].url
-          }
+    // for (let i = 0; i < imageGroups.length; i++) {
+    //     for (let x = 0; x < imageGroups[i].images.length; x++) {
+    //       let location = {
+    //         title: imageGroups[i].images[x].title,
+    //         alt: imageGroups[i].images[x].alt,
+    //         description: imageGroups[i].images[x].description,
+    //         lat: imageGroups[i].images[x].lat,
+    //         lng: imageGroups[i].images[x].lng,
+    //         category: imageGroups[i].images[x].category,
+    //         image: imageGroups[i].images[x].url
+    //       }
 
-          locations.push(location);
-        }
-    }
+    //       locations.push(location);
+    //     }
+    // }
 
     for (let i = 0; i < locations.length; i++) {
       let title = locations[i].title;
-      let alt = locations[i].alt;
       let description = locations[i].description;
       let lat = locations[i].lat;
       let lng = locations[i].lng;
       let category = locations[i].category;
-      let image = locations[i].image;
+      let images = [];
+
+      for (let j = 0; j < imageGroups.length; j++) {
+        for (let x = 0; x < imageGroups[j].images.length; x++) {
+          if (imageGroups[j].images[x].location == locations[i].slug) {
+              images.push({
+                url: imageGroups[j].images[x].url,
+                alt: imageGroups[j].images[x].alt
+              });
+          }
+        }
+      }
+
+      console.log(title, images);
 
       if (typeof lat !== 'undefined' && typeof lng !== 'undefined') {
 
@@ -72,12 +85,16 @@ isMap: true
             scaledSize: new google.maps.Size(32, 32)
           },
         });
+
+
         allMarkers.push(marker);
         
         bounds.extend(marker.position);
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
           return function() {
+        
+            let imagesHTML = "";
 
             // change all markers
             allMarkers.forEach((element) => {
@@ -93,18 +110,17 @@ isMap: true
               lng : lng
             });
 
+            // @TODO Create IMG element so that it preloads (maybe)
+            for (let i = 0; i < images.length; i++) {
+              imagesHTML = imagesHTML + `<picture class="">
+                <img alt="${images[i].alt}" 
+                  src="${baseURL}${images[i].url}?h=300"
+                  class="" height="300">
+              </picture>`
+            }
+
             // update HTML
-            contentContainer.innerHTML = `
-            <h2>${title}</h2>
-            <picture class="w-64">
-              <img alt="${alt}" sizes="(max-width: 1600px) 100vw, 1600px"
-                src="${baseURL}${image}?w=512"
-                srcset="${baseURL}${image}?w=512 768w,
-                ${baseURL}${image}?w=480 480w,
-                ${baseURL}${image}?w=300 300w"
-                class="" width="256" height="256">
-            </picture>
-            `;
+            contentContainer.innerHTML = `<h2>${title}</h2><div class="flex flex-wrap gap-4">${imagesHTML}</div>`;
           }
         })(marker, i));
       }

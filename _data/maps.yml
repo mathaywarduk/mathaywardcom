@@ -1,0 +1,31 @@
+iceland:
+  - slug: mulagljufur
+    title: Múlagljúfur Canyon
+    description: ""
+    lat: 63.989393
+    lng: -16.459858
+    category: view
+  - slug: vestrahorn
+    title: Vestrahorn
+    description: ""
+    lat: 64.248717
+    lng: -14.971737
+    category: view
+  - slug: thorsmork
+    title: Þórsmörk
+    description: ""
+    lat: 63.702245
+    lng: -19.645839
+    category: view
+  - slug: reynisfjara
+    title: Reynisfjara
+    description: ""
+    lat: 63.403454
+    lng: -19.046474
+    category: view
+  - slug: hjorleifshofoi
+    title: Hjörleifshöfði
+    description: ""
+    lat: 63.416524
+    lng: -18.763081
+    category: view

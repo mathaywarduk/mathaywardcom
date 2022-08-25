@@ -136,116 +136,60 @@ iceland:
     images:
       - url: "Iceland-012.jpg"
         alt: "Stokksnes Beach"
-        title: "Stokksnes Beach"
-        description: ""
-        lat: 64.245446
-        lng: -14.968926
-        category: view
+        location: vestrahorn
       - url: "Iceland-014.jpg"
         alt: "Stokksnes Beach"
-        title: "Stokksnes Beach"
-        description: ""
-        lat: 64.245485
-        lng: -14.973533
-        category: view
+        location: vestrahorn
   - type: double
     images:
       - url: "Iceland-004.jpg"
         alt: "Around Þórsmörk on the F261"
-        title: "Around Þórsmörk on the F261"
-        description: ""
-        lat: 63.702245
-        lng: -19.645839
-        category: view
+        location: thorsmork
       - url: "Iceland-003.jpg"
         alt: "Around Þórsmörk on the F261"
-        title: "Around Þórsmörk on the F261"
-        description: ""
-        lat: 63.702245
-        lng: -19.645839
-        category: view
+        location: thorsmork
   - type: single
     images:
       - url: "Iceland-010.jpg"
         alt: "Black sand beach near Hjörleifshöfði"
-        title: "Black sand beach near Hjörleifshöfði"
-        description: ""
-        lat: 63.416524
-        lng: -18.763081
-        category: view
+        location: hjorleifshofoi
   - type: double
     images:
       - url: "Iceland-005.jpg"
         alt: "Sunrise at Reynisfjara"
-        title: "Sunrise at Reynisfjara"
-        description: ""
-        lat: 63.403454
-        lng: -19.046474
-        category: view
+        location: reynisfjara
       - url: "Iceland-006.jpg"
         alt: "Sunrise at Reynisfjara"
-        title: "Sunrise at Reynisfjara"
-        description: ""
-        lat: 63.403437
-        lng: -19.045754
-        category: view
+        location: reynisfjara
   - type: double
     images:
       - url: "Iceland-017.jpg"
         alt: "Vestrahorn from Stokksnes"
-        title: "Vestrahorn from Stokksnes"
-        description: ""
-        lat: 64.245438
-        lng: -14.971533
-        category: view
+        location: vestrahorn
       - url: "Iceland-015.jpg"
         alt: "Vestrahorn from Stokksnes"
-        title: "Vestrahorn from Stokksnes"
-        description: ""
-        lat: 64.245438
-        lng: -14.971533
-        category: view
+        location: vestrahorn
   - type: double
     images:
       - url: "Iceland-018.jpg"
         alt: "Múlagljúfur Canyon"
-        title: "Múlagljúfur Canyon"
-        description: ""
-        lat: 63.989393
-        lng: -16.459858
-        category: view
+        location: mulagljufur
       - url: "Iceland-019.jpg"
         alt: "Vestrahorn from Stokksnes"
-        title: "Vestrahorn from Stokksnes"
-        description: ""
-        lat: 64.248717
-        lng: -14.971737
-        category: view
+        location: vestrahorn
   - type: single
     images:
       - url: "Iceland-007.jpg"
         alt: "Sunrise at Reynisfjara"
-        title: "Sunrise at Reynisfjara"
-        description: ""
-        lat: 63.403266
-        lng: -19.044601
-        category: view
+        location: reynisfjara
   - type: double
     images:
       - url: "Iceland-008.jpg"
         alt: "Sunrise at Reynisfjara"
-        title: "Sunrise at Reynisfjara"
-        description: ""
-        lat: 63.403950
-        lng: -19.045892
-        category: view
+        location: reynisfjara
       - url: "Iceland-009.jpg"
         alt: "Sunrise at Reynisfjara"
-        title: "Sunrise at Reynisfjara"
-        description: ""
-        lat: 63.403950
-        lng: -19.045892
-        category: view
+        location: reynisfjara
 southern-highlands:
   - type: single
     images:
