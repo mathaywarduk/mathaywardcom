@@ -3,6 +3,8 @@ layout: default
 isMap: true
 ---
 
+{% assign image_groups = site.data.images[page.slug] %}
+
 <div id="map" class="w-screen md:ml-64 md:w-auto h-screen"></div>
 
 <div class="absolute bottom-0 left-0 right-0 b-white p-8 md:p-12" id="mapContent">
@@ -19,59 +21,93 @@ isMap: true
     let bounds = new google.maps.LatLngBounds();
     let mapContainer = document.getElementById("map");
     let contentContainer = document.getElementById("mapContent");
-    let locations = {{ site.data.map-dolomites | jsonify }};
+    let imageGroups = {{ image_groups | jsonify }};
+    let locations = [];
     let allMarkers = [];
+    let baseURL = "{{ site.image_base }}";
 
     const map = new google.maps.Map(mapContainer, {
-      zoom: 4,
-      center: new google.maps.LatLng(52.978945, -0.987937),
+      zoom: 8,
+      center: new google.maps.LatLng({{ page.center }}),
       styles: {{ site.data.mapstyles | jsonify }},
       mapTypeControl: false,
       streetViewControl: false,
       fullscreenControl: false,
     });
 
+    for (let i = 0; i < imageGroups.length; i++) {
+        for (let x = 0; x < imageGroups[i].images.length; x++) {
+          let location = {
+            title: imageGroups[i].images[x].title,
+            alt: imageGroups[i].images[x].alt,
+            description: imageGroups[i].images[x].description,
+            lat: imageGroups[i].images[x].lat,
+            lng: imageGroups[i].images[x].lng,
+            category: imageGroups[i].images[x].category,
+            image: imageGroups[i].images[x].url
+          }
+
+          locations.push(location);
+        }
+    }
+
     for (let i = 0; i < locations.length; i++) {
       let title = locations[i].title;
+      let alt = locations[i].alt;
+      let description = locations[i].description;
       let lat = locations[i].lat;
-      let long = locations[i].lng;
+      let lng = locations[i].lng;
       let category = locations[i].category;
+      let image = locations[i].image;
 
-      let marker = new google.maps.Marker({
-        position: new google.maps.LatLng(lat, long),
-        map: map,
-        category: category,
-        a: category,
-        icon: {
-          url: `/assets/images/icons/${category}_off.svg`,
-          scaledSize: new google.maps.Size(32, 32)
-        },
-      });
-      allMarkers.push(marker);
-      
-      bounds.extend(marker.position);
+      if (typeof lat !== 'undefined' && typeof lng !== 'undefined') {
 
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
+        let marker = new google.maps.Marker({
+          position: new google.maps.LatLng(lat, lng),
+          map: map,
+          category: category,
+          a: category,
+          icon: {
+            url: `/assets/images/icons/${category}_off.svg`,
+            scaledSize: new google.maps.Size(32, 32)
+          },
+        });
+        allMarkers.push(marker);
+        
+        bounds.extend(marker.position);
 
-          // change all markers
-          allMarkers.forEach((element) => {
-            element.setIcon(`/assets/images/icons/${element.category}_off.svg`);
-          });
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
 
-          // change this marker
-          marker.setIcon(`/assets/images/icons/${marker.category}_on.svg`);
+            // change all markers
+            allMarkers.forEach((element) => {
+              element.setIcon(`/assets/images/icons/${element.category}_off.svg`);
+            });
 
-          // change map center to current marker
-          map.setCenter({
-            lat : lat,
-            lng : long
-          });
+            // change this marker
+            marker.setIcon(`/assets/images/icons/${marker.category}_on.svg`);
 
-          // update HTML
-          contentContainer.innerHTML = title;
-        }
-      })(marker, i));
+            // change map center to current marker
+            map.setCenter({
+              lat : lat,
+              lng : lng
+            });
+
+            // update HTML
+            contentContainer.innerHTML = `
+            <h2>${title}</h2>
+            <picture class="w-64">
+              <img alt="${alt}" sizes="(max-width: 1600px) 100vw, 1600px"
+                src="${baseURL}${image}?w=512"
+                srcset="${baseURL}${image}?w=512 768w,
+                ${baseURL}${image}?w=480 480w,
+                ${baseURL}${image}?w=300 300w"
+                class="" width="256" height="256">
+            </picture>
+            `;
+          }
+        })(marker, i));
+      }
 
     }
     
