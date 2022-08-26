@@ -1,31 +1,36 @@
 iceland:
   - slug: mulagljufur
     title: Múlagljúfur Canyon
-    description: ""
+    description: "<p>This is a great location that you rarely see on Iceland travel guides. It's two minutes drive from Fjallsárlón glacier and then a 30-minute walk up to the canyon. You can then walk along the side of the canyon, taking in massive waterfalls and tiny looking birds.</p>"
     lat: 63.989393
     lng: -16.459858
-    category: view
+    hero: "Iceland-018.jpg"
+    category: hike
   - slug: vestrahorn
     title: Vestrahorn
     description: ""
     lat: 64.248717
     lng: -14.971737
+    hero: "Iceland-014.jpg"
     category: view
   - slug: thorsmork
     title: Þórsmörk
     description: ""
     lat: 63.702245
     lng: -19.645839
+    hero: "Iceland-004.jpg"
     category: view
   - slug: reynisfjara
     title: Reynisfjara
     description: ""
     lat: 63.403454
     lng: -19.046474
+    hero: "Iceland-006.jpg"
     category: view
   - slug: hjorleifshofoi
     title: Hjörleifshöfði
     description: ""
     lat: 63.416524
     lng: -18.763081
+    hero: "Iceland-011.jpg"
     category: view

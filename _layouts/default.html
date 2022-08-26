@@ -56,12 +56,14 @@
           </ul>
         </nav>
       </div>
+      {% unless layout.isMap %}
       <div class="hidden md:block md:fixed top-0 right-0 z-10 p-8 md:p-12 lg:p-16">
         <span class="text-sm uppercase font-sans meta-date">2016
           <span class="sr-only"> - </span>
           <span class="block">{{ site.time | date: '%Y' }}</span>
         </span>
       </div>
+      {% endunless %}
     </header>
     <main>
       {{ content }}
