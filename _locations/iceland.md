@@ -1,6 +1,6 @@
 ---
 layout: map
-title: Tenerife
+title: Iceland
 center: 64.946408,-18.546283
 seo:
   title: "Iceland Exploration Map"

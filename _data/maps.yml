@@ -34,3 +34,46 @@ iceland:
     lng: -18.763081
     hero: "Iceland-011.jpg"
     category: view
+dolomites:
+  - slug: trecime
+    title: Tre Cime Di Lavaredo
+    description: ""
+    lat: 46.611687
+    lng: 12.297310
+    hero: "Dolomiti-7187.jpg"
+    category: hike
+  - slug: misurina
+    title: Cadina di Misurina
+    description: ""
+    lat: 46.600221
+    lng: 12.296343
+    hero: "Dolomiti-7344.jpg"
+    category: view
+  - slug: seceda
+    title: Seceda
+    description: ""
+    lat: 46.597869
+    lng: 11.724829
+    hero: "Dolomiti-6782.jpg"
+    category: view
+  - slug: alpedisiusi
+    title: Alpe di Siusi
+    description: ""
+    lat: 46.555709
+    lng: 11.662177
+    hero: "Dolomiti-7625.jpg"
+    category: view
+  - slug: monytepez
+    title: Monte Pez
+    description: ""
+    lat: 46.512016
+    lng: 11.575218
+    hero: "Dolomiti-8115.jpg"
+    category: hike
+  - slug: stjohann
+    title: St Johann in Ranui
+    description: ""
+    lat: 46.636703
+    lng: 11.722170
+    hero: "Dolomiti-7380.jpg"
+    category: view

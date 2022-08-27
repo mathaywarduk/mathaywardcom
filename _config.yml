@@ -17,10 +17,12 @@ collections:
       - tenerife.md
       - skye.md
       - alberta.md
-  map:
+  locations:
     output: true
     order:
+      - dolomites.md
       - iceland.md
+      - all.md
   peaks:
     output: true
     order: 
