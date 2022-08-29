@@ -21,9 +21,12 @@ collections:
   locations:
     output: true
     order:
+      - scotland.md
       - dolomites.md
+      - lofoten.md
       - iceland.md
-      - all.md
+      - tenerife.md
+      - alberta.md
   peaks:
     output: true
     order: 

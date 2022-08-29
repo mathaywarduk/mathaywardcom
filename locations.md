@@ -11,8 +11,8 @@ seo:
     <ul>
       {% for item in site.locations %}
       <li class="fade-up animate-stepped">
-        <a href="{{ item.url }}" class="feature-nav-item" data-hover-show data-hover-target=".thumb-{{ item.slug }}">
-          {{ item.title }}
+        <a href="{{ item.url }}" class="feature-nav-item">
+          <span class="text">{{ item.title }}</span>
         </a>
       </li>
       {% endfor %}

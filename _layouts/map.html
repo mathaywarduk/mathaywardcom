@@ -2,7 +2,8 @@
 layout: default
 isMap: true
 ---
-{% if page.slug %}
+
+{% if page.slug != "all" %}
   {% assign locations = site.data.maps[page.slug] %}
 {% else %}
   {% assign locations = "" | split: ',' %}
@@ -13,13 +14,14 @@ isMap: true
   {% endfor %}
 {% endif %}
 
+{{ collections }}
 
 <div id="map" class="w-screen h-screen"></div>
 
 <button class="close hidden fixed top-4 right-4 c-white z-30" id="mapContentClose"><span class="sr-only">Close</span></button>
 
 <div class="fixed bottom-0 top-0 right-0 b-white max-w-screen md:max-w-md hidden drop-shadow-[-5px_0_10px_rgba(0,0,0,0.25)] overflow-y-auto z-20" id="mapContentWrapper">
-  <div id="mapContent" class=""></div>
+  <div id="mapContent"></div>
 </div>
 
 
@@ -28,6 +30,7 @@ isMap: true
 
 <script>
 
+// @TODO abstract this
   function initMap() {
 
     let bounds = new google.maps.LatLngBounds();
@@ -50,6 +53,7 @@ isMap: true
 
     for (let i = 0; i < locations.length; i++) {
       let title = locations[i].title;
+      let collection = locations[i].collection;
       let description = locations[i].description;
       let lat = locations[i].lat;
       let lng = locations[i].lng;
@@ -98,11 +102,12 @@ isMap: true
               map.setZoom(10);
             }
 
-              heroHTML = `<picture class="w-full">
-                <img alt="${title}" 
-                  src="${baseURL}${hero}?w=767"
-                  width="767">
-              </picture>`
+            // @TODO Set image with element to preload?
+            heroHTML = `<picture class="w-full">
+              <img alt="${title}" 
+                src="${baseURL}${hero}?w=767"
+                width="767">
+            </picture>`
 
             // update HTML
             contentContainer.innerHTML = 
@@ -119,7 +124,25 @@ isMap: true
                   <div class="overflow-hidden">
                     <h2 class="meta text-slide-down anim-delay-600">Info</h2>
                   </div>
-                  <div class="fade-down anim-delay-600">${description}</div>
+                  <div class="fade-down anim-delay-600">
+                    <p>${description}</p>
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <a href="/photography/${collection.slug}" class="collection-nav-item">
+                    <div class="absolute bottom-0 left-0 p-4 z-10 c-white">
+                      <div class="overflow-hidden">
+                        <span class="meta text-slide-down anim-delay-600">Photography collection</span>
+                      </div>
+                      <div class="fade-down anim-delay-600">
+                        <h2 class="text-2xl font-display leading-none tracking-wide mb-4 md:text-3xl lg:text-4xl inline-block">
+                          ${collection.title}
+                        </h2>
+                      </div>
+                    </div>
+                    <img src="${baseURL}${collection.hero.url}?w=767" alt="${collection.hero.alt}" class="block">
+                  </a>
                 </div>`;
 
             // show content element
@@ -141,7 +164,8 @@ isMap: true
       contentContainer.innerHTML = "";
       contentWrapper.classList.add("hidden");
       closeButton.classList.add("hidden");
-      map.fitBounds(bounds);
+      // map.fitBounds(bounds);
+      // map.setZoom(8);
       // contentWrapper.classList.remove("slide-from-left");
       allMarkers.forEach((element) => {
         element.setIcon(`/assets/images/icons/${element.category}_off.svg`);

@@ -128,3 +128,30 @@
   }
 
 }
+
+.collection-nav-item {
+
+  h2 {
+    @apply
+      transition-all
+      duration-500
+      ease-in-out
+      inline
+    ;
+
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#ffffff, #ffffff);
+    background-size: 0 2px, 0 2px;
+    background-position: 0 85%, 0 85%;
+    background-repeat: no-repeat;
+
+  }
+
+  &:hover h2 ,
+  &:focus h2 {
+    @apply c-white;
+    background-size: 0 2px, 100% 2px;
+    background-position: 100% 85%, 0 85%;
+  }
+
+}

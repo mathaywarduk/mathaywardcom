@@ -9,8 +9,8 @@ seo:
   title: "Travel Photography - Lofoten Islands"
   description: "Photography from around the Lofoten Islands, Norway including Henningsvær, Sørvågen and Hamnøy"
   image:
-    url: "Lofoten-001.jpg"
-    alt: "Road to Henningsvær"
+    url: "Lofoten-011.jpg"
+    alt: "Kerry on Haukland Beach"
 hero:
   url: "Lofoten-003.jpg"
   alt: "Hamnøy and Festhaeltinden"
