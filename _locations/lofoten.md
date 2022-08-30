@@ -6,4 +6,9 @@ seo:
   title: "Lofoten Islands Exploration Map"
   description: "A map of photo locations in Lofoten Islands"
 slug: lofoten
+thumb:
+  - url: "Lofoten-011.jpg"
+    alt: "Haukland Beach"
+  - url: "Lofoten-013.jpg"
+    alt: "Skottinden"
 ---

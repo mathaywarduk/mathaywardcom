@@ -36,8 +36,13 @@
   opacity: 0;
 }
 
-.slide-from-left {
-  animation: 500ms ease-in-out 0s 1 slideFromLeft;
+.hideRight {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-from-right {
+  animation: 500ms ease-in-out 0s 1 slideFromRight;
   animation-fill-mode: forwards;
   transform: translateX(100%);
   opacity: 0;
@@ -174,7 +179,7 @@
   }
 }
 
-@keyframes slideFromLeft {
+@keyframes slideFromRight {
   0% {
     transform: translateX(100%);
     opacity: 0;

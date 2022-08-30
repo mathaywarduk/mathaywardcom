@@ -4,6 +4,35 @@ layout: default
 
 <h1>All images</h1>
 
+<h2>Lofoten</h2>
+
+<div class="flex flex-wrap">
+  {% for i in (1..17) %}
+    {% assign num = i %}
+    {% if i < 10 %}
+        {% assign num = "0" | append: i %}
+    {% endif %}
+    <a href="https://mathaywarduk.imgix.net/Lofoten-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathaywarduk.imgix.net/Lofoten-0{{ num }}.jpg?w=600"><br>
+      Lofoten-0{{ num }}.jpg
+    </a>
+  {% endfor %}
+</div>
+
+<h2>Dolomites</h2>
+
+<div class="flex flex-wrap">
+  {% assign images = "000a,000b,2-2,2-3,2,6764,6767,6770,6782,6788,6800,6815,6818,6834,6900,6924,6993,7041,7050,7071,7116,7121,7170,7187,7191,7217,7223,7226,7234,7287,7293,7307,7313,7316,7339,7342,7344-2,7344,7351,7364,7380,7398,7421,7424,7476,7515,7530,7539,7557,7585,7588,7592,7610,7616,7625,7659,7718,7847,7886,7889,7892,7895-2,7895,7910,7916,7928,7937,7962,7998,8015,8018,8068,8109,8112,8115,8127,8151,8187,8217,8248,8254,8257,8265,8282,8338,9219,9220,9221" | split: "," %}
+
+  {% for i in images %}
+    {% assign num = i %}
+    <a href="https://mathaywarduk.imgix.net/Dolomiti-{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathaywarduk.imgix.net/Dolomiti-{{ num }}.jpg?w=600"><br>
+      Dolomiti-{{ num }}.jpg
+    </a>
+  {% endfor %}
+</div>
+
 <h2>Alberta</h2>
 
 <div class="flex flex-wrap">
@@ -90,6 +119,21 @@ layout: default
     <a href="https://mathaywarduk.imgix.net/Skye-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
       <img src="https://mathaywarduk.imgix.net/Skye-0{{ num }}.jpg?w=600"><br>
       Skye-0{{ num }}.jpg
+    </a>
+  {% endfor %}
+</div>
+
+<h2>Assynt</h2>
+
+<div class="flex flex-wrap">
+  {% for i in (1..2) %}
+    {% assign num = i %}
+    {% if i < 10 %}
+        {% assign num = "0" | append: i %}
+    {% endif %}
+    <a href="https://mathaywarduk.imgix.net/Assynt-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathaywarduk.imgix.net/Assynt-0{{ num }}.jpg?w=600"><br>
+      Assynt-0{{ num }}.jpg
     </a>
   {% endfor %}
 </div>

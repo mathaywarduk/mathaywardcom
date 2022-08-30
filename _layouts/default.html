@@ -37,6 +37,12 @@
     <link href="{{ site.url }}" rel="canonical">
     <link href="{{ site.url }}" rel="home">
     <link type="text/plain" href="{{ site.url }}/humans.txt" rel="author">
+    {% if layout.isMap %}
+      {% for location in site.data.maps[page.slug] %}
+        <link rel="preload" as="image" href="{{ site.image_base }}{{location.hero}}?w=767">
+        <link rel="preload" as="image" href="{{ site.image_base }}{{location.collection.hero.url}}?w=767">
+      {% endfor %}
+    {% endif %}
   </head>
   <body>
     {% if layout.isMap %}

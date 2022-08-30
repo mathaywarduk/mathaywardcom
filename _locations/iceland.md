@@ -6,4 +6,9 @@ seo:
   title: "Iceland Exploration Map"
   description: "A map of photo locations in Iceland"
 slug: iceland
+thumb:
+  - url: "Iceland-005.jpg"
+    alt: "Sunrise at Reynisfjara"
+  - url: "Iceland-018.jpg"
+    alt: "Múlagljúfur Canyon"
 ---
