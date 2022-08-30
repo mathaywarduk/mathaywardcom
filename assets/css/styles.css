@@ -266,6 +266,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-auto { margin-left: auto; }
 
+.mt-auto { margin-top: auto; }
+
 .mb-1 { margin-bottom: 0.25rem; }
 
 .mt-12 { margin-top: 3rem; }
@@ -303,6 +305,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-4 { width: 1rem; }
 
 .w-screen { width: 100vw; }
+
+.flex-col { flex-direction: column; }
 
 .flex-wrap { flex-wrap: wrap; }
 
@@ -576,7 +580,9 @@ p a:hover, p a:focus { color: var(--orange); }
 
 .text-slide-down { -webkit-animation: 1s ease-in-out 0s 1 textSlideDown; animation: 1s ease-in-out 0s 1 textSlideDown; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; transform: translateY(-100%); opacity: 0; }
 
-.slide-from-left { -webkit-animation: 500ms ease-in-out 0s 1 slideFromLeft; animation: 500ms ease-in-out 0s 1 slideFromLeft; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; transform: translateX(100%); opacity: 0; }
+.hideRight { transform: translateX(100%); opacity: 0; }
+
+.slide-from-right { -webkit-animation: 500ms ease-in-out 0s 1 slideFromRight; animation: 500ms ease-in-out 0s 1 slideFromRight; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; transform: translateX(100%); opacity: 0; }
 
 .animate-stepped { -webkit-animation-delay: 1000ms; animation-delay: 1000ms; }
 
@@ -670,12 +676,12 @@ p a:hover, p a:focus { color: var(--orange); }
   100% { transform: translateY(0%);
     opacity: 1; } }
 
-@-webkit-keyframes slideFromLeft { 0% { transform: translateX(100%);
+@-webkit-keyframes slideFromRight { 0% { transform: translateX(100%);
     opacity: 0; }
   100% { transform: translateY(0%);
     opacity: 1; } }
 
-@keyframes slideFromLeft { 0% { transform: translateX(100%);
+@keyframes slideFromRight { 0% { transform: translateX(100%);
     opacity: 0; }
   100% { transform: translateY(0%);
     opacity: 1; } }
