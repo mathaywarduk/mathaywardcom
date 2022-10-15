@@ -30,6 +30,7 @@ collections:
   peaks:
     output: true
     order: 
+      - canisp_and_covid.md
       - monte_pez.md
       - fairfield_horseshoe.md
       - loch_long_arrochar.md
