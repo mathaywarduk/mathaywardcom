@@ -18,5 +18,5 @@ thumb:
   - url: "Canada-008.jpg"
     alt: "Maligne Lake"
   - url: "Canada-018.jpg"
-    alt: "Maligne Lake"
+    alt: "Kananaskis"
 ---

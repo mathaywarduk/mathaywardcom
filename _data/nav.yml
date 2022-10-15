@@ -2,11 +2,10 @@
   url: "/"
 - title: Photography
   url: "/photography"
+- title: Locations
+  url: "/locations"
 - title: 40 Peaks
   url: "/40-peaks"
 - title: Unsplash
   url: "https://unsplash.com/mathaywarduk"
-  target: "_blank"
-- title: Instagram
-  url: "https://instagram.com/mathaywarduk"
   target: "_blank"

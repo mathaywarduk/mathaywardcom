@@ -37,8 +37,24 @@
     <link href="{{ site.url }}" rel="canonical">
     <link href="{{ site.url }}" rel="home">
     <link type="text/plain" href="{{ site.url }}/humans.txt" rel="author">
+    {% if layout.isMap %}
+      {% for location in site.data.maps[page.slug] %}
+        <link rel="preload" as="image" href="{{ site.image_base }}{{location.hero}}?w=767">
+        <link rel="preload" as="image" href="{{ site.image_base }}{{location.collection.hero.url}}?w=767">
+      {% endfor %}
+    {% endif %}
   </head>
   <body>
+    {% if layout.isMap %}
+    <header class="fixed top-0 left-0 z-10 p-8 uppercase b-white">
+      <div class="">
+        <a href="/locations" class="font-bold tracking-widest inline-flex gap-2">
+          <img src="/assets/images/icons/back.svg" class="w-4 h-4">
+          Locations
+        </a>
+      </div>
+    </header>
+    {% else %}
     <header class="md:fixed top-0 left-0 z-10 p-8 pb-0 md:p-12 lg:p-16 uppercase">
       <div class="flex flex-wrap md:block">
         <a href="/" class="font-bold tracking-widest mb-6 block">Mat Hayward</a>
@@ -56,13 +72,16 @@
           </ul>
         </nav>
       </div>
+      {% if page.isMap == true %}
       <div class="hidden md:block md:fixed top-0 right-0 z-10 p-8 md:p-12 lg:p-16">
         <span class="text-sm uppercase font-sans meta-date">2016
           <span class="sr-only"> - </span>
           <span class="block">{{ site.time | date: '%Y' }}</span>
         </span>
       </div>
+      {% endif %}
     </header>
+    {% endif %}
     <main>
       {{ content }}
     </main>

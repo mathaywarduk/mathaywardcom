@@ -8,6 +8,8 @@ collections:
   photography:
     output: true
     order:
+      - dolomites.md
+      - lofoten.md
       - iceland.md
       - north-coast-500.md
       - assynt.md
@@ -16,9 +18,20 @@ collections:
       - tenerife.md
       - skye.md
       - alberta.md
+  locations:
+    output: true
+    order:
+      - scotland.md
+      - dolomites.md
+      - lofoten.md
+      - iceland.md
+      - tenerife.md
+      - alberta.md
   peaks:
     output: true
     order: 
+      - canisp_and_covid.md
+      - monte_pez.md
       - fairfield_horseshoe.md
       - loch_long_arrochar.md
       - beinn_each_wild_camp.md
@@ -27,3 +40,4 @@ exclude:
   - package-lock.json
   - postcss.config.js
   - tailwind.config.js
+  - publish.sh

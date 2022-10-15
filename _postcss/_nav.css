@@ -2,13 +2,21 @@
 
   @apply
     transition-all
-    duration-300
+    duration-500
     ease-in-out
   ;
+
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(var(--orange), var(--orange));
+    background-size: 0 2px, 0 2px;
+    background-position: 0 100%, 0 100%;
+    background-repeat: no-repeat;
 
   &:hover,
   &:focus {
     @apply c-orange;
+        background-size: 0 2px, 100% 2px;
+        background-position: 100% 100%, 0 100%;
   }
 
   &.is-active {
@@ -47,26 +55,51 @@
     border-b
     border-transparent
     mb-4
+    c-black
     inline-flex
     items-start
     justify-start
     md:text-5xl
-    md:opacity-30
     md:mb-8
     lg:text-6xl
     lg:mb-10
-    hover:opacity-100
-    focus:opacity-100
   ;
+    
+    &:hover,
+    &:focus {
 
-    background-image: linear-gradient(0deg, transparent 14%, transparent 14%, transparent 15%, transparent 15%);
+      > span {
+        @apply
+          c-orange
+          opacity-100
+        ;
+      }
+
+      > span.text {
+        background-size: 0 2px, 100% 2px;
+        background-position: 100% 100%, 0 100%;
+      }
+    }
+}
+
+.feature-nav-item > span {
+  @apply
+    transition-all
+    duration-500
+    ease-in-out
+    md:opacity-30
+  ;
+}
+
+.feature-nav-item > span.text {
+
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(var(--orange), var(--orange));
+    background-size: 0 2px, 0 2px;
+    background-position: 0 100%, 0 100%;
+    background-repeat: no-repeat;
 
 
-  &:hover,
-  &:focus {
-    @apply c-orange;
-    background-image: linear-gradient(0deg, transparent 14%, #BF5700 14%, #BF5700 15%, transparent 15%);
-  }
 }
 
 .peak-nav-item {
@@ -76,19 +109,49 @@
       transition-all
       duration-500
       ease-in-out
+      inline
     ;
 
-    background-image: linear-gradient(0deg, transparent 14%, black 14%, black 15%, transparent 15%);
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(var(--orange), var(--orange));
+    background-size: 0 2px, 0 2px;
+    background-position: 0 85%, 0 85%;
+    background-repeat: no-repeat;
 
-    @screen lg {
-      background-image: linear-gradient(0deg, transparent 14%, transparent 14%, transparent 15%, transparent 15%);
-    }
   }
 
   &:hover h2 ,
   &:focus h2 {
     @apply c-orange;
-    background-image: linear-gradient(0deg, transparent 14%, #BF5700 14%, #BF5700 15%, transparent 15%);
+    background-size: 0 2px, 100% 2px;
+    background-position: 100% 85%, 0 85%;
+  }
+
+}
+
+.collection-nav-item {
+
+  h2 {
+    @apply
+      transition-all
+      duration-500
+      ease-in-out
+      inline
+    ;
+
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#ffffff, #ffffff);
+    background-size: 0 2px, 0 2px;
+    background-position: 0 85%, 0 85%;
+    background-repeat: no-repeat;
+
+  }
+
+  &:hover h2 ,
+  &:focus h2 {
+    @apply c-white;
+    background-size: 0 2px, 100% 2px;
+    background-position: 100% 85%, 0 85%;
   }
 
 }

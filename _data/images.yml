@@ -136,46 +136,60 @@ iceland:
     images:
       - url: "Iceland-012.jpg"
         alt: "Stokksnes Beach"
+        location: vestrahorn
       - url: "Iceland-014.jpg"
         alt: "Stokksnes Beach"
+        location: vestrahorn
   - type: double
     images:
       - url: "Iceland-004.jpg"
         alt: "Around Þórsmörk on the F261"
+        location: thorsmork
       - url: "Iceland-003.jpg"
         alt: "Around Þórsmörk on the F261"
+        location: thorsmork
   - type: single
     images:
       - url: "Iceland-010.jpg"
         alt: "Black sand beach near Hjörleifshöfði"
+        location: hjorleifshofoi
   - type: double
     images:
       - url: "Iceland-005.jpg"
         alt: "Sunrise at Reynisfjara"
+        location: reynisfjara
       - url: "Iceland-006.jpg"
         alt: "Sunrise at Reynisfjara"
+        location: reynisfjara
   - type: double
     images:
       - url: "Iceland-017.jpg"
         alt: "Vestrahorn from Stokksnes"
+        location: vestrahorn
       - url: "Iceland-015.jpg"
         alt: "Vestrahorn from Stokksnes"
+        location: vestrahorn
   - type: double
     images:
       - url: "Iceland-018.jpg"
         alt: "Múlagljúfur Canyon"
-      - url: "Iceland-016.jpg"
-        alt: "Vatnajokull Glacier"
+        location: mulagljufur
+      - url: "Iceland-019.jpg"
+        alt: "Vestrahorn from Stokksnes"
+        location: vestrahorn
   - type: single
     images:
       - url: "Iceland-007.jpg"
         alt: "Sunrise at Reynisfjara"
+        location: reynisfjara
   - type: double
     images:
       - url: "Iceland-008.jpg"
         alt: "Sunrise at Reynisfjara"
+        location: reynisfjara
       - url: "Iceland-009.jpg"
         alt: "Sunrise at Reynisfjara"
+        location: reynisfjara
 southern-highlands:
   - type: single
     images:
@@ -428,3 +442,167 @@ assynt:
         alt: "Blue layers of Assynt"
       - url: "NC500-015.jpg"
         alt: "Layers of Cul Mor"
+lofoten:
+  - type: double
+    images:
+      - url: "Lofoten-001.jpg"
+        alt: "Road to Henningsvær"
+      - url: "Lofoten-005.jpg"
+        alt: "E10 around Selfjord"
+  - type: double
+    images:
+      - url: "Lofoten-002.jpg"
+        alt: "Ristinden and Himmeltindan"
+      - url: "Lofoten-004.jpg"
+        alt: "A flat topped mountain in the Lofoten Islands"
+  - type: single
+    images:
+      - url: "Lofoten-011.jpg"
+        alt: "Kerry on Haukland Beach"
+  - type: single
+    images:
+      - url: "Lofoten-012.jpg"
+        alt: "A seagull and the mountains from Haukland Beach"
+  - type: double
+    images:
+      - url: "Lofoten-016.jpg"
+        alt: "Henningsvær viewed from Festvagtind"
+      - url: "Lofoten-017.jpg"
+        alt: "Henningsvær viewed from Festvagtind"
+  - type: single
+    images:
+      - url: "Lofoten-015.jpg"
+        alt: "Litlmolla Island from Festvagtind"
+  - type: double
+    images:
+      - url: "Lofoten-008.jpg"
+        alt: "Seagulls and stockfish"
+      - url: "Lofoten-010.jpg"
+        alt: "Spengerleira"
+  - type: double
+    images:
+      - url: "Lofoten-007.jpg"
+        alt: "Sakrisøya"
+      - url: "Lofoten-009.jpg"
+        alt: "Sakrisøya"
+  - type: double
+    images:
+      - url: "Lofoten-014.jpg"
+        alt: "Henningsvær harbour at night"
+      - url: "Lofoten-013.jpg"
+        alt: "Skottinden"
+dolomites:
+  - type: double
+    images:
+      - url: "Dolomiti-7071.jpg"
+        alt: "Rautkofel from Lake Misurina"
+      - url: "Dolomiti-6993.jpg"
+        alt: "Close up of mountain cliffs around the Gardena Pass"
+  - type: double
+    images:
+      - url: "Dolomiti-7041.jpg"
+        alt: "Averau above a mountain road"
+      - url: "Dolomiti-7050.jpg"
+        alt: "Close up of mountains and cloud"
+  - type: single
+    images:
+      - url: "Dolomiti-6818.jpg"
+        alt: "Close up of part of the Puez group of mountains"
+  - type: single
+    images:
+      - url: "Dolomiti-7121.jpg"
+        alt: "Close up of rocky mountain and cloud"
+  - type: double
+    images:
+      - url: "Dolomiti-7217.jpg"
+        alt: "Howard in front of the Misurina mountains"
+      - url: "Dolomiti-7187.jpg"
+        alt: "Sarah and the moutains around Rifugio Auronzo"
+  - type: double
+    images:
+      - url: "Dolomiti-7234.jpg"
+        alt: "Kerry in front of the Misurina mountains"
+      - url: "Dolomiti-7316.jpg"
+        alt: "Howard and Sarah dwarfed by the moutains and fog around Rifugio Auronzo"
+  - type: double
+    images:
+      - url: "Dolomiti-7351.jpg"
+        alt: "Close up of mountains and cloud"
+      - url: "Dolomiti-7226.jpg"
+        alt: "Close up of mountains and cloud"
+  - type: single
+    images:
+      - url: "Dolomiti-7223.jpg"
+        alt: "Close up of mountains and cloud"
+  - type: double
+    images:
+      - url: "Dolomiti-7998.jpg"
+        alt: "An Arctic Chough and some pink alpine flowers"
+      - url: "Dolomiti-7585.jpg"
+        alt: "Nutcrackers in a pine tree"
+  - type: double
+    images:
+      - url: "Dolomiti-6782.jpg"
+        alt: "Seceda with purple alpine flowers"
+      - url: "Dolomiti-6788.jpg"
+        alt: "Seceda"
+  - type: double
+    images:
+      - url: "Dolomiti-7476.jpg"
+        alt: "Sassolungo through the trees"
+      - url: "Dolomiti-7530.jpg"
+        alt: "Close up of a mountain pass through Sassolungo"
+  - type: single
+    images:
+      - url: "Dolomiti-7610.jpg"
+        alt: "Sassolungo and Alpe di Siusi"
+  - type: single
+    images:
+      - url: "Dolomiti-7616.jpg"
+        alt: "Sassolungo and Alpe di Siusi"
+  - type: single
+    images:
+      - url: "Dolomiti-7557.jpg"
+        alt: "Sassolungo and Alpe di Siusi"
+  - type: double
+    images:
+      - url: "Dolomiti-7625.jpg"
+        alt: "Sassolungo and Alpe di Siusi"
+      - url: "Dolomiti-7539.jpg"
+        alt: "Sassolungo and Alpe di Siusi"
+  - type: single
+    images:
+      - url: "Dolomiti-7659.jpg"
+        alt: "Alpe di Siusi"
+  - type: single
+    images:
+      - url: "Dolomiti-7962.jpg"
+        alt: "Rifugio Bolzano and the Catinaccio and Latemar mountains"
+  - type: double
+    images:
+      - url: "Dolomiti-8068.jpg"
+        alt: "Kerry on top of Monte Pez"
+      - url: "Dolomiti-8115.jpg"
+        alt: "Rifugio Bolzano and the Catinaccio mountains"
+  - type: double
+    images:
+      - url: "Dolomiti-8282.jpg"
+        alt: "Kerry walking down Monte Pez between the trees"
+      - url: "Dolomiti-8265.jpg"
+        alt: "Stairway on Monte Pez mountain path"
+  - type: single
+    images:
+      - url: "Dolomiti-7364.jpg"
+        alt: "Sunset over the mountains, taken from Tre Cime de Laverado"
+  - type: double
+    images:
+      - url: "Dolomiti-7380.jpg"
+        alt: "The church of San Giovanni in Val de Funes"
+      - url: "Dolomiti-7424.jpg"
+        alt: "The church of Santa Maddalena at Santa Maddalena"
+  - type: double
+    images:
+      - url: "Dolomiti-2.jpg"
+        alt: "Rifugio Antonio Locatelli in the last light"
+      - url: "Dolomiti-7191.jpg"
+        alt: "Rifugio Auronzo in the last light"

@@ -8,6 +8,14 @@ seo:
       url: "Wild-Camp-004.jpg"
       alt: "Wild Camping on Beinn Each"
 ---
+{% assign peaks = 0 %}
+{% assign ascent = 0 %}
+{% assign distance = 0 %}
+{% for item in site.peaks %}
+  {% assign peaks = peaks | plus: item.peaks.size %}
+  {% assign ascent = ascent | plus: item.ascent %}
+  {% assign distance = distance  | plus: item.distance %}
+{% endfor %}
 
 <div class="md:w-7/12 md:mx-auto pt-10 md:pt-12 lg:pt-16 pb-24 md:pb-40 px-8">
   <h1 class="font-display text-4xl md:text-6xl lg:text-7xl mb-0 pb-0 fade-down anim-delay-200">{{ page.title }}</h1>
@@ -15,6 +23,21 @@ seo:
     <p>Turning 40 in 2022, I decided to set myself the challenge of climbing forty peaks in 12 months.</p>
     <p>This is a record of my progress.</p>
   </div>
+
+  <ul class="flex flex-wrap gap-8 overflow-hidden pt-2 pb-4 border-t border-b">
+    <li class="text-slide-up animate-stepped">
+      <h3 class="font-bold mb-4">Peaks</h3>
+      <span class="text-xl py-1 px-2 border br-orange c-orange">{{ peaks | intcomma }}</span>
+    </li>
+    <li class="text-slide-up animate-stepped">
+      <h3 class="font-bold mb-4">Total ascent</h3>
+      <span class="text-xl py-1 px-2 border br-orange c-orange">{{ ascent | intcomma }}m</span>
+    </li>
+    <li class="text-slide-up animate-stepped">
+      <h3 class="font-bold mb-4">Total distance</h3>
+      <span class="text-xl py-1 px-2 border br-orange c-orange">{{ distance | intcomma }}km</span>
+    </li>
+  </ul>
 
   <ul class="">
     {% for item in site.peaks %}
@@ -37,19 +60,20 @@ seo:
           <h2 class="text-2xl font-display leading-none tracking-wide mb-4 md:text-3xl lg:text-4xl inline-block">
             {{ item.title }}
           </h2>
-          <p class="mb-0">{{ item.description }}</p>
+          <p class="mt-4 mb-0">{{ item.description }}</p>
         </div>
       </a>
     </li>
     {% endfor %}
   </ul>
 
+  {% comment %}
 
- {% comment %}
   {% assign munros = "" | split: ',' %}
   {% assign corbetts = "" | split: ',' %}
   {% assign grahams = "" | split: ',' %}
   {% assign wainwrights = "" | split: ',' %}
+  {% assign dolomites = "" | split: ',' %}
 
   {% for item in site.peaks %}
     {% for peak in item.peaks %}
@@ -64,6 +88,9 @@ seo:
       {% endif %}
       {% if peak.category == 'wainwright' %}
         {% assign wainwrights = wainwrights | push: peak %}
+      {% endif %}
+      {% if peak.category == 'dolomite' %}
+        {% assign dolomites = dolomites | push: peak %}
       {% endif %}
     {% endfor %}
   {% endfor %}
@@ -140,7 +167,25 @@ seo:
       {% endfor %}
     </ul>
     {% endif %}
+    {% if dolomites.size > 0 %}
+    <div class="overflow-hidden">
+      <h3 class="meta text-slide-up">Dolomites</h3>
+    </div>
+    <ul class="flex flex-wrap gap-8 mb-8">
+      {% for item in dolomites %}
+        <li>
+          <div class="overflow-hidden">
+            <h3 class="text-xl font-bold mb-4 text-slide-up">{{ item.name }}</h3>
+          </div>
+          <div class="overflow-hidden">
+            <span class="p-1 text-slide-up block">{{ item.elevation }}m</span>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
   </div>
+  
+  {% endcomment %}
 
-   {% endcomment %}
 </div>

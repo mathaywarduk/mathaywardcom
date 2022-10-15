@@ -15,8 +15,8 @@ hero:
   url: "Iceland-013.jpg"
   alt: "Howard on Stokksnes beach"
 thumb:
-  - url: "Iceland-006.jpg"
-    alt: "Sunrise at Reynisfjara"
   - url: "Iceland-004.jpg"
     alt: "Around Þórsmörk on the F261"
+  - url: "Iceland-006.jpg"
+    alt: "Sunrise at Reynisfjara"
 ---

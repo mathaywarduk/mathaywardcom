@@ -4,6 +4,8 @@ date: 2022-03-19
 title: Beinn Each Wild Camp
 description: "I kicked off the year-long challenge with an 'easy' climb in the Trossachs. To make it more memorable we set up our first wild camp near the top and watched the sun setting behind Stob Binnein and Ben More."
 region: Scotland
+distance: 7
+ascent: 693
 seo:
   title: "Wild Camping on Beinn Each"
   description: "I kicked off the year-long challenge with an 'easy' climb in the Trossachs."

@@ -4,6 +4,8 @@ date: 2022-05-12
 title: Fairfield Horseshoe
 description: "A last minute trip to the Lake District gave us the opportunity to check out the Fairfield Horseshoe."
 region: Lake District
+distance: 18.5
+ascent: 995
 seo:
   title: "Fairfield Horseshoe"
   description: "A last minute trip to the Lake District gave us the opportunity to check out the Fairfield Horseshoe."
