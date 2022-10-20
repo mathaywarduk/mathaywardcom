@@ -40,9 +40,9 @@ images:
 
 ---
 
-Every September, we go back to Scotland to celebrate our anniversary. This year, we had plans to climb a lot of mountains, really making a dent in my aim to cbag 40 peaks before my 41st birthday.
+Every September, we go back to Scotland to celebrate our anniversary. This year, we had plans to climb a lot of mountains, really making a dent in my aim to bag 40 peaks before my 41st birthday.
 
-After bailing on Cul Beag due to the weather the day before, we managed to trudge our way through bog, over a river and up the rocky terrain of Canisp. Not much to enjoy about this one, so it's unlikely we'll be back! On to the next mountain; the three-peak sof Quinag.
+After bailing on Cul Beag due to the weather the day before, we managed to trudge our way through bog, over a river and up the rocky terrain of Canisp. Not much to enjoy about this one, so it's unlikely we'll be back! On to the next mountain; the three-peaks of Quinag.
 
 2 days later, Covid had other ideas. Both Kerry and I got hit pretty hard with the virus, so instead of climbing 15 more peaks, we went home early to rest and recover.
 
