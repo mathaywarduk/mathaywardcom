@@ -1,39 +1,127 @@
----
-layout: null
----
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-      <loc>{{ site.url }}</loc>
-      <lastmod>{{ "2022-03-29" | date_to_xmlschema }}</lastmod>
+      <loc>https://mathayward.com</loc>
+      <lastmod>2022-03-29T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>{{ site.url }}/photography</loc>
-      <lastmod>{{ "2022-03-29" | date_to_xmlschema }}</lastmod>
+      <loc>https://mathayward.com/photography</loc>
+      <lastmod>2022-03-29T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>{{ site.url }}/40-peaks</loc>
-      <lastmod>{{ "2022-03-29" | date_to_xmlschema }}</lastmod>
+      <loc>https://mathayward.com/40-peaks</loc>
+      <lastmod>2022-03-29T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
-  {% for page in site.photography %}
+  
     <url>
-      <loc>{{ site.url }}{{ page.url }}</loc>
-      <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+      <loc>https://mathayward.com/photography/dolomites</loc>
+      <lastmod>2023-01-06T15:49:12+00:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
-  {% endfor %}
-  {% for page in site.peaks %}
+  
     <url>
-      <loc>{{ site.url }}{{ page.url }}</loc>
-      <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+      <loc>https://mathayward.com/photography/lofoten</loc>
+      <lastmod>2023-01-06T15:49:12+00:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
-  {% endfor %}
+  
+    <url>
+      <loc>https://mathayward.com/photography/iceland</loc>
+      <lastmod>2023-01-06T15:49:12+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/photography/north-coast-500</loc>
+      <lastmod>2023-01-06T15:49:12+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/photography/assynt</loc>
+      <lastmod>2023-01-06T15:49:12+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/photography/lake-district</loc>
+      <lastmod>2023-01-06T15:49:12+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/photography/southern-highlands</loc>
+      <lastmod>2023-01-06T15:49:12+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/photography/tenerife</loc>
+      <lastmod>2023-01-06T15:49:12+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/photography/skye</loc>
+      <lastmod>2023-01-06T15:49:12+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/photography/alberta</loc>
+      <lastmod>2023-01-06T15:49:12+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+  
+    <url>
+      <loc>https://mathayward.com/peaks/canisp_and_covid</loc>
+      <lastmod>2022-09-13T00:00:00+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/monte_pez</loc>
+      <lastmod>2022-07-30T00:00:00+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/fairfield_horseshoe</loc>
+      <lastmod>2022-05-12T00:00:00+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/loch_long_arrochar</loc>
+      <lastmod>2022-04-09T00:00:00+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/beinn_each_wild_camp</loc>
+      <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
 </urlset>
