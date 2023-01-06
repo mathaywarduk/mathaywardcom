@@ -1,0 +1,33 @@
+.image-loc {
+  @apply relative;
+}
+
+.image-loc:hover,
+.image-loc:focus {
+  .image-loc__icon {
+    opacity: 1;
+  }
+}
+
+
+.image-loc__icon {
+  @apply
+    opacity-0
+    absolute
+    bottom-2
+    px-5
+    py-4
+    right-2
+    transition-all
+    duration-300
+    ease-in-out
+}
+
+.image-loc--2 {
+  .image-loc__icon {
+    @apply
+      md:right-6
+      xl:right-10
+    ;
+  }
+}
