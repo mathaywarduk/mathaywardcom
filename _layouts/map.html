@@ -1,0 +1,177 @@
+---
+layout: default
+isMap: true
+---
+
+{% assign locations = site.data.maps[page.slug] %}
+
+<div id="map" class="w-screen h-screen"></div>
+
+<button class="close fixed top-4 right-4 c-white z-30 hideRight" id="mapContentClose"><span class="sr-only">Close</span></button>
+
+<div class="fixed bottom-0 top-0 right-0 b-white max-w-screen md:max-w-md drop-shadow-[-5px_0_10px_rgba(0,0,0,0.25)] overflow-y-auto z-20 hideRight" id="mapContentWrapper">
+  <div id="mapContent" class="flex flex-col h-screen"></div>
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV3uTC8stNqMKRlJhpZDo6c5YBha1VTY4&amp;libraries=&amp;v=weekly&amp;callback=initMap" defer></script>
+
+
+<script>
+
+// @TODO abstract this
+  function initMap() {
+
+    let bounds = new google.maps.LatLngBounds();
+    let mapContainer = document.getElementById("map");
+    let contentWrapper = document.getElementById("mapContentWrapper");
+    let contentContainer = document.getElementById("mapContent");
+    let closeButton = document.getElementById("mapContentClose");
+    let locations = {{ locations | jsonify }};
+    let allMarkers = [];
+    let baseURL = "{{ site.image_base }}";
+
+    // get location from query string
+    const urlParams = new URLSearchParams(window.location.search);
+    const qloc = urlParams.get('l');
+
+    const map = new google.maps.Map(mapContainer, {
+      zoom: 10,
+      center: new google.maps.LatLng({{ page.center }}),
+      styles: {{ site.data.mapstyles | jsonify }},
+      mapTypeControl: false,
+      streetViewControl: false,
+      fullscreenControl: false,
+    });
+
+    for (let i = 0; i < locations.length; i++) {
+      let title = locations[i].title;
+      let collection = locations[i].collection;
+      let description = locations[i].description;
+      let lat = locations[i].lat;
+      let lng = locations[i].lng;
+      let slug = locations[i].slug;
+      let category = locations[i].category;
+      let hero = locations[i].hero;
+
+      if (typeof lat !== 'undefined' && typeof lng !== 'undefined') {
+
+        let marker = new google.maps.Marker({
+          position: new google.maps.LatLng(lat, lng),
+          map: map,
+          category: category,
+          a: category,
+          icon: {
+            url: `/assets/images/icons/${category}_off.svg`,
+            scaledSize: new google.maps.Size(32, 32)
+          },
+        });
+
+        allMarkers.push(marker);
+        
+        bounds.extend(marker.position);
+
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+        
+            let imagesHTML = "";
+
+            // change all markers
+            allMarkers.forEach((element) => {
+              element.setIcon(`/assets/images/icons/${element.category}_off.svg`);
+            });
+
+            // change this marker
+            marker.setIcon(`/assets/images/icons/${marker.category}_on.svg`);
+
+            // change map center to current marker
+            map.setCenter({
+              lat : lat,
+              lng : lng
+            });
+
+            // Zoom in
+            if (map.getZoom() < 10){
+              map.setZoom(10);
+            }
+
+            heroHTML = `<picture class="w-full">
+              <img alt="${title}" 
+                src="${baseURL}${hero}?w=767"
+                width="767">
+            </picture>`
+
+            // update HTML
+            contentContainer.innerHTML = 
+               `<div class="relative mb-8">
+                  ${heroHTML}
+                  <div class="absolute bottom-0 left-0 right-0 b-black-grad p-4">
+                    <div class="overflow-hidden">
+                      <h2 class="text-slide-up text-4xl font-display c-white leading-none pb-2">${title}</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-4">
+                  <div class="overflow-hidden">
+                    <h2 class="meta text-slide-down anim-delay-600">Info</h2>
+                  </div>
+                  <div class="fade-down anim-delay-600">
+                    <p>${description}</p>
+                  </div>
+                </div>
+
+                <div class="relative mt-auto">
+                  <a href="/photography/${collection.slug}" class="collection-nav-item">
+                    <div class="absolute bottom-0 left-0 p-4 z-10 c-white">
+                      <div class="overflow-hidden">
+                        <span class="meta text-slide-down anim-delay-600">Photography collection</span>
+                      </div>
+                      <div class="fade-down anim-delay-600">
+                        <h2 class="text-2xl font-display leading-none tracking-wide mb-4 md:text-3xl lg:text-4xl inline-block">
+                          ${collection.title}
+                        </h2>
+                      </div>
+                    </div>
+                    <img src="${baseURL}${collection.hero.url}?w=767" alt="${collection.hero.alt}" class="block">
+                  </a>
+                </div>`;
+
+            // show content element
+            // contentWrapper.classList.remove("hidden");
+            // closeButton.classList.remove("hidden");
+            closeButton.classList.add("slide-from-right");
+            contentWrapper.classList.add("slide-from-right");
+          }
+        })(marker, i));
+
+        if (qloc !== null && qloc === slug) {
+          new google.maps.event.trigger( marker, 'click' );
+        }
+
+      }
+
+    }
+    
+    if (qloc === null) {
+      map.fitBounds(bounds);
+    }
+
+    //  When close button clicked
+    closeButton.addEventListener("click", function() {
+
+      contentContainer.innerHTML = "";
+      // contentWrapper.classList.add("hidden");
+      // closeButton.classList.add("hidden");
+      // map.fitBounds(bounds);
+      // map.setZoom(8);
+      closeButton.classList.remove("slide-from-right");
+      contentWrapper.classList.remove("slide-from-right");
+      allMarkers.forEach((element) => {
+        element.setIcon(`/assets/images/icons/${element.category}_off.svg`);
+      });
+
+    });
+  }
+
+</script>
