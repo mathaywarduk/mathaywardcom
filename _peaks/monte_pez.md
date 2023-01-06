@@ -56,4 +56,4 @@ It's been a bit slow progress with the peak bagging so far. Our trip to [Lofoten
 
 So, when our friends asked us to go to the [Italian Dolomites](/photography/dolomites) we jumped at the chance and this time the weather was definitely on our side.
 
-In between cable cars, pasta and gelato we managed to fit in a sunset trip to Alpe di Siusi followed by a climb to the top of Monte Pez, via a stop at the Rifugio for lunch at 2,500m!
+In between cable cars, pasta and gelato we managed to fit in a sunrise trip to Alpe di Siusi followed by a climb to the top of Monte Pez, via a stop at the Rifugio for lunch at 2,500m!

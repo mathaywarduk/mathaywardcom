@@ -516,84 +516,109 @@ dolomites:
     images:
       - url: "Dolomiti-7217.jpg"
         alt: "Howard in front of the Misurina mountains"
+        location: cadini-di-misurina
       - url: "Dolomiti-7187.jpg"
         alt: "Sarah and the moutains around Rifugio Auronzo"
+        location: tre-cime-di-lavaredo
   - type: double
     images:
       - url: "Dolomiti-7234.jpg"
         alt: "Kerry in front of the Misurina mountains"
+        location: cadini-di-misurina
       - url: "Dolomiti-7316.jpg"
         alt: "Howard and Sarah dwarfed by the moutains and fog around Rifugio Auronzo"
+        location: tre-cime-di-lavaredo
   - type: double
     images:
       - url: "Dolomiti-7351.jpg"
         alt: "Close up of mountains and cloud"
+        location: tre-cime-di-lavaredo
       - url: "Dolomiti-7226.jpg"
         alt: "Close up of mountains and cloud"
+        location: cadini-di-misurina
   - type: single
     images:
       - url: "Dolomiti-7223.jpg"
         alt: "Close up of mountains and cloud"
+        location: cadini-di-misurina
   - type: double
     images:
       - url: "Dolomiti-7998.jpg"
         alt: "An Arctic Chough and some pink alpine flowers"
+        location: monte-pez
       - url: "Dolomiti-7585.jpg"
         alt: "Nutcrackers in a pine tree"
+        location: alpe-di-siusi
   - type: double
     images:
       - url: "Dolomiti-6782.jpg"
         alt: "Seceda with purple alpine flowers"
+        location: seceda
       - url: "Dolomiti-6788.jpg"
         alt: "Seceda"
+        location: seceda
   - type: double
     images:
       - url: "Dolomiti-7476.jpg"
         alt: "Sassolungo through the trees"
+        location: alpe-di-siusi
       - url: "Dolomiti-7530.jpg"
         alt: "Close up of a mountain pass through Sassolungo"
+        location: alpe-di-siusi
   - type: single
     images:
       - url: "Dolomiti-7610.jpg"
         alt: "Sassolungo and Alpe di Siusi"
+        location: alpe-di-siusi
   - type: single
     images:
       - url: "Dolomiti-7616.jpg"
         alt: "Sassolungo and Alpe di Siusi"
+        location: alpe-di-siusi
   - type: single
     images:
       - url: "Dolomiti-7557.jpg"
         alt: "Sassolungo and Alpe di Siusi"
+        location: alpe-di-siusi
   - type: double
     images:
       - url: "Dolomiti-7625.jpg"
         alt: "Sassolungo and Alpe di Siusi"
+        location: alpe-di-siusi
       - url: "Dolomiti-7539.jpg"
         alt: "Sassolungo and Alpe di Siusi"
+        location: alpe-di-siusi
   - type: single
     images:
       - url: "Dolomiti-7659.jpg"
         alt: "Alpe di Siusi"
+        location: alpe-di-siusi
   - type: single
     images:
       - url: "Dolomiti-7962.jpg"
         alt: "Rifugio Bolzano and the Catinaccio and Latemar mountains"
+        location: monte-pez
   - type: double
     images:
       - url: "Dolomiti-8068.jpg"
         alt: "Kerry on top of Monte Pez"
+        location: monte-pez
       - url: "Dolomiti-8115.jpg"
         alt: "Rifugio Bolzano and the Catinaccio mountains"
+        location: monte-pez
   - type: double
     images:
       - url: "Dolomiti-8282.jpg"
         alt: "Kerry walking down Monte Pez between the trees"
+        location: monte-pez
       - url: "Dolomiti-8265.jpg"
         alt: "Stairway on Monte Pez mountain path"
+        location: monte-pez
   - type: single
     images:
       - url: "Dolomiti-7364.jpg"
         alt: "Sunset over the mountains, taken from Tre Cime de Laverado"
+        location: tre-cime-di-lavaredo
   - type: double
     images:
       - url: "Dolomiti-7380.jpg"
@@ -604,5 +629,7 @@ dolomites:
     images:
       - url: "Dolomiti-2.jpg"
         alt: "Rifugio Antonio Locatelli in the last light"
+        location: tre-cime-di-lavaredo
       - url: "Dolomiti-7191.jpg"
         alt: "Rifugio Auronzo in the last light"
+        location: tre-cime-di-lavaredo

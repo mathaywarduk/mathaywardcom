@@ -14,6 +14,7 @@ seo:
 hero:
   url: "Dolomiti-7344.jpg"
   alt: "Peak of Cimon di Croda Liscia appearing through cloud"
+  location: cadini-di-misurina
 thumb:
   - url: "Dolomiti-7625.jpg"
     alt: "Alpe di Suisi"
