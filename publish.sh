@@ -8,6 +8,7 @@ mv _site ..
 rm -rf ./*
 mv ../_site/* .
 rm -rf ../_site
+git add .
 git commit -am "$v"
 git push
 git checkout develop
