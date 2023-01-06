@@ -568,6 +568,14 @@ p a:hover, p a:focus { color: var(--orange); }
 
 .close:after { transform: rotate(-45deg); }
 
+.image-loc { position: relative; }
+
+.image-loc:hover .image-loc__icon, .image-loc:focus .image-loc__icon { opacity: 1; }
+
+.image-loc__icon { position: absolute; bottom: 0.5rem; right: 2.5rem; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 1rem; padding-bottom: 1rem; opacity: 0; transition-property: all; transition-duration: 300ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+.image-loc__icon--hero { right: 0.5rem; }
+
 .fade-up { -webkit-animation: 1s ease-in-out 0s 1 fadeUp; animation: 1s ease-in-out 0s 1 fadeUp; opacity: 0; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
 .fade-down { -webkit-animation: 1s ease-in-out 0s 1 fadeDown; animation: 1s ease-in-out 0s 1 fadeDown; opacity: 0; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }

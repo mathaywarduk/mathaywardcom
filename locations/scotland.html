@@ -156,6 +156,10 @@
     let allMarkers = [];
     let baseURL = "https://mathaywarduk.imgix.net/";
 
+    // get location from query string
+    const urlParams = new URLSearchParams(window.location.search);
+    const qloc = urlParams.get('l');
+
     const map = new google.maps.Map(mapContainer, {
       zoom: 10,
       center: new google.maps.LatLng(58.043805, -4.587318),
@@ -171,6 +175,7 @@
       let description = locations[i].description;
       let lat = locations[i].lat;
       let lng = locations[i].lng;
+      let slug = locations[i].slug;
       let category = locations[i].category;
       let hero = locations[i].hero;
 
@@ -186,7 +191,6 @@
             scaledSize: new google.maps.Size(32, 32)
           },
         });
-
 
         allMarkers.push(marker);
         
@@ -265,12 +269,18 @@
             contentWrapper.classList.add("slide-from-right");
           }
         })(marker, i));
+
+        if (qloc !== null && qloc === slug) {
+          new google.maps.event.trigger( marker, 'click' );
+        }
+
       }
 
     }
     
-
-    map.fitBounds(bounds);
+    if (qloc === null) {
+      map.fitBounds(bounds);
+    }
 
     //  When close button clicked
     closeButton.addEventListener("click", function() {

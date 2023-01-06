@@ -95,9 +95,13 @@
     let contentWrapper = document.getElementById("mapContentWrapper");
     let contentContainer = document.getElementById("mapContent");
     let closeButton = document.getElementById("mapContentClose");
-    let locations = [{"title":"Tre Cime Di Lavaredo","description":"It costs €30 to take your car on the toll road that leads to Tre Cime Di Lavaredo. You can walk it for free, but it'll take a few hours. The area is full of rocky monoliths and dotted with refuges for hikers.","lat":46.611687,"lng":12.29731,"hero":"Dolomiti-7187.jpg","category":"hike","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}},{"title":"Cadini di Misurina","description":"About a 20-30 minute walk from Rifugio Auronzo, you'll find an incredible viewpoint of the Cadini di Misurina. Known as the best viewpoint in the Dolomites, if the clouds are on your side!","lat":46.600221,"lng":12.296343,"hero":"Dolomiti-7344.jpg","category":"view","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}},{"title":"Seceda","description":"Two cable-car trips from Ortesei will take you 2,500m up the Odle mountains. From there you'll get some great views of the surrounding ranges, and a close up of the famous south side of Seceda.","lat":46.597869,"lng":11.724829,"hero":"Dolomiti-6782.jpg","category":"view","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}},{"title":"Alpe di Siusi","description":"Take a cable-car or walk in from Compatsch to Alpe di Siuse (or Seiser Alm) for beautiful rolling green hills and the magnificent twin peaks of Plattkofel and Langkofel. Go early or late for interesting shadows (and to avoid the crowds).","lat":46.555709,"lng":11.662177,"hero":"Dolomiti-7625.jpg","category":"view","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}},{"title":"Monte Pez","description":"The road to Compatsch closes at 9am, so start this hike early. It take about 2-3 hours to reach the top and much longer if you stop for photographs on the way. Amazing views all round once you get close to Rifugio Bolzano, as well as mountain horses and livestock.","lat":46.512016,"lng":11.575218,"hero":"Dolomiti-8115.jpg","category":"hike","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}},{"title":"St Johann in Ranui","description":"This little church is all over Instagram, because it's so easy to get to you barely have to get out of the car. If you're looking for a bit more space, take a walk up the hill to Chiesa di Santa Maddalena instead.","lat":46.636703,"lng":11.72217,"hero":"Dolomiti-7380.jpg","category":"view","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}}];
+    let locations = [{"title":"Tre Cime Di Lavaredo","slug":"tre-cime-di-lavaredo","description":"It costs €30 to take your car on the toll road that leads to Tre Cime Di Lavaredo. You can walk it for free, but it'll take a few hours. The area is full of rocky monoliths and dotted with refuges for hikers.","lat":46.611687,"lng":12.29731,"hero":"Dolomiti-7187.jpg","category":"hike","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}},{"title":"Cadini di Misurina","slug":"cadini-di-misurina","description":"About a 20-30 minute walk from Rifugio Auronzo, you'll find an incredible viewpoint of the Cadini di Misurina. Known as the best viewpoint in the Dolomites, if the clouds are on your side!","lat":46.600221,"lng":12.296343,"hero":"Dolomiti-7344.jpg","category":"view","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}},{"title":"Seceda","slug":"seceda","description":"Two cable-car trips from Ortesei will take you 2,500m up the Odle mountains. From there you'll get some great views of the surrounding ranges, and a close up of the famous south side of Seceda.","lat":46.597869,"lng":11.724829,"hero":"Dolomiti-6782.jpg","category":"view","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}},{"title":"Alpe di Siusi","slug":"alpe-di-siusi","description":"Take a cable-car or walk in from Compatsch to Alpe di Siuse (or Seiser Alm) for beautiful rolling green hills and the magnificent twin peaks of Plattkofel and Langkofel. Go early or late for interesting shadows (and to avoid the crowds).","lat":46.555709,"lng":11.662177,"hero":"Dolomiti-7625.jpg","category":"view","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}},{"title":"Monte Pez","slug":"monte-pez","description":"The road to Compatsch closes at 9am, so start this hike early. It take about 2-3 hours to reach the top and much longer if you stop for photographs on the way. Amazing views all round once you get close to Rifugio Bolzano, as well as mountain horses and livestock.","lat":46.512016,"lng":11.575218,"hero":"Dolomiti-8115.jpg","category":"hike","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}},{"title":"St Johann in Ranui","slug":"st-johann-in-ranui","description":"This little church is all over Instagram, because it's so easy to get to you barely have to get out of the car. If you're looking for a bit more space, take a walk up the hill to Chiesa di Santa Maddalena instead.","lat":46.636703,"lng":11.72217,"hero":"Dolomiti-7380.jpg","category":"view","collection":{"title":"Dolomites","slug":"dolomites","hero":{"url":"Dolomiti-7610.jpg","alt":"Alpe di Suisi"}}}];
     let allMarkers = [];
     let baseURL = "https://mathaywarduk.imgix.net/";
+
+    // get location from query string
+    const urlParams = new URLSearchParams(window.location.search);
+    const qloc = urlParams.get('l');
 
     const map = new google.maps.Map(mapContainer, {
       zoom: 10,
@@ -114,6 +118,7 @@
       let description = locations[i].description;
       let lat = locations[i].lat;
       let lng = locations[i].lng;
+      let slug = locations[i].slug;
       let category = locations[i].category;
       let hero = locations[i].hero;
 
@@ -129,7 +134,6 @@
             scaledSize: new google.maps.Size(32, 32)
           },
         });
-
 
         allMarkers.push(marker);
         
@@ -208,12 +212,18 @@
             contentWrapper.classList.add("slide-from-right");
           }
         })(marker, i));
+
+        if (qloc !== null && qloc === slug) {
+          new google.maps.event.trigger( marker, 'click' );
+        }
+
       }
 
     }
     
-
-    map.fitBounds(bounds);
+    if (qloc === null) {
+      map.fitBounds(bounds);
+    }
 
     //  When close button clicked
     closeButton.addEventListener("click", function() {
