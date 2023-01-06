@@ -18,13 +18,16 @@
     px-5
     py-4
     right-2
-    md:right-6
-    xl:right-10
     transition-all
     duration-300
     ease-in-out
 }
-.image-loc__icon--hero {
-  @apply
-    right-2
+
+.image-loc--2 {
+  .image-loc__icon {
+    @apply
+      md:right-6
+      xl:right-10
+    ;
+  }
 }

@@ -14,6 +14,7 @@ seo:
 hero:
   url: "NC500-026.jpg"
   alt: "Howard on Stac Pollaidh"
+  location: stac-pollaidh
 thumb:
   - url: "NC500-003.jpg"
     alt: "Howard on Stac Pollaidh"

@@ -14,6 +14,7 @@ seo:
 hero:
   url: "NC500-036.jpg"
   alt: "Rudi in Plockton"
+  location: plockton-shores
 thumb:
   - url: "NC500-038.jpg"
     alt: "Private cove near Plockton"

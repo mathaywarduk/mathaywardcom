@@ -3,6 +3,16 @@ layout: default
 ---
 
 {% assign image_group = site.data.images[page.slug] %}
+
+{% case page.slug %}
+  {% when "assynt", "southern-highlands", "skye", "north-coast-500" %}
+     {% assign location_slug = "scotland" %}
+  {% else %}
+     {% assign location_slug = page.slug %}
+{% endcase %}
+
+
+
 {% assign more = site.photography | where_exp:"post","post.url != page.url" | sample: 3 %}
 
 <div class="pt-10 md:pt-0">
@@ -32,7 +42,7 @@ layout: default
       {% include image.html url=page.hero.url alt=page.hero.alt classes=" w-full md:h-full md:object-cover" %}
         <p class="text-lg md:text-xl lg:text-2xl uppercase font-sans tracking-widest upright absolute bottom-0 md:bottom-auto md:top-0 right-0 md:right-auto md:left-0 md:mt-16 md:-ml-4 lg:-ml-5 z-10 mr-3 md:mr-0 mb-12 md:mb-0 fade-static anim-delay-400">{{ page.region }} &bull; {{ page.year }}</p>
         {% if page.hero.location %}
-          <a href="/locations/{{ page.slug }}/?l={{ page.hero.location }}" class="b-orange image-loc__icon image-loc__icon--hero">
+          <a href="/locations/{{ location_slug }}/?l={{ page.hero.location }}" class="b-orange image-loc__icon image-loc__icon--hero">
             <img src="/assets/images/icons/pin.svg" class="w-4">
             <span class="sr-only">Where is this?</span>
           </a>
@@ -46,10 +56,10 @@ layout: default
   {% for group in image_group %}
     <div class="flex flex-wrap {% if group.images.size == 2 %} md:-mx-4 xl:-mx-8 {% endif %}">
      {% for image in group.images %}
-      <div class="w-full {% if group.images.size == 2 %} md:w-1/2 md:px-4 xl:px-8 {% endif %} mb-1 md:mb-8 xl:mb-16 {% if image.location %}image-loc{% endif %}">
-        {% include image.html url=image.url alt=image.alt %}
+      <div class="w-full {% if group.images.size == 2 %} md:w-1/2 md:px-4 xl:px-8 {% endif %} mb-1 md:mb-8 xl:mb-16 {% if image.location %}image-loc image-loc--{{group.images.size}}{% endif %}">
+        {% include image.html url=image.url alt=image.alt classes=" w-full md:h-full md:object-cover" %}
         {% if image.location %}
-          <a href="/locations/{{ page.slug }}/?l={{ image.location }}" class="b-orange image-loc__icon">
+          <a href="/locations/{{ location_slug }}/?l={{ image.location }}" class="b-orange image-loc__icon">
             <img src="/assets/images/icons/pin.svg" class="w-4">
             <span class="sr-only">Where is this?</span>
           </a>

@@ -14,6 +14,7 @@ seo:
 hero:
   url: "Iceland-013.jpg"
   alt: "Howard on Stokksnes beach"
+  location: stokksnes
 thumb:
   - url: "Iceland-004.jpg"
     alt: "Around Þórsmörk on the F261"

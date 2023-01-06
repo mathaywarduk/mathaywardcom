@@ -14,6 +14,7 @@ seo:
 hero:
   url: "Skye-043.jpg"
   alt: "Elgol"
+  location: elgol-beach
 thumb:
   - url: "Skye-008.jpg"
     alt: "Pinnacle Ridge and Loch na Creitheach"

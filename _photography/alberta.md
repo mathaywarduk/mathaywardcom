@@ -14,6 +14,7 @@ seo:
 hero:
   url: "Canada-009.jpg"
   alt: "Medicine Lake"
+  location: medicine-lake
 thumb:
   - url: "Canada-008.jpg"
     alt: "Maligne Lake"

@@ -14,6 +14,7 @@ seo:
 hero:
   url: "Highlands-026.jpg"
   alt: "Ben Vorlich summit"
+  location: ben-vorlich
 thumb:
   - url: "Highlands-002.jpg"
     alt: "Sarah and Vinnie on Ben A'an Summit"

@@ -14,6 +14,7 @@ seo:
 hero:
   url: "Lofoten-003.jpg"
   alt: "Hamnøy and Festhaeltinden"
+  location: hamnoy
 thumb:
   - url: "Lofoten-001.jpg"
     alt: "Road to Henningsvær"
