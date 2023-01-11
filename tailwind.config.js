@@ -30,6 +30,9 @@ module.exports = {
       xxl: "1600px",
     },
     extend: {
+      opacity: {
+        '46': '.46',
+      },
       lineHeight: {
         tight: "0.7",
         default: "1.5",
