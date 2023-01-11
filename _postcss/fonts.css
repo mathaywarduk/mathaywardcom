@@ -2,4 +2,5 @@
   font-family: "SuisseIntl";
   src: url("/assets/fonts/SuisseIntl-Book.woff2") format("woff2"),
        url("/assets/fonts/SuisseIntl-Book.woff") format("woff");
+  font-display: swap;
 }
