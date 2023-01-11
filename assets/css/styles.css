@@ -527,7 +527,7 @@ p a:hover, p a:focus { color: var(--orange); }
 
 .feature-nav-item > span { transition-property: all; transition-duration: 500ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
-@media (min-width: 768px) { .feature-nav-item > span { opacity: 0.3; } }
+@media (min-width: 768px) { .feature-nav-item > span { opacity: .46; } }
 
 .feature-nav-item > span.text { background-image: linear-gradient(transparent, transparent), linear-gradient(var(--orange), var(--orange)); background-size: 0 2px, 0 2px; background-position: 0 100%, 0 100%; background-repeat: no-repeat; }
 
