@@ -1,7 +1,0 @@
- @layer utilities {
-   .upright {
-      writing-mode: vertical-rl;
-      text-orientation: sideways-right;
-      transform: rotate(180deg);
-   }
- }
