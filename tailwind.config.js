@@ -31,7 +31,7 @@ module.exports = {
     },
     extend: {
       opacity: {
-        '46': '.46',
+        '55': '.55',
       },
       lineHeight: {
         tight: "0.7",
