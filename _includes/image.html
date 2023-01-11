@@ -7,7 +7,7 @@
 {% endif %}
 
 <picture class="{{ include.block_classes }}">
-  <img alt="{{ include.alt }}" loading="lazy" sizes="(max-width: 1600px) 100vw, 1600px"
+  <img alt="{{ include.alt }}" {% if include.hero != "true" %}loading="lazy"{% endif %} sizes="(max-width: 1600px) 100vw, 1600px"
     src="{{ site.image_base }}{{ include.url }}?w=10"
     data-srcset="{{ site.image_base }}{{ include.url }}?w=2000{{opts}} 2000w,
     {{ site.image_base }}{{ include.url }}?w=1600{{opts}} 1600w,
