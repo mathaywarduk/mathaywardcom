@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.seo.title }} - Mat Hayward</title>
+    <link rel="preconnect" href="https://use.typekit.net">
+    <link rel="stylesheet" href="https://use.typekit.net/ttu5hld.css" defer>
+    
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="/assets/js/app.js"></script>
+
+    <script src="https://detailed-beard.mathayward.com/script.js" data-site="NYZPYRMT" defer></script>
+
+    <link rel="apple-touch-icon" href="/assets/images/favicon-196.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+    <meta name="description" content="{{ page.seo.description }}">
+    <meta name="robots" content="all">
+    <meta content="en_GB" property="og:locale">
+    <meta content="Mat Hayward" property="og:site_name">
+    <meta content="website" property="og:type">
+    <meta content="{{ site.url }}" property="og:url">
+    <meta content="{{ page.seo.title }} - Mat Hayward" property="og:title">
+    <meta content="{{ page.seo.description }}" property="og:description">
+    <meta content="{{ site.image_base }}{{ page.seo.image.url }}?w=1200&h=630&fit=crop" property="og:image">
+    <meta content="1200" property="og:image:width">
+    <meta content="630" property="og:image:height">
+    <meta content="{{ page.seo.image.alt }}" property="og:image:alt">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@madebykind">
+    <meta name="twitter:title" content="{{ page.seo.title }}">
+    <meta name="twitter:description" content="{{ page.seo.description }}">
+    <meta name="twitter:image" content="{{ site.image_base }}{{ page.seo.image.url }}?w=1200&h=600&fit=crop">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="600">
+    <meta name="twitter:image:alt" content="{{ page.seo.image.alt }}">
+    <link href="{{ site.url }}{{ page.url }}" rel="canonical">
+    <link href="{{ site.url }}" rel="home">
+    <link type="text/plain" href="{{ site.url }}/humans.txt" rel="author">
+    {% if layout.isMap %}
+      {% for location in site.data.maps[page.slug] %}
+        <link rel="preload" as="image" href="{{ site.image_base }}{{location.hero}}?w=767">
+        <link rel="preload" as="image" href="{{ site.image_base }}{{location.collection.hero.url}}?w=767">
+      {% endfor %}
+    {% endif %}
+  </head>
+  <body>
+    {% if layout.isMap %}
+    <header class="fixed top-0 left-0 z-10 p-8 uppercase b-white">
+      <div class="">
+        <a href="/locations" class="font-bold tracking-widest inline-flex gap-2">
+          <img src="/assets/images/icons/back.svg" class="w-4 h-4" role="presentation">
+          Locations
+        </a>
+      </div>
+    </header>
+    {% else %}
+    <header class="md:fixed top-0 left-0 z-10 p-8 pb-0 md:p-12 lg:p-16 uppercase">
+      <div class="flex flex-wrap md:block">
+        <a href="/" class="font-bold tracking-widest mb-6 block">Mat Hayward</a>
+        <nav class="ml-auto md:ml-0 text-right md:text-left">
+          <ul>
+            {% for nav_item in site.data.nav %}
+              <li><a href="{{ nav_item.url }}" {% if nav_item.target %} target="{{ nav_item.target }}" {% endif %} class="text-sm inline-block mb-2 nav-item
+                {% if nav_item.url == page.url %}
+                  is-active
+                {% elsif page.url contains nav_item.url and nav_item.url != '/' %}
+                  is-active
+                {% endif %}
+              ">{{ nav_item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+      {% if page.isMap == true %}
+      <div class="hidden md:block md:fixed top-0 right-0 z-10 p-8 md:p-12 lg:p-16">
+        <span class="text-sm uppercase font-sans meta-date">2016
+          <span class="sr-only"> - </span>
+          <span class="block">{{ site.time | date: '%Y' }}</span>
+        </span>
+      </div>
+      {% endif %}
+    </header>
+    {% endif %}
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>
