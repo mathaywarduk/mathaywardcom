@@ -1,10 +1,9 @@
 {% if include.ar %}
-  {% capture opts %}
-  &ar={{ include.ar }}&fit=crop
-  {% endcapture %}
+  {% capture opts %}&ar={{ include.ar }}&fit=crop{% endcapture %}
 {% else %}
   {% capture opts %}{% endcapture %}
 {% endif %}
+
 
 <picture class="{{ include.block_classes }}">
   <source srcset="{{ site.image_base }}{{ include.url }}?w=2000{{opts}} 2000w,
