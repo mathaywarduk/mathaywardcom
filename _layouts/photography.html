@@ -43,7 +43,7 @@ layout: default
         <p class="text-lg md:text-xl lg:text-2xl uppercase font-sans tracking-widest upright absolute bottom-0 md:bottom-auto md:top-0 right-0 md:right-auto md:left-0 md:mt-16 md:-ml-4 lg:-ml-5 z-10 mr-3 md:mr-0 mb-12 md:mb-0 fade-static anim-delay-400">{{ page.region }} &bull; {{ page.year }}</p>
         {% if page.hero.location %}
           <a href="/locations/{{ location_slug }}?l={{ page.hero.location }}" class="b-orange image-loc__icon image-loc__icon--hero">
-            <img src="/assets/images/icons/pin.svg" class="w-4" role="presentation">
+            <img src="/assets/images/icons/pin.svg" class="w-4" role="presentation" width="16" height="16">
             <span class="sr-only">Where is this?</span>
           </a>
         {% endif %}
@@ -60,7 +60,7 @@ layout: default
         {% include image.html url=image.url alt=image.alt classes=" w-full md:h-full md:object-cover" %}
         {% if image.location %}
           <a href="/locations/{{ location_slug }}?l={{ image.location }}" class="b-orange image-loc__icon">
-            <img src="/assets/images/icons/pin.svg" class="w-4" role="presentation">
+            <img src="/assets/images/icons/pin.svg" width="16" height="16" class="w-4" role="presentation">
             <span class="sr-only">Where is this?</span>
           </a>
         {% endif %}
