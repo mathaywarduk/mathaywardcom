@@ -34,7 +34,7 @@
     <meta name="twitter:image:width" content="1200">
     <meta name="twitter:image:height" content="600">
     <meta name="twitter:image:alt" content="">
-    <link href="https://mathayward.com" rel="canonical">
+    <link href="https://mathayward.com/locations/alberta" rel="canonical">
     <link href="https://mathayward.com" rel="home">
     <link type="text/plain" href="https://mathayward.com/humans.txt" rel="author">
     
@@ -64,7 +64,7 @@
     <header class="fixed top-0 left-0 z-10 p-8 uppercase b-white">
       <div class="">
         <a href="/locations" class="font-bold tracking-widest inline-flex gap-2">
-          <img src="/assets/images/icons/back.svg" class="w-4 h-4">
+          <img src="/assets/images/icons/back.svg" class="w-4 h-4" role="presentation">
           Locations
         </a>
       </div>
@@ -128,6 +128,7 @@
           position: new google.maps.LatLng(lat, lng),
           map: map,
           category: category,
+          title: title,
           a: category,
           icon: {
             url: `/assets/images/icons/${category}_off.svg`,
