@@ -20,5 +20,5 @@
     {{ site.image_base }}{{ include.url }}?w=768{{opts}} 768w,
     {{ site.image_base }}{{ include.url }}?w=480{{opts}} 480w,
     {{ site.image_base }}{{ include.url }}?w=300{{opts}} 300w" type="image/jpeg"> 
-  <img src="{{ site.image_base }}{{ include.url }}?w=300{{opts}}" alt="{{ include.alt }}" {% if include.hero != "true" %}loading="lazy"{% endif %} sizes="(max-width: 1600px) 100vw, 1600px" width="2000" height="2000">
+  <img src="{{ site.image_base }}{{ include.url }}?w=300{{opts}}" alt="{{ include.alt }}" {% if include.hero != "true" %}loading="lazy"{% endif %} sizes="(max-width: 1600px) 100vw, 1600px" width="2000" height="2000" class="{{ include.classes }}">
 </picture>
