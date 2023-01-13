@@ -64,8 +64,15 @@ layout: default
 {% for group in page.images %}
   <div class="flex flex-wrap {% if group.images.size == 2 %} md:-mx-4 xl:-mx-8 {% endif %} fade-up {% if forloop.last != true %} md:mb-8 xl:mb-16 {% endif %}">
    {% for image in group.images %}
+    {% if group.images.size == 2 %}
+      {% capture width %}900{% endcapture %}
+      {% capture height %}600{% endcapture %}
+    {% else %}
+      {% capture width %}600{% endcapture %}
+      {% capture height %}900{% endcapture %}
+    {% endif %}
     <div class="w-full {% if group.images.size == 2 %} md:w-1/2 md:px-4 xl:px-8 {% endif %}  mb-1">
-      {% include image.html url=image.url alt=image.alt %}
+      {% include image.html url=image.url alt=image.alt width=width height=height %}
     </div>
    {% endfor %}
   </div>
