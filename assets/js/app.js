@@ -20,13 +20,35 @@ function Hoverer(el) {
   });
 }
 
-function updateImage(el, src, srcset) {
-  if (el.getAttribute("src") != src) {
-    el.setAttribute("src", src);
-    if (typeof(srcset) != "undefined") {
-        el.setAttribute("srcset", srcset);
+function updateImage(el, img, srcset) {
+    // Check if source elements already exist
+    let sources = el.querySelectorAll("source");
+
+    if (typeof(srcset) != "undefined" && sources.length < 1) {
+
+
+      const webpSrcSet = srcset.replaceAll('?w=', '?fm=webp&w=');
+
+      // Create source element for JPG
+      const jpgSource = document.createElement("source");
+      jpgSource.setAttribute("srcset", srcset);
+      jpgSource.setAttribute("type", "image/jpeg");
+
+      // Create source element for WEBP
+      const webpSource = document.createElement("source");
+      webpSource.setAttribute("srcset", webpSrcSet);
+      webpSource.setAttribute("type", "image/webp");
+
+      // Add source elements
+      el.prepend(jpgSource);
+      el.prepend(webpSource);
+
+      // remove srcset attribute from img
+      img.removeAttribute('srcset');
+
+      console.log(el);
+
     }
-  }
 }
 
 function isInView(el) {
@@ -35,23 +57,23 @@ function isInView(el) {
 }
 
 function BlurLoad(el) {
-  const src = el.dataset.src;
-  const srcset = el.dataset.srcset;
+  const img = el.querySelector("img");
+  const srcset = img.getAttribute('srcset');
 
   // if in viewport and not large image
   if (isInView(el)) {
-    updateImage(el, src, srcset);
+    updateImage(el, img, srcset);
   }
 
   // check on scroll/resize if in viewport
   document.addEventListener('scroll', function(e) {
     if (isInView(el)) {
-      updateImage(el, src, srcset);
+      updateImage(el, img, srcset);
     }
   });
   document.addEventListener('resize', function(e) {
     if (isInView(el)) {
-      updateImage(el, src, srcset);
+      updateImage(el, img, srcset);
     }
   });
 }
