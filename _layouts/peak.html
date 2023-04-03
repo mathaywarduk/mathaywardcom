@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+{% assign peaks = site.peaks | reverse  %}
+{% for item in peaks %}
+  {% if item.url == page.url %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+      {% assign prevtitle = prev.title %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next = peaks[forloop.index] %}
+      {% assign nexturl = next.url %}
+      {% assign nexttitle = next.title %}
+    {% endunless %}
+  {% endif %}
+  {% assign prev = item %}
+{% endfor %}
+
+
+<div class="pt-10 md:pt-40 md:w-9/12 md:ml-auto px-8 md:pl-0">
+  <div class="overflow-hidden">
+    <div class="text-slide-up anim-delay-500 flex items-center gap-2 relative z-10">
+      <span>&lsaquo;</span>
+      <a href="/40-peaks" class="underline nav-item">40 Peaks</a>
+    </div>
+  </div>
+  <h1 class="font-display text-4xl md:text-6xl lg:text-7xl mb-4 lg:mb-8 pb-0 leading-none fade-down">{{ page.title }}</h1>
+  <div class="overflow-hidden">
+    <div class="text-base text-left no-underline font-sans mb-4 text-slide-up anim-delay-1000">
+      {{ page.date | date: "%d %B %Y" }}
+      &nbsp;&bull;&nbsp;
+      {{ page.region }}
+      &nbsp;&bull;&nbsp;
+      {{ page.distance }}km
+      &nbsp;&bull;&nbsp;
+      {{ page.ascent }}m ascent
+    </div>
+  </div>
+</div>
+
+<div class="md:w-9/12 md:ml-auto px-8 md:pl-0 fade-static border-b border-t br-grey py-4 xl:py-8">
+  <div class="overflow-hidden">
+    <h2 class="meta text-slide-up anim-delay-200">Peaks</h2>
+  </div>
+  <ul class="flex flex-wrap gap-8 overflow-hidden pb-2">
+    {% for peak in page.peaks %}
+      <li class="text-slide-up animate-stepped">
+        <h3 class="text-xl font-bold mb-4">{{ peak.name }}</h3>
+        <span class="p-1 border br-orange c-orange">{{ peak.category | capitalize }}</span>
+        <span class="p-1">{{ peak.elevation }}m</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+<div class="md:w-9/12 md:ml-auto md:pr-1/4 py-12 px-8 md:pl-0 fade-up  anim-delay-500">
+  {{ content }}
+</div>
+
+<div class="overflow-hidden animate-stepped">
+{% for group in page.images %}
+  <div class="flex flex-wrap {% if group.images.size == 2 %} md:-mx-4 xl:-mx-8 {% endif %} fade-up {% if forloop.last != true %} md:mb-8 xl:mb-16 {% endif %}">
+   {% for image in group.images %}
+    {% if group.images.size == 2 %}
+      {% capture width %}900{% endcapture %}
+      {% capture height %}600{% endcapture %}
+    {% else %}
+      {% capture width %}600{% endcapture %}
+      {% capture height %}900{% endcapture %}
+    {% endif %}
+    <div class="w-full {% if group.images.size == 2 %} md:w-1/2 md:px-4 xl:px-8 {% endif %}  mb-1">
+      {% include image.html url=image.url alt=image.alt width=width height=height %}
+    </div>
+   {% endfor %}
+  </div>
+{% endfor %}
+</div>
+
+<div class="lg:w-6/12 md:mx-auto px-8 lg:pl-0 py-4 xl:py-8">
+
+  <div class="flex flex-wrap justify-between">
+    {% if prevurl %}
+    <div class="w-full {% if next and next.url %} md:w-auto {% endif %} px-1 pb-4 md:pb-0">
+      <span class="meta block mb-2 md:mb-0">Previous</span>
+
+      <a class="font-display text-2xl lg:text-4xl link--pretty" href="{{ prevurl }}">{{ prevtitle }}</a>
+    </div>
+    {% endif %}
+
+    {% if nexturl %}
+    <div class="w-full {% if prev and prevurl %} md:w-auto {% endif %} px-1 text-right">
+      <span class="meta block mb-2 md:mb-0">Next</span>
+
+      <a class="font-display text-2xl lg:text-4xl link--pretty" href="{{ nexturl }}">{{ nexttitle }}</a>
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</div>
