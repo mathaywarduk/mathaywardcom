@@ -726,3 +726,58 @@ dolomites:
       - url: "Dolomiti-7191.jpg"
         alt: "Rifugio Auronzo in the last light"
         location: tre-cime-di-lavaredo
+jericho:
+  - type: double
+    images:
+      - url: "Jericho-0024.jpg"
+        alt: "Rich Stevens, Chef Patron of Restaurant Jericho, attending to corn plant in kitchen garden"
+      - url: "Jericho-0019.jpg"
+        alt: "Rich Stevens, Chef Patron of Restaurant Jericho, attending the kitchen garden at sunrise"
+  - type: single
+    images:
+      - url: "Jericho-0028.jpg"
+        alt: "Rich Stevens, Chef Patron of Restaurant Jericho, attending the kitchen garden at sunrise"
+  - type: double
+    images:
+      - url: "Jericho-0022.jpg"
+        alt: "Corn plant with sunrise behind"
+      - url: "Jericho-0026.jpg"
+        alt: "Large leaf with veins, lit up by the sun"
+  - type: single
+    images:
+      - url: "Jericho-0018.jpg"
+        alt: "Rich Stevens, Chef Patron of Restaurant Jericho, attending the kitchen garden at sunrise"
+  - type: double
+    images:
+      - url: "Jericho-0027.jpg"
+        alt: "Close up of Rich Stevens, Chef Patron of Restaurant Jericho"
+      - url: "Jericho-0016.jpg"
+        alt: "Rich Stevens, Chef Patron of Restaurant Jericho and Minnie the Jack Russell"
+  - type: single
+    images:
+      - url: "Jericho-006.jpg"
+        alt: "Table setting at Restaurant Jericho"
+  - type: single
+    images:
+      - url: "Jericho-0015.jpg"
+        alt: "Halibut, Kohlrabi and fish roe"
+  - type: double
+    images:
+      - url: "Jericho-003.jpg"
+        alt: "Rich Stevens, Chef Patron of Restaurant Jericho in the kitchen"
+      - url: "Jericho-001.jpg"
+        alt: "Kitchen table at Restaurant Jericho"
+  - type: single
+    images:
+      - url: "Jericho-004.jpg"
+        alt: "Pork Skin, Fermented Honey Skyr, Hawthorne, Apple"
+  - type: single
+    images:
+      - url: "Jericho-0013.jpg"
+        alt: "Salt Beef, Garum, Ramson Capers"
+  - type: double
+    images:
+      - url: "Jericho-0010.jpg"
+        alt: "Dark clay tableware at Restaurant Jericho"
+      - url: "Jericho-009.jpg"
+        alt: "Light clay tableware at Restaurant Jericho"
