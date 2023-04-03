@@ -1,10 +1,10 @@
 ---
-layout: jericho
+layout: photography
 title:  "Restaurant Jericho"
 region: "England"
 year: 2022
 id: jericho
-intro: "A post-lockdown weekend in Coniston brought much needed outdoor times and great views."
+intro: "Inspired by farm Jericho, the land that raised him and the generations that went before, Rich Stevens, has created a distinctive dining experience in the Vale of Belvoir. He asked me to take some phototgraphs of his food and his kitchen garden."
 seo:
   title: "Food Photography - Restaurant Jericho"
   description: "Photography from Restaurant Jericho, a fine dining experience in the Vale of Belvoir."
