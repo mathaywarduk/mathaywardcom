@@ -33,7 +33,7 @@ seo:
   {% for item in site.photography %}
     {% for image in item.thumb %}
       <img src="{{ site.image_base }}{{ image.url }}?w=10&h=13&fit=crop" class="fixed z-10 hidden opacity-0 thumb-{{ item.slug }} {% cycle item.slug: 'bottom-20 left-0 w-1/4 h-auto md:block', 'top-1/2 -right-10 -mt-80 w-1/6 h-auto xl:block', '-top-80 left-1/2 -ml-60 w-1/6 h-auto xxl:block' %}" loading="lazy" alt="{{ image.alt }}" srcset="{{ site.image_base }}{{ image.url }}??w=720&h=960&fit=crop 1200w,
-      {{ site.image_base }}{{ image.url }}??w=480&h=640&fit=crop 300w" id="{{ image.url }}">
+      {{ site.image_base }}{{ image.url }}??w=480&h=640&fit=crop 300w" id="{{ image.url | replace: '.jpg', '' }}">
     {% endfor %}
   {% endfor %}
 

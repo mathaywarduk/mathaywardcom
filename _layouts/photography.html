@@ -63,7 +63,7 @@ layout: default
           {% capture width %}600{% endcapture %}
           {% capture height %}900{% endcapture %}
         {% endif %}
-        <div class="w-full {% if group.images.size == 2 %} md:w-1/2 md:px-4 xl:px-8 {% endif %} mb-1 md:mb-8 xl:mb-16 {% if image.location %}image-loc image-loc--{{group.images.size}}{% endif %}">
+        <div class="w-full {% if group.images.size == 2 %} md:w-1/2 md:px-4 xl:px-8 {% endif %} mb-1 md:mb-8 xl:mb-16 {% if image.location %}image-loc image-loc--{{group.images.size}}{% endif %}" id="{{ image.url | replace: '.jpg', '' }}">
           {% include image.html url=image.url alt=image.alt classes=" w-full md:h-full md:object-cover" width=width height=height %}
         {% if image.location %}
         <a href="/locations/{{ location_slug }}?l={{ image.location }}" class="b-orange image-loc__icon">
