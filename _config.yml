@@ -35,7 +35,7 @@ collections:
       - fairfield_horseshoe.md
       - loch_long_arrochar.md
       - beinn_each_wild_camp.md
-image_base:  https://mathaywarduk.imgix.net/
+image_base:  https://mathayward.imgix.net/
 exclude:
   - package-lock.json
   - postcss.config.js
