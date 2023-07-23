@@ -13,7 +13,7 @@ layout: default
 
 
 
-{% assign more = site.photography | where_exp:"post","post.url != page.url" | sample: 3 %}
+{% assign more = site.photography | where_exp:"post","post.url != page.url and post.slug != 'jericho'"  | sample: 3 %}
 
 <div class="pt-10 md:pt-0">
   <div class="w-full ml-auto flex flex-wrap md:h-screen mb-12 md:mb-24">
