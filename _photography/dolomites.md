@@ -4,7 +4,7 @@ title:  "Dolomites"
 region: "Italy"
 year: 2022
 id: dolomites
-intro: "The Dolomites is a beautiful place in the summer. Alpine Meadows and rocky mountains covered in cloud made for a great week off work."
+intro: "The Dolomites is a beautiful place in the summer. Alpine Meadows and rocky mountains covered in cloud made for a great week off&nbsp;work."
 seo:
   title: "Travel Photography - Dolomites"
   description: "Photography from around the Italian Dolomites (South Tyrol) including Alpe di Suisi, Monte Pez, Seceda and Santa Maddalena."

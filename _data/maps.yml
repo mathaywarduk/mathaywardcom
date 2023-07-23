@@ -64,6 +64,71 @@ iceland:
       hero:
         url: "Iceland-007.jpg"
         alt: "Sunrise at Reynisfjara"
+  - title: Landmannalaugar
+    slug: landmannalaugar
+    description: "A drive along F225 is quite straightforward, but takes a while because of all the great photo opportunities. Once you get to Landmannalaugar, you're greated with a decent campsite, hot springs and some strangley coloured mountains."
+    lat: 63.982755
+    lng: -19.065884
+    hero: "Iceland_0076.jpg"
+    category: view
+    collection:
+      title:  "Iceland"
+      slug: iceland
+      hero:
+        url: "Iceland-007.jpg"
+        alt: "Sunrise at Reynisfjara"
+  - title: Gullfoss
+    slug: gullfoss
+    description: "This is tourist hell, because it's really easy to get to. Despite that, Gullfoss is pretty awesome, but if you're looking for a bit more peace go very early or very late."
+    lat: 64.327042
+    lng: -20.120123
+    hero: "Iceland_0021.jpg"
+    category: view
+    collection:
+      title:  "Iceland"
+      slug: iceland
+      hero:
+        url: "Iceland-007.jpg"
+        alt: "Sunrise at Reynisfjara"
+  - title: Raudufossar
+    slug: raudufossar
+    description: "Half way along the F225 towards Landmannalaugar, a pretty beautiful cascading waterfall in a peaceful spot."
+    lat: 64.020105
+    lng: -19.339699
+    hero: "Iceland_0053.jpg"
+    category: view
+    collection:
+      title:  "Iceland"
+      slug: iceland
+      hero:
+        url: "Iceland-007.jpg"
+        alt: "Sunrise at Reynisfjara"
+  - title: Sigöldugljúfur
+    slug: sigoldugljufur
+    description: "Just off the northern part of the F208, you could easily drive straight past Sigöldugljúfur without noticing it. It's worth 2-minute walk away from the road though."
+    lat: 64.157673
+    lng: -19.126116
+    hero: "Iceland_0026.jpg"
+    category: view
+    collection:
+      title:  "Iceland"
+      slug: iceland
+      hero:
+        url: "Iceland-007.jpg"
+        alt: "Sunrise at Reynisfjara"
+  - title: Kerlingarfjoll
+    slug: kerlingarfjoll
+    description: "An easy but very long drive up the F35 takes you to Kerlingarfjoll, an area of hot springs. When we arrived it was whiteout at the top, so we climbed a hill nearby and checked out the view to the north."
+    lat: 64.680173
+    lng: -19.281253
+    hero: "Iceland_0093.jpg"
+    category: view
+    collection:
+      title:  "Iceland"
+      slug: iceland
+      hero:
+        url: "Iceland-007.jpg"
+        alt: "Sunrise at Reynisfjara"
 dolomites:
   - title: Tre Cime Di Lavaredo
     slug: tre-cime-di-lavaredo

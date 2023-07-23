@@ -4,7 +4,7 @@ title:  "Lofoten Islands"
 region: "Norway"
 year: 2022
 id: lofoten
-intro: "My time in Lofoten was a bit spoilt by some heavy storms, but the one day there was good weather showed me just how beautiful it is."
+intro: "My time in Lofoten was a bit spoilt by some heavy storms, but the one day there was good weather showed me just how beautiful&nbsp;it&nbsp;is."
 seo:
   title: "Travel Photography - Lofoten Islands"
   description: "Photography from around the Lofoten Islands, Norway including Henningsvær, Sørvågen and Hamnøy"

@@ -12,8 +12,8 @@ layout: default
     {% if i < 10 %}
         {% assign num = "0" | append: i %}
     {% endif %}
-    <a href="https://mathaywarduk.imgix.net/Lofoten-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
-      <img src="https://mathaywarduk.imgix.net/Lofoten-0{{ num }}.jpg?w=600"><br>
+    <a href="https://mathayward.imgix.net/Lofoten-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathayward.imgix.net/Lofoten-0{{ num }}.jpg?w=600"><br>
       Lofoten-0{{ num }}.jpg
     </a>
   {% endfor %}
@@ -26,8 +26,8 @@ layout: default
 
   {% for i in images %}
     {% assign num = i %}
-    <a href="https://mathaywarduk.imgix.net/Dolomiti-{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
-      <img src="https://mathaywarduk.imgix.net/Dolomiti-{{ num }}.jpg?w=600"><br>
+    <a href="https://mathayward.imgix.net/Dolomiti-{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathayward.imgix.net/Dolomiti-{{ num }}.jpg?w=600"><br>
       Dolomiti-{{ num }}.jpg
     </a>
   {% endfor %}
@@ -41,8 +41,8 @@ layout: default
     {% if i < 10 %}
         {% assign num = "0" | append: i %}
     {% endif %}
-    <a href="https://mathaywarduk.imgix.net/Canada-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
-      <img src="https://mathaywarduk.imgix.net/Canada-0{{ num }}.jpg?w=600"><br>
+    <a href="https://mathayward.imgix.net/Canada-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathayward.imgix.net/Canada-0{{ num }}.jpg?w=600"><br>
       Canada-0{{ num }}.jpg
     </a>
   {% endfor %}
@@ -51,15 +51,23 @@ layout: default
 <h2>Iceland</h2>
 
 <div class="flex flex-wrap">
-  {% for i in (1..17) %}
+  {% for i in (1..97) %}
     {% assign num = i %}
-    {% if i < 10 %}
-        {% assign num = "0" | append: i %}
+    {% if i > 19 %}
+      <a href="https://mathayward.imgix.net/Iceland_00{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+        <img src="https://mathayward.imgix.net/Iceland_00{{ num }}.jpg?w=600"><br>
+        Iceland_00{{ num }}.jpg
+      </a>
+    {% elsif i < 10 %}
+      <a href="https://mathayward.imgix.net/Iceland-00{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+        <img src="https://mathayward.imgix.net/Iceland-00{{ num }}.jpg?w=600"><br>
+        Iceland-00{{ num }}.jpg
+    {% else %}
+      <a href="https://mathayward.imgix.net/Iceland-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+        <img src="https://mathayward.imgix.net/Iceland-0{{ num }}.jpg?w=600"><br>
+        Iceland-0{{ num }}.jpg
+      </a>
     {% endif %}
-    <a href="https://mathaywarduk.imgix.net/Iceland-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
-      <img src="https://mathaywarduk.imgix.net/Iceland-0{{ num }}.jpg?w=600"><br>
-      Iceland-0{{ num }}.jpg
-    </a>
   {% endfor %}
 </div>
 
@@ -71,8 +79,8 @@ layout: default
     {% if i < 10 %}
         {% assign num = "0" | append: i %}
     {% endif %}
-    <a href="https://mathaywarduk.imgix.net/Lakes-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
-      <img src="https://mathaywarduk.imgix.net/Lakes-0{{ num }}.jpg?w=600"><br>
+    <a href="https://mathayward.imgix.net/Lakes-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathayward.imgix.net/Lakes-0{{ num }}.jpg?w=600"><br>
       Lakes-0{{ num }}.jpg
     </a>
   {% endfor %}
@@ -86,8 +94,8 @@ layout: default
     {% if i < 10 %}
         {% assign num = "0" | append: i %}
     {% endif %}
-    <a href="https://mathaywarduk.imgix.net/NC500-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
-      <img src="https://mathaywarduk.imgix.net/NC500-0{{ num }}.jpg?w=600"><br>
+    <a href="https://mathayward.imgix.net/NC500-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathayward.imgix.net/NC500-0{{ num }}.jpg?w=600"><br>
       NC500-0{{ num }}.jpg
     </a>
   {% endfor %}
@@ -101,8 +109,8 @@ layout: default
     {% if i < 10 %}
         {% assign num = "0" | append: i %}
     {% endif %}
-    <a href="https://mathaywarduk.imgix.net/Highlands-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
-      <img src="https://mathaywarduk.imgix.net/Highlands-0{{ num }}.jpg?w=600"><br>
+    <a href="https://mathayward.imgix.net/Highlands-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathayward.imgix.net/Highlands-0{{ num }}.jpg?w=600"><br>
       Highlands-0{{ num }}.jpg
     </a>
   {% endfor %}
@@ -116,8 +124,8 @@ layout: default
     {% if i < 10 %}
         {% assign num = "0" | append: i %}
     {% endif %}
-    <a href="https://mathaywarduk.imgix.net/Skye-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
-      <img src="https://mathaywarduk.imgix.net/Skye-0{{ num }}.jpg?w=600"><br>
+    <a href="https://mathayward.imgix.net/Skye-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathayward.imgix.net/Skye-0{{ num }}.jpg?w=600"><br>
       Skye-0{{ num }}.jpg
     </a>
   {% endfor %}
@@ -131,8 +139,8 @@ layout: default
     {% if i < 10 %}
         {% assign num = "0" | append: i %}
     {% endif %}
-    <a href="https://mathaywarduk.imgix.net/Assynt-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
-      <img src="https://mathaywarduk.imgix.net/Assynt-0{{ num }}.jpg?w=600"><br>
+    <a href="https://mathayward.imgix.net/Assynt-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathayward.imgix.net/Assynt-0{{ num }}.jpg?w=600"><br>
       Assynt-0{{ num }}.jpg
     </a>
   {% endfor %}
@@ -146,8 +154,8 @@ layout: default
     {% if i < 10 %}
         {% assign num = "0" | append: i %}
     {% endif %}
-    <a href="https://mathaywarduk.imgix.net/Tenerife-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
-      <img src="https://mathaywarduk.imgix.net/Tenerife-0{{ num }}.jpg?w=600"><br>
+    <a href="https://mathayward.imgix.net/Tenerife-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathayward.imgix.net/Tenerife-0{{ num }}.jpg?w=600"><br>
       Tenerife-0{{ num }}.jpg
     </a>
   {% endfor %}

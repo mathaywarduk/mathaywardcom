@@ -206,9 +206,74 @@ iceland:
       - url: "Iceland-018.jpg"
         alt: "Múlagljúfur Canyon"
         location: mulagljufur
-      - url: "Iceland-019.jpg"
-        alt: "Vestrahorn from Stokksnes"
-        location: stokksnes
+      - url: "Iceland_0052.jpg"
+        alt: "Green river"
+  - type: double
+    images:
+      - url: "Iceland_0021.jpg"
+        alt: "Gulfoss"
+        location: gulfoss
+      - url: "Iceland_0024.jpg"
+        alt: "Gulfoss"
+        location: gulfoss
+  - type: double
+    images:
+      - url: "Iceland_0025.jpg"
+        alt: "Gulfoss"
+        location: gulfoss
+      - url: "Iceland_0053.jpg"
+        alt: "Raudufossar"
+        location: raudufossar
+  - type: single
+    images:
+      - url: "Iceland_0028.jpg"
+        alt: "Sigöldugljúfur"
+        location: sigoldugljufur
+  - type: double
+    images:
+      - url: "Iceland_0026.jpg"
+        alt: "Sigöldugljúfur"
+        location: sigoldugljufur
+      - url: "Iceland_0029.jpg"
+        alt: "Sigöldugljúfur"
+        location: sigoldugljufur
+  - type: double
+    images:
+      - url: "Iceland_0076.jpg"
+        alt: "Landmannalaugar"
+        location: landmannalaugar
+      - url: "Iceland_0041.jpg"
+        alt: "Abstract snow"
+  - type: single
+    images:
+      - url: "Iceland_0063.jpg"
+        alt: "Snow mountain"
+  - type: single
+    images:
+      - url: "Iceland_0071.jpg"
+        alt: "Landmannalaugar"
+        location: landmannalaugar
+  - type: single
+    images:
+      - url: "Iceland_0073.jpg"
+        alt: "Landmannalaugar"
+        location: landmannalaugar
+  - type: single
+    images:
+      - url: "Iceland_0081.jpg"
+        alt: "Snow mountain"
+  - type: double
+    images:
+      - url: "Iceland_0044.jpg"
+        alt: "Howie"
+      - url: "Iceland_0088.jpg"
+        alt: "Howie sunset"
+  - type: double
+    images:
+      - url: "Iceland_0090.jpg"
+        alt: "River sunset"
+      - url: "Iceland_0093.jpg"
+        alt: "River sunset"
   - type: single
     images:
       - url: "Iceland-007.jpg"

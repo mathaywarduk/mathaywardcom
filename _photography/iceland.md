@@ -2,9 +2,9 @@
 layout: photography
 title:  "Iceland"
 region: "Iceland"
-year: 2021
+year: 2021-23
 id: iceland
-intro: "Iceland has the most incredibly bizarre landscapes. In just 3 days I felt like I was in a dream, on the moon and on the surface of the sea."
+intro: "Iceland has the most incredibly bizarre landscapes. On just two short trips, I felt like I was in a dream, on the moon and on the surface of the&nbsp;sea."
 seo:
   title: "Travel Photography - Iceland"
   description: "Photography from Southern Iceland, including Stokksnes, Þórsmörk and Reynisfjara."

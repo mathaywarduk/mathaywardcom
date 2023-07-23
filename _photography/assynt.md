@@ -2,9 +2,9 @@
 layout: photography
 title:  "Assynt"
 region: "Scotland"
-year: 2020
+year: 2020-22
 id: assynt
-intro: "Home to some of the most intriguing mountains and broken landscapes, I'll just keep going back to this place."
+intro: "Home to some of the most intriguing mountains and broken landscapes, I'll just keep going back to this&nbsp;place."
 seo:
   title: "Travel Photography - Assynt"
   description: "Photography from the Assynt in Scotland including Suilven and Stac Pollaidh"
