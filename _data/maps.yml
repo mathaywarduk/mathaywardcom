@@ -54,8 +54,8 @@ madeira:
   - title: Miradouro do Caniçals
     slug: miradouro-do-canical
     description: "Clifftop views of the red rocks are easily accessible from Miradouro do Caniçal. From here, you can get a different angle by walking up to Miradouro da Ponta do Rosto or Pico das Pedras Brancas"
-    lat: 32.758974
-    lng: -16.943217
+    lat: 32.749323
+    lng: -16.706711
     hero: "Madeira-043.jpg"
     category: hike
     collection:
