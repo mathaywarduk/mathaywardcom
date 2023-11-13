@@ -7,8 +7,8 @@ seo:
   description: "A map of photo locations in Dolomites"
 slug: dolomites
 thumb:
+  - url: "Dolomiti-7616.jpg"
+    alt: "Sassolungo and Alpe di Siusi"
   - url: "Dolomiti-7187.jpg"
     alt: "Sarah and the moutains around Rifugio Auronzo"
-  - url: "Dolomiti-7316.jpg"
-    alt: "Howard and Sarah dwarfed by the moutains and fog around Rifugio Auronzo"
 ---
