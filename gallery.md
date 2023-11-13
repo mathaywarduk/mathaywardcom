@@ -4,6 +4,21 @@ layout: default
 
 <h1>All images</h1>
 
+<h2>Hebrides</h2>
+
+<div class="flex flex-wrap">
+  {% for i in (1..35) %}
+    {% assign num = i %}
+    {% if i < 10 %}
+        {% assign num = "0" | append: i %}
+    {% endif %}
+    <a href="https://mathayward.imgix.net/Hebrides-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
+      <img src="https://mathayward.imgix.net/Hebrides-0{{ num }}.jpg?w=600"><br>
+      Hebrides-0{{ num }}.jpg
+    </a>
+  {% endfor %}
+</div>
+
 <h2>Madeira</h2>
 
 <div class="flex flex-wrap">

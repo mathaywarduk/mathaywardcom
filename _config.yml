@@ -11,13 +11,11 @@ collections:
       - madeira.md
       - iceland.md
       - dolomites.md
+      - trossachs.md
+      - west-coast.md
       - lofoten.md
-      - north-coast-500.md
-      - assynt.md
-      - lake-district.md
-      - southern-highlands.md
       - tenerife.md
-      - skye.md
+      - skye-hebrides.md
       - alberta.md
   locations:
     output: true

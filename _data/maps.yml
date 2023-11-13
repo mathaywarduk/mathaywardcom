@@ -420,6 +420,45 @@ lofoten:
         url: "Lofoten-011.jpg"
         alt: "Kerry on Haukland Beach"
 scotland:
+  - title: The Golden Road
+    slug: golden-road
+    description: "If you visit the Isle of Harris by car, be sure to take a drive down the golden road at sunset. It's spectactular!"
+    lat: 57.801433
+    lng: -6.862021
+    hero: "Hebrides-011.jpg"
+    category: view
+    collection:
+      title:  "Skye and the Hebrides"
+      slug: skye-hebrides
+      hero:
+        url: "Skye-027.jpg"
+        alt: "Sunset on Skye near Tarskavaig"
+  - title: Traigh Ghearadha
+    slug: traigh-ghearadha
+    description: "There's not a lot to look at on the Isle of Lewis, it's all pretty flat. But at the far north there are a couple of really nice beaches, like Traigh Ghearadha aka Garry Beach."
+    lat: 58.367425
+    lng: -6.216030
+    hero: "Hebrides-010.jpg"
+    category: view
+    collection:
+      title:  "Skye and the Hebrides"
+      slug: skye-hebrides
+      hero:
+        url: "Skye-027.jpg"
+        alt: "Sunset on Skye near Tarskavaig"
+  - title: Usiken Bay
+    slug: uisken-bay
+    description: "Uisken Bay is a beautiful spot on the Isle of Mull, complete with sandy beach, coves and rock formations to explore. And you can wild camp for a fee."
+    lat: 56.290406
+    lng: -6.214993
+    hero: "Hebrides-002.jpg"
+    category: view
+    collection:
+      title:  "Skye and the Hebrides"
+      slug: skye-hebrides
+      hero:
+        url: "Skye-027.jpg"
+        alt: "Sunset on Skye near Tarskavaig"
   - title: Upper Loch Torridon
     slug: upper-loch-torridon
     description: "The area around Torridon is one of the most beautiful parts of Scotland in my opinion. This part of Loch Torridon faces west, so golden hour can be pretty beautiful."
@@ -428,8 +467,8 @@ scotland:
     hero: "NC500-043.jpg"
     category: view
     collection:
-      title:  "North Coast 500"
-      slug: north-coast-500
+      title:  "West Coast"
+      slug: west-coast
       hero:
         url: "NC500-013.jpg"
         alt: "Howard in Plockton"
@@ -441,8 +480,8 @@ scotland:
     hero: "NC500-039.jpg"
     category: view
     collection:
-      title:  "North Coast 500"
-      slug: north-coast-500
+      title:  "West Coast"
+      slug: west-coast
       hero:
         url: "NC500-013.jpg"
         alt: "Howard in Plockton"
@@ -454,8 +493,8 @@ scotland:
     hero: "NC500-041.jpg"
     category: view
     collection:
-      title:  "North Coast 500"
-      slug: north-coast-500
+      title:  "West Coast"
+      slug: west-coast
       hero:
         url: "NC500-013.jpg"
         alt: "Howard in Plockton"
@@ -467,8 +506,8 @@ scotland:
     hero: "NC500-038.jpg"
     category: view
     collection:
-      title:  "North Coast 500"
-      slug: north-coast-500
+      title:  "West Coast"
+      slug: west-coast
       hero:
         url: "NC500-013.jpg"
         alt: "Howard in Plockton"
@@ -480,8 +519,8 @@ scotland:
     hero: "NC500-056.jpg"
     category: hike
     collection:
-      title:  "North Coast 500"
-      slug: north-coast-500
+      title:  "West Coast"
+      slug: west-coast
       hero:
         url: "NC500-013.jpg"
         alt: "Howard in Plockton"
@@ -493,8 +532,8 @@ scotland:
     hero: "NC500-031.jpg"
     category: view
     collection:
-      title:  "North Coast 500"
-      slug: north-coast-500
+      title:  "West Coast"
+      slug: west-coast
       hero:
         url: "NC500-013.jpg"
         alt: "Howard in Plockton"
@@ -506,8 +545,8 @@ scotland:
     hero: "NC500-002.jpg"
     category: hike
     collection:
-      title:  "North Coast 500"
-      slug: north-coast-500
+      title:  "West Coast"
+      slug: west-coast
       hero:
         url: "NC500-013.jpg"
         alt: "Howard in Plockton"
@@ -519,11 +558,11 @@ scotland:
     hero: "NC500-052.jpg"
     category: view
     collection:
-      title:  "Assynt"
-      slug: assynt
+      title:  "West Coast"
+      slug: west-coast
       hero:
-        url: "NC500-047.jpg"
-        alt: "Stac Pollaidh"
+        url: "NC500-013.jpg"
+        alt: "Howard in Plockton"
   - title: Cam Loch
     slug: cam-loch
     description: "Most people approach Suilven from Lochinver, but there are a number of other routes to the foot of the mountain. The route from Cam Loch gives great views of the south side of Suilven. If you don't fancy the hike, visit around sunset and you'll get rewarded with some amazing views."
@@ -532,11 +571,11 @@ scotland:
     hero: "NC500-017.jpg"
     category: hike
     collection:
-      title:  "Assynt"
-      slug: assynt
+      title:  "West Coast"
+      slug: west-coast
       hero:
-        url: "NC500-047.jpg"
-        alt: "Stac Pollaidh"
+        url: "NC500-013.jpg"
+        alt: "Howard in Plockton"
   - title: Drumbeg Road
     slug: drumbeg-road
     description: "The coastal road around Drumbeg is one of my favourites. It's narrow and not suitable for large vehicles and, because it ends up back at the main road eventually, you often get it to yourself. It winds around Lochans and hills and is host to some of the most beautiful beaches in Scotland."
@@ -545,11 +584,11 @@ scotland:
     hero: "NC500-055.jpg"
     category: view
     collection:
-      title:  "Assynt"
-      slug: assynt
+      title:  "West Coast"
+      slug: west-coast
       hero:
-        url: "NC500-047.jpg"
-        alt: "Stac Pollaidh"
+        url: "NC500-013.jpg"
+        alt: "Howard in Plockton"
   - title: Stac Pollaidh
     slug: stac-pollaidh
     description: "It's known as a mountain, but the climb isn't too difficult. Set off as early enough and by the time you reach the east top you might be lucky enough to see the cloud clearing above the surrounding lochs."
@@ -558,11 +597,11 @@ scotland:
     hero: "NC500-028.jpg"
     category: hike
     collection:
-      title:  "Assynt"
-      slug: assynt
+      title:  "West Coast"
+      slug: west-coast
       hero:
-        url: "NC500-047.jpg"
-        alt: "Stac Pollaidh"
+        url: "NC500-013.jpg"
+        alt: "Howard in Plockton"
   - title: Cul Mor
     slug: cul-mor
     description: "The first half or more of the walk up Cul Mor is pretty dull, but once you reach the saddle between the two peaks the views over to Stac Pollaidh and Suilven are incredible. Take a head torch and go late for a spectactular golden hour."
@@ -571,11 +610,11 @@ scotland:
     hero: "Assynt-001.jpg"
     category: hike
     collection:
-      title:  "Assynt"
-      slug: assynt
+      title:  "West Coast"
+      slug: west-coast
       hero:
-        url: "NC500-047.jpg"
-        alt: "Stac Pollaidh"
+        url: "NC500-013.jpg"
+        alt: "Howard in Plockton"
   - title: Suilven
     slug: suilven
     description: "I wanted to climb Suilven the first time I saw it. After a few failed or called off attempts, I finally got up there in 2021 and it didn't disappoint. The walk in is long but not difficult, which is in contrast to the climb after you reach the base."
@@ -584,11 +623,11 @@ scotland:
     hero: "NC500-058.jpg"
     category: hike
     collection:
-      title:  "Assynt"
-      slug: assynt
+      title:  "West Coast"
+      slug: west-coast
       hero:
-        url: "NC500-047.jpg"
-        alt: "Stac Pollaidh"
+        url: "NC500-013.jpg"
+        alt: "Howard in Plockton"
   - title: Ben Vorlich
     slug: ben-vorlich
     description: 'This is a relatively "easy" munro in the summer months and even was when we did it in October (but obviously check the weather first). The mountain often has a snow-capped top which makes for some dramatic shots.'
@@ -597,8 +636,8 @@ scotland:
     hero: "Highlands-026.jpg"
     category: hike
     collection:
-      title:  "Highlands"
-      slug: southern-highlands
+      title:  "The Trosssachs"
+      slug: trossachs
       hero:
         url: "Highlands-005.jpg"
         alt: "Sunset from Ben A'an"
@@ -610,8 +649,8 @@ scotland:
     hero: "Highlands-006.jpg"
     category: hike
     collection:
-      title:  "Highlands"
-      slug: southern-highlands
+      title:  "The Trosssachs"
+      slug: trossachs
       hero:
         url: "Highlands-005.jpg"
         alt: "Sunset from Ben A'an"
@@ -623,8 +662,8 @@ scotland:
     hero: "Highlands-017.jpg"
     category: hike
     collection:
-      title:  "Highlands"
-      slug: southern-highlands
+      title:  "The Trosssachs"
+      slug: trossachs
       hero:
         url: "Highlands-005.jpg"
         alt: "Sunset from Ben A'an"
@@ -636,8 +675,8 @@ scotland:
     hero: "Highlands-028.jpg"
     category: view
     collection:
-      title:  "Highlands"
-      slug: southern-highlands
+      title:  "The Trosssachs"
+      slug: trossachs
       hero:
         url: "Highlands-005.jpg"
         alt: "Sunset from Ben A'an"
@@ -649,8 +688,8 @@ scotland:
     hero: "Highlands-013.jpg"
     category: view
     collection:
-      title:  "Highlands"
-      slug: southern-highlands
+      title:  "The Trosssachs"
+      slug: trossachs
       hero:
         url: "Highlands-005.jpg"
         alt: "Sunset from Ben A'an"
@@ -662,8 +701,8 @@ scotland:
     hero: "Highlands-014.jpg"
     category: hike
     collection:
-      title:  "Highlands"
-      slug: southern-highlands
+      title:  "The Trosssachs"
+      slug: trossachs
       hero:
         url: "Highlands-005.jpg"
         alt: "Sunset from Ben A'an"
@@ -675,8 +714,8 @@ scotland:
     hero: "Wild-Camp-008.jpg"
     category: hike
     collection:
-      title:  "Highlands"
-      slug: southern-highlands
+      title:  "The Trosssachs"
+      slug: trossachs
       hero:
         url: "Highlands-005.jpg"
         alt: "Sunset from Ben A'an"
@@ -688,8 +727,8 @@ scotland:
     hero: "Skye-043.jpg"
     category: view
     collection:
-      title:  "Skye"
-      slug: skye
+      title:  "Skye and the Hebrides"
+      slug: skye-hebrides
       hero:
         url: "Skye-027.jpg"
         alt: "Sunset on Skye near Tarskavaig"
@@ -701,8 +740,8 @@ scotland:
     hero: "Skye-036.jpg"
     category: view
     collection:
-      title:  "Skye"
-      slug: skye
+      title:  "Skye and the Hebrides"
+      slug: skye-hebrides
       hero:
         url: "Skye-027.jpg"
         alt: "Sunset on Skye near Tarskavaig"
@@ -714,8 +753,8 @@ scotland:
     hero: "Skye-046.jpg"
     category: view
     collection:
-      title:  "Skye"
-      slug: skye
+      title:  "Skye and the Hebrides"
+      slug: skye-hebrides
       hero:
         url: "Skye-027.jpg"
         alt: "Sunset on Skye near Tarskavaig"
@@ -727,8 +766,8 @@ scotland:
     hero: "Skye-015.jpg"
     category: view
     collection:
-      title:  "Skye"
-      slug: skye
+      title:  "Skye and the Hebrides"
+      slug: skye-hebrides
       hero:
         url: "Skye-027.jpg"
         alt: "Sunset on Skye near Tarskavaig"
@@ -740,8 +779,8 @@ scotland:
     hero: "Skye-048.JPG"
     category: hike
     collection:
-      title:  "Skye"
-      slug: skye
+      title:  "Skye and the Hebrides"
+      slug: skye-hebrides
       hero:
         url: "Skye-027.jpg"
         alt: "Sunset on Skye near Tarskavaig"
