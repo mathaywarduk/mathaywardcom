@@ -8,6 +8,7 @@ collections:
   photography:
     output: true
     order:
+      - madeira.md
       - iceland.md
       - dolomites.md
       - lofoten.md
@@ -24,6 +25,7 @@ collections:
       - scotland.md
       - dolomites.md
       - lofoten.md
+      - madeira.md
       - iceland.md
       - tenerife.md
       - alberta.md

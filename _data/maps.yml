@@ -1,3 +1,69 @@
+madeira:
+  - title: Bica da Cana
+    slug: bica-da-cana
+    description: "After a relatively easy walk, Bica da Cana offers a great view of layers upon layers of mountains in Madeira, usually with a cloud inversion in the morning"
+    lat: 32.756511
+    lng: -17.054419
+    hero: "Madeira-001.jpg"
+    category: hike
+    collection:
+      title:  "Madeira"
+      slug: madeira
+      hero:
+        url: "Madeira-007.jpg"
+        alt: "First light on the hills below Bica da Cana"
+  - title: Encumeada
+    slug: encumeada
+    description: "A beautiful place in between huge peaks, full of lush green trees. Drive directly to the Boca de Encumeada viewpoint or take when of the hiking trails."
+    lat: 32.753483
+    lng: -17.020005
+    hero: "Madeira-009.jpg"
+    category: view
+    collection:
+      title:  "Madeira"
+      slug: madeira
+      hero:
+        url: "Madeira-007.jpg"
+        alt: "First light on the hills below Bica da Cana"
+  - title: Pico do Arieiro
+    slug: pico-do-arieiro
+    description: "A very popular spot! Mostly because you can drive to it and get a great view without walking more than 50 metres! From here you can explore for hours along the Vereda do Arieiro."
+    lat: 32.735446
+    lng: -16.928705
+    hero: "Madeira-017.jpg"
+    category: view
+    collection:
+      title:  "Madeira"
+      slug: madeira
+      hero:
+        url: "Madeira-007.jpg"
+        alt: "First light on the hills below Bica da Cana"
+  - title: Pico Ruivo
+    slug: pico-ruivo
+    description: "The highest peak in Madeira, most people get here by hiking 3 hours from Pico do Arieiro, but part of that route was closed when we went, so we walked the more accessible route from Achada do Teixeira.<br><br>At sunset, the light is incredible..."
+    lat: 32.758974
+    lng: -16.943217
+    hero: "Madeira-031.jpg"
+    category: hike
+    collection:
+      title:  "Madeira"
+      slug: madeira
+      hero:
+        url: "Madeira-007.jpg"
+        alt: "First light on the hills below Bica da Cana"
+  - title: Miradouro do Caniçals
+    slug: miradouro-do-canical
+    description: "Clifftop views of the red rocks are easily accessible from Miradouro do Caniçal. From here, you can get a different angle by walking up to Miradouro da Ponta do Rosto or Pico das Pedras Brancas"
+    lat: 32.758974
+    lng: -16.943217
+    hero: "Madeira-043.jpg"
+    category: hike
+    collection:
+      title:  "Madeira"
+      slug: madeira
+      hero:
+        url: "Madeira-007.jpg"
+        alt: "First light on the hills below Bica da Cana"
 iceland:
   - title: Múlagljúfur Canyon
     slug: mulagljufur

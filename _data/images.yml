@@ -1,3 +1,83 @@
+madeira:
+  - type: single
+    images:
+      - url: "Madeira-007.jpg"
+        alt: "First light on the hills below Bica da Cana"
+        location: bica-da-cana
+  - type: double
+    images:
+      - url: "Madeira-001.jpg"
+        alt: "First light on the hills around Bica da Cana"
+        location: bica-da-cana 
+      - url: "Madeira-002.jpg"
+        alt: "Kerry takes a photo on her iPhone of the clouds rising from below Bica da Cana"
+        location: bica-da-cana
+  - type: single
+    images:
+      - url: "Madeira-015.jpg"
+        alt: "A view of mountains at sunset from Pico do Arieiro"
+        location: pico-do-arieiro
+  - type: double
+    images:
+      - url: "Madeira-031.jpg"
+        alt: "Sunbeams showing the layers of mountains around Pico Ruivo. A bird flying above them"
+        location: pico-ruivo
+      - url: "Madeira-040.jpg"
+        alt: "Casa de Abrigo do Pico Ruivo after sunset"
+        location: pico-ruivo
+  - type: double
+    images:
+      - url: "Madeira-017.jpg"
+        alt: "Miradouro do Ninho da Manta, high above the clouds"
+        location: pico-do-arieiro
+      - url: "Madeira-019.jpg"
+        alt: "Miradouro do Ninho da Manta, high above the clouds"
+        location: pico-do-arieiro
+  - type: double
+    images:
+      - url: "Madeira-020.jpg"
+        alt: "A view of mountains at sunset from Pico do Arieiro"
+        location: pico-do-arieiro
+      - url: "Madeira-009.jpg"
+        alt: "Hotel Encumeada surrounded by greenery and mountains"
+        location: encumeada
+  - type: single
+    images:
+      - url: "Madeira-025.jpg"
+        alt: "Clouds below an orange sky between two mountains"
+        location: pico-do-arieiro
+  - type: double
+    images:
+      - url: "Madeira-024.jpg"
+        alt: "Howard taking a photo in the pink light, from Miradouro do Ninho da Manta"
+        location: pico-do-arieiro
+      - url: "Madeira-023.jpg"
+        alt: "Kerry taking a photo in the pink light, from Miradouro do Ninho da Manta"
+        location: pico-do-arieiro
+  - type: double
+    images:
+      - url: "Madeira-038.jpg"
+        alt: "The observatory at the top of Pico do Arieiro, taken from Pico Ruivo at sunset"
+        location: pico-ruivo
+      - url: "Madeira-039.jpg"
+        alt: "Kerry looking out at the sunset from the top of Pico Ruivo"
+        location: pico-ruivo
+  - type: double
+    images:
+      - url: "Madeira-028.jpg"
+        alt: "A white dead tree with orange tinged mountains in the background"
+        location: pico-ruivo
+      - url: "Madeira-043.jpg"
+        alt: "Clifftop views of red rocks from Pico das Pedras Brancas"
+        location: miradouro-do-canical
+  - type: double
+    images:
+      - url: "Madeira-042.jpg"
+        alt: "Clifftop views of red rocks from Pico das Pedras Brancas"
+        location: miradouro-do-canical
+      - url: "Madeira-003.jpg"
+        alt: "View from behind of Howard taking a photo on Bica da Cana, the background is blurred"
+        location: bica-da-cana
 tenerife:
   - type: double
     images:
