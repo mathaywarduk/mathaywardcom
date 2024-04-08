@@ -12,114 +12,163 @@
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>https://mathayward.com/40-peaks</loc>
-      <lastmod>2022-03-29T00:00:00+01:00</lastmod>
+      <loc>https://mathayward.com/peaks</loc>
+      <lastmod>2024-03-19T00:00:00+00:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
       <loc>https://mathayward.com/photography/madeira</loc>
-      <lastmod>2023-11-13T20:58:26+00:00</lastmod>
+      <lastmod>2024-04-08T21:28:20+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
       <loc>https://mathayward.com/photography/iceland</loc>
-      <lastmod>2023-11-13T20:58:26+00:00</lastmod>
+      <lastmod>2024-04-08T21:28:20+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
       <loc>https://mathayward.com/photography/dolomites</loc>
-      <lastmod>2023-11-13T20:58:26+00:00</lastmod>
+      <lastmod>2024-04-08T21:28:20+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
       <loc>https://mathayward.com/photography/trossachs</loc>
-      <lastmod>2023-11-13T20:58:26+00:00</lastmod>
+      <lastmod>2024-04-08T21:28:20+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
       <loc>https://mathayward.com/photography/west-coast</loc>
-      <lastmod>2023-11-13T20:58:26+00:00</lastmod>
+      <lastmod>2024-04-08T21:28:20+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
       <loc>https://mathayward.com/photography/lofoten</loc>
-      <lastmod>2023-11-13T20:58:26+00:00</lastmod>
+      <lastmod>2024-04-08T21:28:20+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
       <loc>https://mathayward.com/photography/tenerife</loc>
-      <lastmod>2023-11-13T20:58:26+00:00</lastmod>
+      <lastmod>2024-04-08T21:28:20+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
       <loc>https://mathayward.com/photography/skye-hebrides</loc>
-      <lastmod>2023-11-13T20:58:26+00:00</lastmod>
+      <lastmod>2024-04-08T21:28:20+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
       <loc>https://mathayward.com/photography/alberta</loc>
-      <lastmod>2023-11-13T20:58:26+00:00</lastmod>
+      <lastmod>2024-04-08T21:28:20+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
       <loc>https://mathayward.com/photography/jericho</loc>
-      <lastmod>2023-11-13T20:58:26+00:00</lastmod>
+      <lastmod>2024-04-08T21:28:20+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
   
     <url>
-      <loc>https://mathayward.com/peaks/canisp_and_covid</loc>
+      <loc>https://mathayward.com/peaks/easy-route-pico-ruivo</loc>
+      <lastmod>2023-11-09T00:00:00+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/canisp-and-covid</loc>
       <lastmod>2022-09-13T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/peaks/monte_pez</loc>
+      <loc>https://mathayward.com/peaks/monte-pez</loc>
       <lastmod>2022-07-30T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/peaks/fairfield_horseshoe</loc>
+      <loc>https://mathayward.com/peaks/fairfield-horseshoe</loc>
       <lastmod>2022-05-12T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/peaks/loch_long_arrochar</loc>
+      <loc>https://mathayward.com/peaks/loch-long-the-cobbler</loc>
       <lastmod>2022-04-09T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://mathayward.com/peaks/beinn_each_wild_camp</loc>
+      <loc>https://mathayward.com/peaks/beinn-each-wild-camp</loc>
       <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/the-iconic-suilven</loc>
+      <lastmod>2021-09-16T00:00:00+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/sunset-trip-up-cul-mor</loc>
+      <lastmod>2021-05-22T00:00:00+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/stac-pollaidh-sunrise-inversion</loc>
+      <lastmod>2020-09-20T00:00:00+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/the-four-peaks-of-the-buachaille</loc>
+      <lastmod>2020-09-25T00:00:00+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/stob-binnein-from-the-south</loc>
+      <lastmod>2019-09-19T00:00:00+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://mathayward.com/peaks/accidental-summit-of-ben-ledi</loc>
+      <lastmod>2019-09-14T00:00:00+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
