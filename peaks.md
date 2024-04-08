@@ -116,7 +116,7 @@ seo:
     {% endif %}
     <li class="peak-nav-item group animate-stepped text-slide-up">
       {% if page != "" %}
-        <a href="{{ page.url }}" class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8 underline md:no-underline">
+        <a href="{{ page.url }}" class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
       {% else %}
         <article class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
       {% endif %}
@@ -146,7 +146,10 @@ seo:
           </ul>
           {% if page != "" %}
             <p class="max-w-prose mb-4 md:mb-8">{{ page.description }}</p>
-            <button class="peak-nav-button md:mt-4 text-lg font-display tracking-wide underline md:no-underline md:text-2xl">Read <span class="sr-only">{{ page.title }}</span> article</button>
+            <div class="text-slide-up anim-delay-500 flex items-center gap-2 relative z-10 md:mt-4">
+              <span>&rsaquo;</span>
+              <button class="peak-nav-button text-lg font-display tracking-wide underline md:no-underline md:text-2xl">Read <span class="sr-only">{{ page.title }}</span> article</button>
+            </div>
           {% endif %}
         </div>
       {% if page != "" %}

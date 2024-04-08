@@ -104,6 +104,13 @@
 
 .peak-nav-item  {
 
+  a h2 {
+    @apply
+      underline
+      md:no-underline
+    ;
+  }
+
   .peak-nav-button {
       @apply
         transition-all
