@@ -1,11 +1,8 @@
 ---
 layout: peak
 date: 2022-03-19
-title: Beinn Each Wild Camp
-description: "I kicked off the year-long challenge with an 'easy' climb in the Trossachs. To make it more memorable we set up our first wild camp near the top and watched the sun setting behind Stob Binnein and Ben More."
-region: Scotland
-distance: 7
-ascent: 693
+title: Beinn Each wild camp
+description: "I kicked off the year with an 'easy' climb in the Trossachs. To make it more memorable we set up our first wild camp near the top and watched the sun setting behind Stob Binnein and Ben More."
 seo:
   title: "Wild Camping on Beinn Each"
   description: "I kicked off the year-long challenge with an 'easy' climb in the Trossachs."
@@ -13,13 +10,8 @@ seo:
     url: "Wild-Camp-004.jpg"
     alt: "Wild Camping on Beinn Each"
 hero:
-  url: "Wild-Camp-004.jpg"
-  alt: "Wild Camping on Beinn Each"
-number: 1
-peaks:
-    - name: Beinn Each
-      elevation: 813
-      category: corbett
+  url: "Wild-Camp-008.jpg"
+  alt: "Sunset in the Trossachs"
 images:
   - type: single
     images:
@@ -47,7 +39,7 @@ images:
 ---
 
 
-With better weather for the weekend I decided to kick off my 40-peak challenge in the best way possible... a wild camp with my wife and my dog.
+With better weather for the weekend I decided to bag my first peak of the year in the best way possible... a wild camp with my wife and my dog.
 
 We took the [Walk Highlands route](https://www.walkhighlands.co.uk/lochlomond/beinn-each.shtml) up Beinn Each from Loch Lubnaig and reached the plateau at 580 metres just before 5pm.
 

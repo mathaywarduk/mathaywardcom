@@ -3,9 +3,6 @@ layout: peak
 date: 2022-07-30
 title: Monte Pez and Rifugio Bolzano
 description: "After a slow start to peak bagging, I jumped at the opportunity to climb a mountain on holiday in Italy. And a mountain with the promise of lunch at the top is a big win!"
-region: Dolomites
-distance: 26.5
-ascent: 1155
 seo:
   title: "Monte Pez and Rifugio Bolzano"
   description: "After a slow start to peak bagging, I jumped at the opportunity to climb a mountain on holiday in Italy."
@@ -13,13 +10,8 @@ seo:
     url: "Dolomiti-7889.jpg"
     alt: "Rifugio Bolzano and the Catinaccio and Latemar mountains"
 hero:
-  url: "Dolomiti-7889.jpg"
-  alt: "Rifugio Bolzano and the Catinaccio and Latemar mountains"
-number: 7
-peaks:
-    - name: Monte Pez
-      elevation: 2564
-      category: dolomite
+  url: "Dolomiti-8112.jpg"
+  alt: "Kerry in front of the Catinaccio mountain range"
 images:
   - type: double
     images:

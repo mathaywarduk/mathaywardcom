@@ -21,6 +21,7 @@ module.exports = {
       "5xl": "3.75rem", // 60px
       "6xl": "4.5rem", // 72px
       "7xl": "7.5rem", // 120px
+      "8xl": "15rem", // 240px
     },
     screens: {
       sm: "375px",

@@ -552,7 +552,7 @@ scotland:
         alt: "Howard in Plockton"
   - title: Assynt mountains
     slug: assynt
-    description: "The mountains in Assynt are pretty spread out, with a row of Canisp, Suilven, Cul Mor, Cul Beag and Stac Pollaidh visible from a few places to the west. This spot is a car park on the Drumbeg road where you can just see all five on a clear day."
+    description: "The mountains in Assynt are pretty spread out, with a row of Canisp, Suilven, Cùl Mòr, Cùl Beag and Stac Pollaidh visible from a few places to the west. This spot is a car park on the Drumbeg road where you can just see all five on a clear day."
     lat: 58.177029
     lng: -5.274024
     hero: "NC500-052.jpg"
@@ -602,9 +602,9 @@ scotland:
       hero:
         url: "NC500-013.jpg"
         alt: "Howard in Plockton"
-  - title: Cul Mor
+  - title: Cùl Mòr
     slug: cul-mor
-    description: "The first half or more of the walk up Cul Mor is pretty dull, but once you reach the saddle between the two peaks the views over to Stac Pollaidh and Suilven are incredible. Take a head torch and go late for a spectactular golden hour."
+    description: "The first half or more of the walk up Cùl Mòr is pretty dull, but once you reach the saddle between the two peaks the views over to Stac Pollaidh and Suilven are incredible. Take a head torch and go late for a spectactular golden hour."
     lat: 58.057925
     lng: -5.118133
     hero: "Assynt-001.jpg"
@@ -682,7 +682,7 @@ scotland:
         alt: "Sunset from Ben A'an"
   - title: Stob Dearg
     slug: stob-dearg
-    description: "Buachaille Etive Mor is the most photographed mountain in the UK. Largely because of the larger of it's peaks, Stob Dearg, and the fact that it can be easily shot from the road through Glen Coe. Go early or late in the day to avoid the crowds, though."
+    description: "Buachaille Etive Mòr is the most photographed mountain in the UK. Largely because of the larger of it's peaks, Stob Dearg, and the fact that it can be easily shot from the road through Glen Coe. Go early or late in the day to avoid the crowds, though."
     lat: 56.653637
     lng: -4.861952  
     hero: "Highlands-013.jpg"

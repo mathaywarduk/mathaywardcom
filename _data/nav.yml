@@ -4,8 +4,8 @@
   url: "/photography"
 - title: Locations
   url: "/locations"
-#- title: 40 Peaks
-#  url: "/40-peaks"
+- title: Peaks
+  url: "/peaks"
 - title: Unsplash
   url: "https://unsplash.com/mathaywarduk"
   target: "_blank"

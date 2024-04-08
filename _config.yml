@@ -30,11 +30,19 @@ collections:
   peaks:
     output: true
     order: 
-      - canisp_and_covid.md
-      - monte_pez.md
-      - fairfield_horseshoe.md
-      - loch_long_arrochar.md
-      - beinn_each_wild_camp.md
+      - easy-route-pico-ruivo.md
+      - canisp-and-covid.md
+      - monte-pez.md
+      - fairfield-horseshoe.md
+      - loch-long-the-cobbler.md
+      - beinn-each-wild-camp.md
+      - the-iconic-suilven.md
+      - sunset-trip-up-cul-mor.md
+      - stac-pollaidh-sunrise-inversion.md
+      - the-four-peaks-of-the-buachaille.md
+      - stob-binnein-from-the-south.md
+      - accidental-summit-of-ben-ledi.md
+
 image_base: https://mathayward.imgix.net/
 exclude:
   - package-lock.json

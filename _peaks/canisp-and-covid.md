@@ -3,23 +3,15 @@ layout: peak
 date: 2022-09-13
 title: Canisp and a Covid write-off
 description: "A plan to bag 16 peaks during a two-week holiday, soon went south."
-region: Scotland
-distance: 12
-ascent: 710
 seo:
   title: "Canisp and a Covid write-off"
-  description: "AA plan to bag 16 peaks during a two-week holiday, soon went south."
+  description: "A plan to bag 16 peaks during a two-week holiday, soon went south."
   image:
     url: "Canisp-008.jpg"
     alt: "A view of Suilven, topped with cloud, from Canisp"
 hero:
   url: "Canisp-008.jpg"
   alt: "A view of Suilven, topped with cloud, from Canisp"
-number: 8
-peaks:
-    - name: Canisp
-      elevation: 847
-      category: corbett
 images:
   - type: single
     images:
@@ -42,7 +34,7 @@ images:
 
 Every September, we go back to Scotland to celebrate our anniversary. This year, we had plans to climb a lot of mountains, really making a dent in my aim to bag 40 peaks before my 41st birthday.
 
-After bailing on Cul Beag due to the weather the day before, we managed to trudge our way through bog, over a river and up the rocky terrain of Canisp. Not much to enjoy about this one, so it's unlikely we'll be back! On to the next mountain; the three-peaks of Quinag.
+After bailing on Cùl Beag due to the weather the day before, we managed to trudge our way through bog, over a river and up the rocky terrain of Canisp. Not much to enjoy about this one, so it's unlikely we'll be back! On to the next mountain; the three-peaks of Quinag.
 
 2 days later, Covid had other ideas. Both Kerry and I got hit pretty hard with the virus, so instead of climbing 15 more peaks, we went home early to rest and recover.
 

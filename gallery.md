@@ -92,6 +92,7 @@ layout: default
       <a href="https://mathayward.imgix.net/Iceland-00{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
         <img src="https://mathayward.imgix.net/Iceland-00{{ num }}.jpg?w=600"><br>
         Iceland-00{{ num }}.jpg
+      </a>
     {% else %}
       <a href="https://mathayward.imgix.net/Iceland-0{{ num }}.jpg" target="_blank" class="w-1/3 p-2">
         <img src="https://mathayward.imgix.net/Iceland-0{{ num }}.jpg?w=600"><br>

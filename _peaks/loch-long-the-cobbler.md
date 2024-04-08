@@ -3,9 +3,6 @@ layout: peak
 date: 2022-04-09
 title: Loch Long and Arrochar
 description: "A wild camp in the woods around Loch Long followed by a walk up The Cobbler on a beautifully clear day."
-region: Scotland
-distance: 11
-ascent: 920
 seo:
   title: "Loch Long and Arrochar"
   description: "A wild camp in the woods around Loch Long followed by a walk up The Cobbler on a beautifully clear day."
@@ -13,38 +10,33 @@ seo:
     url: "LochLong_006.jpg"
     alt: "Zan takes a break on The Cobbler"
 hero:
-  url: "LochLong_006.jpg"
-  alt: "Zan takes a break on The Cobbler"
-number: 2
-peaks:
-    - name: The Cobbler
-      elevation: 884
-      category: corbett
+  url: "LochLong_009.jpg"
+  alt: ""
 images:
   - type: single
     images:
       - url: "LochLong_005.jpg"
-        alt: ""
+        alt: "A blurry picture of our wild camp in the woods near Loch Long"
   - type: double
     images:
       - url: "LochLong_012.jpg"
-        alt: ""
+        alt: "Chris on the Cobbler"
       - url: "LochLong_013.jpg"
-        alt: ""
+        alt: "The Cobbler"
   - type: single
     images:
       - url: "LochLong_006.jpg"
-        alt: ""
+        alt: "Zan taking a lunch break on The Cobbler"
   - type: double
     images:
       - url: "LochLong_004.jpg"
-        alt: ""
+        alt: "Zan on The Cobbler"
       - url: "LochLong_009.jpg"
-        alt: ""
+        alt: "Zan and Chris on The Cobbler"
   - type: single
     images:
       - url: "LochLong_014.jpg"
-        alt: ""
+        alt: "Zan on The Cobbler"
 
 ---
 
