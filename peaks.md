@@ -116,7 +116,7 @@ seo:
     {% endif %}
     <li class="peak-nav-item group animate-stepped text-slide-up">
       {% if page != "" %}
-        <a href="{{ page.url }}" class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
+        <a href="{{ page.url }}" class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8 underline md:no-underline">
       {% else %}
         <article class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
       {% endif %}
