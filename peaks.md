@@ -133,7 +133,7 @@ seo:
               {% endif %}
             </li>
           </ul>
-          <h2 class="{% if item.link %} text-2xl md:text-3xl xl:text-4xl {% else %} text-xl md:text-2xl xl:text-3xl leading-none {% endif %} font-display tracking-wide inline">
+          <h2 class="{% if item.link %} text-2xl md:text-3xl xl:text-4xl {% else %} text-2xl xl:text-3xl leading-none {% endif %} font-display tracking-wide inline">
             {{ item.title }}
           </h2>
           <ul class="flex flex-wrap gap-2 {% if item.link %} {% else %}w-full shrink-0 {% endif %}">
