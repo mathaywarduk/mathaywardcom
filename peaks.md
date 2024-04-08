@@ -66,6 +66,7 @@ seo:
         <span class="text-xl py-1 px-2 border br-orange c-orange">{{ distance | intcomma }}km</span>
       </li>
     </ul>
+    {% comment %}
     <ul class="flex flex-wrap gap-x-8 gap-y-4">
       {% if munros.size > 0 %}
       <li class="text-slide-up animate-stepped">
@@ -104,6 +105,7 @@ seo:
       </li>
       {% endif %}
     </ul>
+    {% endcomment %}
   </div>
 
   <ul class="flex flex-col gap-16 py-4 xl:py-8">
@@ -143,8 +145,8 @@ seo:
             <li class="before:content-['•'] before:mr-2">{{ item.ascent }}m ascent</li>
           </ul>
           {% if page != "" %}
-            <p class="max-w-prose">{{ page.description }}</p>
-            <button class="peak-nav-button mt-4 text-lg font-display tracking-wide text-2xl">Read <span class="sr-only">{{ page.title }}</span> article</button>
+            <p class="max-w-prose mb-4 md:mb-8">{{ page.description }}</p>
+            <button class="peak-nav-button md:mt-4 text-lg font-display tracking-wide underline md:no-underline md:text-2xl">Read <span class="sr-only">{{ page.title }}</span> article</button>
           {% endif %}
         </div>
       {% if page != "" %}
