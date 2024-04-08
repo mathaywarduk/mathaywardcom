@@ -548,6 +548,10 @@ p a:hover, p a:focus { color: var(--orange); }
 
 .feature-nav-item > span.text { background-image: linear-gradient(transparent, transparent), linear-gradient(var(--orange), var(--orange)); background-size: 0 2px, 0 2px; background-position: 0 100%, 0 100%; background-repeat: no-repeat; }
 
+.peak-nav-item a h2 { text-decoration-line: underline; }
+
+@media (min-width: 768px) { .peak-nav-item a h2 { text-decoration-line: none; } }
+
 .peak-nav-item .peak-nav-button { display: inline; }
 
 .peak-nav-item .peak-nav-button { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
