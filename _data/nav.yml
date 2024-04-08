@@ -6,6 +6,9 @@
   url: "/locations"
 - title: Peaks
   url: "/peaks"
+- title: Instagram
+  url: "https://instagram.com/mathaywarduk"
+  target: "_blank"
 - title: Unsplash
   url: "https://unsplash.com/mathaywarduk"
   target: "_blank"
