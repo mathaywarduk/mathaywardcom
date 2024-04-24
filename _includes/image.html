@@ -1,7 +1,7 @@
 {% if include.ar %}
-  {% capture opts %}&ar={{ include.ar }}&fit=crop{% endcapture %}
+  {% capture opts %}&auto=format&ar={{ include.ar }}&fit=crop{% endcapture %}
 {% else %}
-  {% capture opts %}{% endcapture %}
+  {% capture opts %}&auto=format{% endcapture %}
 {% endif %}
 
 
