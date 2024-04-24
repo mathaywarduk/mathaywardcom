@@ -1,3 +1,28 @@
+- title: A beautiful day in Torridon
+  date: 2024-04-17
+  region: Scotland
+  distance: 12
+  ascent: 980
+  number: 31
+  peaks:
+    - name: Beinn Dàmh
+      elevation: 903
+      category: corbett
+  link: a-beautiful-day-in-torridon
+- title: 2.9 peaks of Quinag
+  date: 2024-04-14
+  region: Scotland
+  distance: 13
+  ascent: 1050
+  number: 29
+  peaks:
+    - name: Spidean Coinich
+      elevation: 764
+      category: corbett
+    - name: Sàil Ghorm
+      elevation: 776
+      category: corbett
+  link: 2.9-peaks-of-quinag
 - title: Schiehallion
   date: 2024-03-17
   region: Scotland
@@ -239,7 +264,7 @@
       elevation: 1345
       category: munro
 - title: Yr Wyddfa (Snowdon)
-  date: 2021-05-28
+  date: 2014-05-28
   region: Wales
   distance: 13
   ascent: 936

@@ -2,10 +2,10 @@
 layout: peak
 date: 2020-09-20
 title: Stac Pollaidh sunrise inversion
-description: 
+description: "Getting up at 5am is rarely something I'm happy to do. But it was worth it!"
 seo:
-  title: 
-  description: 
+  title: Stac Pollaidh sunrise inversion
+  description: "Getting up at 5am is rarely something I'm happy to do. But it was worth it!"
   image:
     url: "NC500-008.jpg"
     alt: "Howard on Stac Pollaidh"

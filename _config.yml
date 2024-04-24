@@ -30,6 +30,8 @@ collections:
   peaks:
     output: true
     order: 
+      - a-beautiful-day-in-torridon.md
+      - 2.9-peaks-of-quinag.md
       - easy-route-pico-ruivo.md
       - canisp-and-covid.md
       - monte-pez.md
@@ -43,7 +45,7 @@ collections:
       - stob-binnein-from-the-south.md
       - accidental-summit-of-ben-ledi.md
 
-image_base: https://mathayward.imgix.net/
+image_base: https://mathaywarduk.s3.eu-west-2.amazonaws.com/
 exclude:
   - package-lock.json
   - postcss.config.js

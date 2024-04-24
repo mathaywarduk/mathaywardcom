@@ -2,10 +2,10 @@
 layout: peak
 date: 2021-05-22
 title: Sunset trip up Cùl Mòr
-description: "We've become obsessed with sunrise an sunset and there's no better time to be up a mountain."
+description: "We've become obsessed with sunrise and sunset and there's no better time to be up a mountain."
 seo:
   title: Sunset trip up Cùl Mòr
-  description: "We've become obsessed with sunrise an sunset and there's no better time to be up a mountain."
+  description: "We've become obsessed with sunrise and sunset and there's no better time to be up a mountain."
   image:
     url: "Assynt-003.jpg"
     alt: "View of Assynt from Cùl Mòr"
