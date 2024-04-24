@@ -22,7 +22,7 @@
     <meta content="https://mathayward.com" property="og:url">
     <meta content="Tenerife Exploration Map - Mat Hayward" property="og:title">
     <meta content="A map of photo locations in Tenerife" property="og:description">
-    <meta content="https://mathayward.imgix.net/?w=1200&h=630&fit=crop" property="og:image">
+    <meta content="https://mathaywarduk.s3.eu-west-2.amazonaws.com/?w=1200&h=630&fit=crop" property="og:image">
     <meta content="1200" property="og:image:width">
     <meta content="630" property="og:image:height">
     <meta content="" property="og:image:alt">
@@ -30,7 +30,7 @@
     <meta name="twitter:creator" content="@madebykind">
     <meta name="twitter:title" content="Tenerife Exploration Map">
     <meta name="twitter:description" content="A map of photo locations in Tenerife">
-    <meta name="twitter:image" content="https://mathayward.imgix.net/?w=1200&h=600&fit=crop">
+    <meta name="twitter:image" content="https://mathaywarduk.s3.eu-west-2.amazonaws.com/?w=1200&h=600&fit=crop">
     <meta name="twitter:image:width" content="1200">
     <meta name="twitter:image:height" content="600">
     <meta name="twitter:image:alt" content="">
@@ -39,17 +39,17 @@
     <link type="text/plain" href="https://mathayward.com/humans.txt" rel="author">
     
       
-        <link rel="preload" as="image" href="https://mathayward.imgix.net/Tenerife-008.jpg?w=767">
-        <link rel="preload" as="image" href="https://mathayward.imgix.net/Tenerife-003.jpg?w=767">
+        <link rel="preload" as="image" href="https://mathaywarduk.s3.eu-west-2.amazonaws.com/Tenerife-008.jpg?w=767">
+        <link rel="preload" as="image" href="https://mathaywarduk.s3.eu-west-2.amazonaws.com/Tenerife-003.jpg?w=767">
       
-        <link rel="preload" as="image" href="https://mathayward.imgix.net/Tenerife-004.jpg?w=767">
-        <link rel="preload" as="image" href="https://mathayward.imgix.net/Tenerife-003.jpg?w=767">
+        <link rel="preload" as="image" href="https://mathaywarduk.s3.eu-west-2.amazonaws.com/Tenerife-004.jpg?w=767">
+        <link rel="preload" as="image" href="https://mathaywarduk.s3.eu-west-2.amazonaws.com/Tenerife-003.jpg?w=767">
       
-        <link rel="preload" as="image" href="https://mathayward.imgix.net/Tenerife-002.jpg?w=767">
-        <link rel="preload" as="image" href="https://mathayward.imgix.net/Tenerife-003.jpg?w=767">
+        <link rel="preload" as="image" href="https://mathaywarduk.s3.eu-west-2.amazonaws.com/Tenerife-002.jpg?w=767">
+        <link rel="preload" as="image" href="https://mathaywarduk.s3.eu-west-2.amazonaws.com/Tenerife-003.jpg?w=767">
       
-        <link rel="preload" as="image" href="https://mathayward.imgix.net/Tenerife-014.jpg?w=767">
-        <link rel="preload" as="image" href="https://mathayward.imgix.net/Tenerife-003.jpg?w=767">
+        <link rel="preload" as="image" href="https://mathaywarduk.s3.eu-west-2.amazonaws.com/Tenerife-014.jpg?w=767">
+        <link rel="preload" as="image" href="https://mathaywarduk.s3.eu-west-2.amazonaws.com/Tenerife-003.jpg?w=767">
       
     
   </head>
@@ -91,7 +91,7 @@
     let closeButton = document.getElementById("mapContentClose");
     let locations = [{"title":"Anaga","slug":"anaga","description":"I'm not sure exactly where in Anaga this shot was taken, but the whole area is full of lush green mountains with winding roads working their way through the valley. You can't miss.","lat":28.544055,"lng":-16.205056,"hero":"Tenerife-008.jpg","category":"view","collection":{"title":"Tenerife","slug":"tenerife","hero":{"url":"Tenerife-003.jpg","alt":"Masca valley - sunset in the mist"}}},{"title":"Masca Valley","slug":"masca-valley","description":"The village of Masca is pretty hidden. It takes driving some pretty windy roads to get there and you have to time it prefectly to get the sunlight poking through the spaces between the mountains.","lat":28.304526,"lng":-16.829807,"hero":"Tenerife-004.jpg","category":"view","collection":{"title":"Tenerife","slug":"tenerife","hero":{"url":"Tenerife-003.jpg","alt":"Masca valley - sunset in the mist"}}},{"title":"Teide","slug":"teide","description":"Tenerife is a volcanic island and Teide the active volcano at it's centre. You can easily drive to Teide through mountain forests before you reach a large plateau with incredible rock formations everywhere.","lat":28.210999,"lng":-16.636865,"hero":"Tenerife-002.jpg","category":"view","collection":{"title":"Tenerife","slug":"tenerife","hero":{"url":"Tenerife-003.jpg","alt":"Masca valley - sunset in the mist"}}},{"title":"Playa de Benijo","slug":"playa-de-benijo","description":"Situated at the north coast of Tenerife, in Anaga, it's less likely to be a beach to sunbathe on and more likely that you'll just enjoy shooting the sea stacks and the black sand.","lat":28.572187,"lng":-16.192852,"hero":"Tenerife-014.jpg","category":"view","collection":{"title":"Tenerife","slug":"tenerife","hero":{"url":"Tenerife-003.jpg","alt":"Masca valley - sunset in the mist"}}}];
     let allMarkers = [];
-    let baseURL = "https://mathayward.imgix.net/";
+    let baseURL = "https://mathaywarduk.s3.eu-west-2.amazonaws.com/";
 
     // get location from query string
     const urlParams = new URLSearchParams(window.location.search);
