@@ -45,7 +45,7 @@ collections:
       - stob-binnein-from-the-south.md
       - accidental-summit-of-ben-ledi.md
 
-image_base: https://mathaywarduk.s3.eu-west-2.amazonaws.com/
+image_base: https://mathayward.imgix.net/
 exclude:
   - package-lock.json
   - postcss.config.js
