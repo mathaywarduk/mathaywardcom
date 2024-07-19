@@ -23,58 +23,73 @@ switzerland:
     images:
       - url: "Switzerland-007.jpg"
         alt: "Oeschinensee (or Oeschinen Lake)"
+        location: oeschinen
       - url: "Switzerland-006.jpg"
         alt: "Oeschinensee (or Oeschinen Lake)"
+        location: oeschinen
   - type: double
     images:
       - url: "Switzerland-009.jpg"
         alt: "Aescher guesthouse"
+        location: aescher
       - url: "Switzerland-008.jpg"
         alt: "Close up of a building in Appenzell"
   - type: single
     images:
       - url: "Switzerland-012.jpg"
         alt: "A woman walking along the Schäfler Ridge"
+        location: schafler-ridge
   - type: double
     images:
       - url: "Switzerland-022.jpg"
         alt: "Part of the Schäfler Ridge peaking through clouds"
+        location: schafler-ridge
       - url: "Switzerland-021.jpg"
         alt: "The Schäfler Ridge"
+        location: schafler-ridge
   - type: double
     images:
       - url: "Switzerland-020.jpg"
         alt: "The Schäfler Ridge"
+        location: schafler-ridge
       - url: "Switzerland-018.jpg"
         alt: "The Schäfler Ridge"
+        location: schafler-ridge
   - type: single
     images:
       - url: "Switzerland-041.jpg"
         alt: "Birds flying above a mountain hut near Zermatt"
+        location: zermatt
   - type: single
     images:
       - url: "Switzerland-029.jpg"
         alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+        location: meglisalp
   - type: double
     images:
       - url: "Switzerland-028.jpg"
         alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+        location: meglisalp
       - url: "Switzerland-034.jpg"
         alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+        location: meglisalp
   - type: single
     images:
       - url: "Switzerland-032.jpg"
         alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+        location: meglisalp
   - type: double
     images:
       - url: "Switzerland-037.jpg"
         alt: "Wildflowers and the Matterhorn"
+        location: blauherd
       - url: "Switzerland-036.jpg"
         alt: "A dog swimming in a lake in front of the Matterhorn"
+        location: blauherd
   - type: single
     images:
       - url: "Switzerland-038.jpg"
-        alt: "A cable car pylong from below, obscuring the sun"
+        alt: "A cable car pylon from below, obscuring the sun"
 madeira:
   - type: single
     images:

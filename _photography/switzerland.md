@@ -14,6 +14,7 @@ seo:
 hero:
   url: "Switzerland-034.jpg"
   alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+  location: meglisalp
 thumb:
   - url: "Switzerland-034.jpg"
     alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
