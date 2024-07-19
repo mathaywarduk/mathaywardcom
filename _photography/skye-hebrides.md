@@ -1,6 +1,6 @@
 ---
 layout: photography
-title:  "Skye and the Hebrides"
+title:  "The Hebrides"
 region: "Scotland"
 year: 2019-23
 id: skye-hebrides

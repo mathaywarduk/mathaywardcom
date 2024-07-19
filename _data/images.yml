@@ -1,3 +1,80 @@
+switzerland:
+  - type: double
+    images:
+      - url: "Switzerland-001.jpg"
+        alt: "A cow in the grass and wildflowers"
+      - url: "Switzerland-004.jpg"
+        alt: "A tree with the sun breaking through the branches"
+  - type: double
+    images:
+      - url: "Switzerland-011.jpg"
+        alt: "View through a mountain pass"
+      - url: "Switzerland-003.jpg"
+        alt: "A cable car in the clouds, on the way to Gimmelwald"
+  - type: single
+    images:
+      - url: "Switzerland-002.jpg"
+        alt: "A cable car pylon in the clouds"
+  - type: single
+    images:
+      - url: "Switzerland-005.jpg"
+        alt: "The Eiger hidden behind clouds, with just the top peaking through"
+  - type: double
+    images:
+      - url: "Switzerland-007.jpg"
+        alt: "Oeschinensee (or Oeschinen Lake)"
+      - url: "Switzerland-006.jpg"
+        alt: "Oeschinensee (or Oeschinen Lake)"
+  - type: double
+    images:
+      - url: "Switzerland-009.jpg"
+        alt: "Aescher guesthouse"
+      - url: "Switzerland-008.jpg"
+        alt: "Close up of a building in Appenzell"
+  - type: single
+    images:
+      - url: "Switzerland-012.jpg"
+        alt: "A woman walking along the Schäfler Ridge"
+  - type: double
+    images:
+      - url: "Switzerland-022.jpg"
+        alt: "Part of the Schäfler Ridge peaking through clouds"
+      - url: "Switzerland-021.jpg"
+        alt: "The Schäfler Ridge"
+  - type: double
+    images:
+      - url: "Switzerland-020.jpg"
+        alt: "The Schäfler Ridge"
+      - url: "Switzerland-018.jpg"
+        alt: "The Schäfler Ridge"
+  - type: single
+    images:
+      - url: "Switzerland-041.jpg"
+        alt: "Birds flying above a mountain hut near Zermatt"
+  - type: single
+    images:
+      - url: "Switzerland-029.jpg"
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+  - type: double
+    images:
+      - url: "Switzerland-028.jpg"
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+      - url: "Switzerland-034.jpg"
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+  - type: single
+    images:
+      - url: "Switzerland-032.jpg"
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+  - type: double
+    images:
+      - url: "Switzerland-037.jpg"
+        alt: "Wildflowers and the Matterhorn"
+      - url: "Switzerland-036.jpg"
+        alt: "A dog swimming in a lake in front of the Matterhorn"
+  - type: single
+    images:
+      - url: "Switzerland-038.jpg"
+        alt: "A cable car pylong from below, obscuring the sun"
 madeira:
   - type: single
     images:

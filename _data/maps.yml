@@ -1,3 +1,82 @@
+switzerland:
+  - title: Schäfler Ridge
+    slug: schafler-ridge
+    description: "Take a cable car up to Ebenalp and Schäfler Ridge is about an hour's hike away. The views of the peaks in the clouds are incredible."
+    lat: 47.276198
+    lng: 9.389817
+    hero: "Switzerland-020.jpg"
+    category: view
+    collection:
+      title:  "Switzerland"
+      slug: switzerland
+      hero:
+        url: "Switzerland-029.jpg"
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+  - title: Zermatt
+    slug: zermatt
+    description: "Zermatt is a beautiful town that you can only reach by train or taxi. It's surrounded by huge mountains, which are pretty breathtaking in certain lights"
+    lat: 46.022044
+    lng: 7.754314
+    hero: "Switzerland-040.jpg"
+    category: view
+    collection:
+      title:  "Switzerland"
+      slug: switzerland
+      hero:
+        url: "Switzerland-029.jpg"
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+  - title: Blauherd
+    slug: blauherd
+    description: "A funicular and a cable car from Zermatt will get you to Blauherd. Incredible views of the Matterhorn and a 5-lake walk means there are some great photo locations"
+    lat: 46.016818
+    lng: 7.785582
+    hero: "Switzerland-036.jpg"
+    category: view
+    collection:
+      title:  "Switzerland"
+      slug: switzerland
+      hero:
+        url: "Switzerland-029.jpg"
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+  - title: Aescher
+    slug: aescher
+    description: "Much closer to the Ebenalp cable car station that Schäfler Ridge, is Aescher Guesthouse, a beautiful wooden restaurant set in the rocks"
+    lat: 47.283338
+    lng: 9.414436
+    hero: "Switzerland-009.jpg"
+    category: view
+    collection:
+      title:  "Switzerland"
+      slug: switzerland
+      hero:
+        url: "Switzerland-029.jpg"
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+  - title: Meglisalp
+    slug: meglisalp
+    description: "The view to Berggasthaus Meglisalp from the walk down Schäfler Ridge was awesome, particularly around Altenalp"
+    lat: 47.271023
+    lng: 9.390003
+    hero: "Switzerland-028.jpg"
+    category: view
+    collection:
+      title:  "Switzerland"
+      slug: switzerland
+      hero:
+        url: "Switzerland-029.jpg"
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
+  - title: Oeschinen Lake
+    slug: oeschinen
+    description: "Either climb, or cable car from Kandersteg before walking out to the lake for incredible views and food at the nearby huts"
+    lat: 46.500630
+    lng: 7.716407
+    hero: "Switzerland-007.jpg"
+    category: hike
+    collection:
+      title:  "Switzerland"
+      slug: switzerland
+      hero:
+        url: "Switzerland-029.jpg"
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
 madeira:
   - title: Bica da Cana
     slug: bica-da-cana
