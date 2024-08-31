@@ -1,0 +1,62 @@
+:root {
+  --orange: #bf5700;
+  --grey: #b8aba0;
+}
+ @layer utilities {
+  .b-orange {
+    background-color: var(--orange);
+  }
+
+  .c-orange {
+    color: var(--orange);
+  }
+
+  .before-c-orange::before {
+    color: var(--orange);
+  }
+
+  .br-orange {
+    border-color: var(--orange);
+  }
+
+  .b-grey {
+    background-color: var(--grey);
+  }
+
+  .c-grey {
+    color: var(--grey);
+  }
+
+  .br-grey {
+    border-color: var(--grey);
+  }
+
+  .b-black {
+    background-color: black;
+  }
+
+  .b-white {
+    background-color: white;
+  }
+
+  .c-black {
+    color: black;
+  }
+
+  .c-white {
+    color: white;
+  }
+
+  .br-white {
+    border-color: white;
+  }
+
+  .br-black {
+    border-color: black;
+  }
+
+  .b-black-grad {
+    background-color: black;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  }
+}

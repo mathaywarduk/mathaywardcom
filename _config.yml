@@ -1,0 +1,54 @@
+url: "https://mathayward.com" # the base hostname & protocol for your site, e.g. http://example.com
+title: "Mat Hayward" # the name of your site, e.g. ACME Corp.
+permalink: /journal/:title
+plugins:
+  - jekyll-postcss
+  - jekyll-minifier
+collections:
+  photography:
+    output: true
+    order:
+      - madeira.md
+      - iceland.md
+      - switzerland.md
+      - dolomites.md
+      - trossachs.md
+      - west-coast.md
+      - lofoten.md
+      - tenerife.md
+      - skye-hebrides.md
+      - alberta.md
+  locations:
+    output: true
+    order:
+      - scotland.md
+      - dolomites.md
+      - lofoten.md
+      - madeira.md
+      - iceland.md
+      - tenerife.md
+      - alberta.md
+  peaks:
+    output: true
+    order: 
+      - a-beautiful-day-in-torridon.md
+      - 2.9-peaks-of-quinag.md
+      - easy-route-pico-ruivo.md
+      - canisp-and-covid.md
+      - monte-pez.md
+      - fairfield-horseshoe.md
+      - loch-long-the-cobbler.md
+      - beinn-each-wild-camp.md
+      - the-iconic-suilven.md
+      - sunset-trip-up-cul-mor.md
+      - stac-pollaidh-sunrise-inversion.md
+      - the-four-peaks-of-the-buachaille.md
+      - stob-binnein-from-the-south.md
+      - accidental-summit-of-ben-ledi.md
+
+image_base: https://mathayward.imgix.net/
+exclude:
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js
+  - publish.sh
