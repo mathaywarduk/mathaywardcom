@@ -726,40 +726,11 @@ lofoten:
         location: henningsvaer
       - url: "Lofoten-005.jpg"
         alt: "E10 around Selfjord"
-  - type: double
-    images:
-      - url: "Lofoten-002.jpg"
-        alt: "Ristinden and Himmeltindan"
-      - url: "Lofoten-004.jpg"
-        alt: "A flat topped mountain in the Lofoten Islands"
   - type: single
     images:
       - url: "Lofoten-011.jpg"
         alt: "Kerry on Haukland Beach"
         location: haukland-beach
-  - type: single
-    images:
-      - url: "Lofoten-012.jpg"
-        alt: "A seagull and the mountains from Haukland Beach"
-        location: haukland-beach
-  - type: double
-    images:
-      - url: "Lofoten-016.jpg"
-        alt: "Henningsvær viewed from Festvagtind"
-        location: henningsvaer
-      - url: "Lofoten-017.jpg"
-        alt: "Henningsvær viewed from Festvagtind"
-        location: henningsvaer
-  - type: single
-    images:
-      - url: "Lofoten-015.jpg"
-        alt: "Litlmolla Island from Festvagtind"
-  - type: double
-    images:
-      - url: "Lofoten-008.jpg"
-        alt: "Seagulls and stockfish"
-      - url: "Lofoten-010.jpg"
-        alt: "Spengerleira"
   - type: double
     images:
       - url: "Lofoten-007.jpg"
@@ -768,14 +739,95 @@ lofoten:
       - url: "Lofoten-009.jpg"
         alt: "Sakrisøya"
         location: sakrisoya
+  - type: single
+    images:
+      - url: "Lofoten-052.jpg"
+        alt: "Sakrisøya"
+        location: sakrisoya
+  - type: double
+    images:
+      - url: "Lofoten-055.jpg"
+        alt: "Sakrisøya"
+        location: sakrisoya
+      - url: "Lofoten-056.jpg"
+        alt: "Sakrisøya"
+        location: sakrisoya
+  - type: single
+    images:
+      - url: "Lofoten-060.jpg"
+        alt: "Sakrisøya"
+        location: sakrisoya
   - type: double
     images:
       - url: "Lofoten-014.jpg"
         alt: "Henningsvær harbour at night"
         location: henningsvaer
+      - url: "Lofoten-042.jpg"
+        alt: "E10 in blue hour"
+  - type: double
+    images:
+      - url: "Lofoten-023.jpg"
+        alt: "Cormorantss near Storsandnes beach"
+        location: storsandnes
       - url: "Lofoten-013.jpg"
         alt: "Skottinden"
         location: skottinden
+  - type: double
+    images:
+      - url: "Lofoten-032.jpg"
+        alt: "People standing on rocks by the sea, near Henningsvær"
+        location: festvagtind
+      - url: "Lofoten-033.jpg"
+        alt: "Woman standing on rocks by the sea, near Henningsvær"
+        location: festvagtind
+  - type: single
+    images:
+      - url: "Lofoten-038.jpg"
+        alt: "View of Festvagtind from the front seat of a blue van"
+        location: festvagtind
+  - type: single
+    images:
+      - url: "Lofoten-080.jpg"
+        alt: "Storsandnes beach"
+        location: storsandnes
+  - type: single
+    images:
+      - url: "Lofoten-051.jpg"
+        alt: "Reine harbour"
+  - type: single
+    images:
+      - url: "Lofoten-066.jpg"
+        alt: "The bridge near Hamnøy"
+  - type: single
+    images:
+      - url: "Lofoten-068.jpg"
+        alt: "Open tunnel on the E10"
+  - type: single
+    images:
+      - url: "Lofoten-043.jpg"
+        alt: "House and hills from Kabelvag harbour"
+  - type: single
+    images:
+      - url: "Lofoten-065.jpg"
+        alt: "Hamnøy"
+        location: hamnoy
+  - type: single
+    images:
+      - url: "Lofoten-071.jpg"
+        alt: "Nusfjord"
+        location: nusfjord
+  - type: double
+    images:
+      - url: "Lofoten-010.jpg"
+        alt: "Spengerleira"
+      - url: "Lofoten-028.jpg"
+        alt: "An arctic tern on the rocks near Storsandnes beach"
+        location: storsandnes
+  - type: single
+    images:
+      - url: "Lofoten-072.jpg"
+        alt: "Seagulls on a rock in Nusfjord"
+        location: nusfjord
 dolomites:
   - type: double
     images:

@@ -2,9 +2,9 @@
 layout: photography
 title:  "Lofoten Islands"
 region: "Norway"
-year: 2022
+year: "2022-24"
 id: lofoten
-intro: "My time in Lofoten was a bit spoilt by some heavy storms, but the one day there was good weather showed me just how beautiful&nbsp;it&nbsp;is."
+intro: "Both times I've been to Lofoten the weather has been... changeable... but the few days there was good weather showed me just how beautiful&nbsp;it&nbsp;is."
 seo:
   title: "Travel Photography - Lofoten Islands"
   description: "Photography from around the Lofoten Islands, Norway including Henningsvær, Sørvågen and Hamnøy"
@@ -18,6 +18,6 @@ hero:
 thumb:
   - url: "Lofoten-001.jpg"
     alt: "Road to Henningsvær"
-  - url: "Lofoten-009.jpg"
-    alt: "Sørvågen"
+  - url: "Lofoten-059.jpg"
+    alt: "Howard in Sakrisøya"
 ---

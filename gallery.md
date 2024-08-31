@@ -37,7 +37,7 @@ layout: default
 <h2>Lofoten</h2>
 
 <div class="flex flex-wrap">
-  {% for i in (1..17) %}
+  {% for i in (1..79) %}
     {% assign num = i %}
     {% if i < 10 %}
         {% assign num = "0" | append: i %}

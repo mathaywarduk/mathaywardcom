@@ -9,6 +9,6 @@ slug: lofoten
 thumb:
   - url: "Lofoten-011.jpg"
     alt: "Haukland Beach"
-  - url: "Lofoten-013.jpg"
-    alt: "Skottinden"
+  - url: "Lofoten-056.jpg"
+    alt: "Sakrisøya"
 ---
