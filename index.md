@@ -13,7 +13,7 @@ seo:
         alt: "Pinnacle Ridge and Loch na Creitheach"
 ---
 
-I'm a photography enthusiast from Nottingham, pictured above (shot by my wife).
+I'm a landscape and travel photographer from Nottingham, pictured above (shot by my wife).
 
 Like a lot of people, I'm happiest when I'm outside. And nothing makes me happier than hiking to a great vantage point and being made to feel small by the enormity of everything.
 
