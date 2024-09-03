@@ -3,18 +3,20 @@ layout: bio
 title:  "Biography"
 long_title: "Exploring the great outdoors and capturing its awesome landscapes."
 hero: 
-    url: Dolomiti-9219.jpg
-    alt: "Looking at Suilven"
+    url: mh-hero.jpg
+    alt: "Silhouette of a man with a camera. He is on a beach with a sea stack in the distance. The sky is orange."
 seo:
     title: "Biography"
-    description: "I'm a photography enthusiast from Nottingham. Like a lot of people, I'm happiest when I'm outside."
+    description: "I’m Mat Hayward, a landscape and travel photographer from the UK."
     image:
-        url: Skye-008.jpg
-        alt: "Pinnacle Ridge and Loch na Creitheach"
+        url: Switzerland-029.jpg
+        alt: "Berggasthaus Meglisalp from the slopes of Schäfler Ridge"
 ---
 
-I'm a landscape and travel photographer from Nottingham, pictured above (shot by my wife).
+I’m Mat Hayward, a landscape and travel photographer from the UK. I aim to capture the beauty of nature and enjoy exploring wild (and not so wild) locations in search of&nbsp;a great shot.
 
-Like a lot of people, I'm happiest when I'm outside. And nothing makes me happier than hiking to a great vantage point and being made to feel small by the enormity of everything.
+Influenced by my love of mountains, the outdoors and adventure, I share my photography to encourage others to appreciate and explore the natural world.
 
-I try to capture that feeling through my camera. I don't think I've managed it yet, but take a look for yourself.
+Have a look through some of my work, check out the locations and read about some of my experiences from my&nbsp;travels.
+
+<small>Photo by <a href="https://www.instagram.com/george_ell/" target="_blank">George Ell</a></small>
