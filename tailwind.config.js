@@ -54,6 +54,9 @@ module.exports = {
         88: "22rem",
         "1/4": "25%",
         "3/10": "30%",
+      },
+      maxWidth: {
+        prose: '65ch',
       }
     },
   },

@@ -1,11 +1,15 @@
 .image-loc {
-  @apply relative;
+  @apply relative overflow-hidden;
 }
 
 .image-loc:hover,
 .image-loc:focus {
   .image-loc__icon {
     opacity: 1;
+    @apply
+      bottom-0
+      right-0
+    ;
   }
 }
 
@@ -14,20 +18,11 @@
   @apply
     opacity-0
     absolute
-    bottom-2
     px-5
     py-4
-    right-2
+    -bottom-16
+    -right-16
     transition-all
-    duration-300
+    duration-500
     ease-in-out
-}
-
-.image-loc--2 {
-  .image-loc__icon {
-    @apply
-      md:right-6
-      xl:right-10
-    ;
-  }
 }
