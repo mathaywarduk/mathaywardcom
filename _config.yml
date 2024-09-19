@@ -31,6 +31,7 @@ collections:
   peaks:
     output: true
     order: 
+      - 1974-steps-up-reinebringen.md
       - a-beautiful-day-in-torridon.md
       - 2.9-peaks-of-quinag.md
       - easy-route-pico-ruivo.md
