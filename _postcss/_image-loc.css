@@ -1,5 +1,5 @@
 .image-loc {
-  @apply relative overflow-hidden;
+  @apply relative;
 }
 
 .image-loc:hover,
