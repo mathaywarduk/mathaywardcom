@@ -590,7 +590,7 @@ p a:hover, p a:focus { color: var(--orange); }
 
 .close:after { transform: rotate(-45deg); }
 
-.image-loc { position: relative; overflow: hidden; }
+.image-loc { position: relative; }
 
 .image-loc:hover .image-loc__icon, .image-loc:focus .image-loc__icon { opacity: 1; }
 
