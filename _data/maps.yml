@@ -902,7 +902,46 @@ scotland:
       hero:
         url: "Skye-027.jpg"
         alt: "Sunset on Skye near Tarskavaig"
-tenerife:
+canaries:
+  - title: El Golfo
+    slug: elgolfo
+    description: "Easily, the most beautiful sunset on our trip to Lanzarote."
+    lat: 28.978792
+    lng: -13.829453
+    hero: "Lanzarote-030.jpg"
+    category: view
+    collection:
+      title:  "Lanzarote"
+      slug: lanzarote
+      hero:
+        url: "Lanzarote-008.jpg"
+        alt: "View from the car at Timanfaya National Park"
+  - title: Timanfaya National Park
+    slug: timanfaya
+    description: "Trips into the heart of Timanfaya are by bus only, but there are roads where you can drive yourself through incredibly eerie lava fields."
+    lat: 29.021960
+    lng: -13.763492
+    hero: "Lanzarote-003.jpg"
+    category: view
+    collection:
+      title:  "Lanzarote"
+      slug: lanzarote
+      hero:
+        url: "Lanzarote-008.jpg"
+        alt: "View from the car at Timanfaya National Park"
+  - title: Charco Verde
+    slug: charcoverde
+    description: "Strange rock formations and a volcanic green lake, just a short walk from the car park at El Golfo."
+    lat: 28.976997
+    lng: -13.827897
+    hero: "Lanzarote-024.jpg"
+    category: view
+    collection:
+      title:  "Lanzarote"
+      slug: lanzarote
+      hero:
+        url: "Lanzarote-008.jpg"
+        alt: "View from the car at Timanfaya National Park"
   - title: Anaga
     slug: anaga
     description: "I'm not sure exactly where in Anaga this shot was taken, but the whole area is full of lush green mountains with winding roads working their way through the valley. You can't miss."

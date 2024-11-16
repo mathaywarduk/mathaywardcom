@@ -1,3 +1,64 @@
+lanzarote:
+  - type: double
+    images:
+      - url: "Lanzarote-011.jpg"
+        alt: "Motorbikes in Timanfaya National Park"
+        location: timanfaya
+      - url: "Lanzarote-012.jpg"
+        alt: "Motorbikes in Timanfaya National Park"
+        location: timanfaya
+  - type: single
+    images:
+      - url: "Lanzarote-008.jpg"
+        alt: "View from the car at Timanfaya National Park"
+        location: timanfaya
+  - type: double
+    images:
+      - url: "Lanzarote-001.jpg"
+        alt: "A crow on a sign for Timanfaya National Park"
+        location: timanfaya
+      - url: "Lanzarote-024.jpg"
+        alt: "Volcanic rock formations at Charco Verde"
+        location: charcoverde 
+  - type: double
+    images:
+      - url: "Lanzarote-017.jpg"
+        alt: "Waves hitting rocks at El Golfo"
+        location: elgolfo
+      - url: "Lanzarote-019.jpg"
+        alt: "Waves hitting rocks at El Golfo"
+        location: elgolfo
+  - type: single
+    images:
+      - url: "Lanzarote-027.jpg"
+        alt: "Taking photos of dogs at El Golfo"
+        location: elgolfo
+  - type: double
+    images:
+      - url: "Lanzarote-022.jpg"
+        alt: "Sunset at El Golfo"
+        location: elgolfo
+      - url: "Lanzarote-028.jpg"
+        alt: "Sunset at El Golfo"
+        location: elgolfo
+  - type: single
+    images:
+      - url: "Lanzarote-029.jpg"
+        alt: "Sunset at El Golfo"
+        location: elgolfo
+  - type: double
+    images:
+      - url: "Lanzarote-028.jpg"
+        alt: "Sunset at El Golfo"
+        location: elgolfo
+      - url: "Lanzarote-030.jpg"
+        alt: "Sunset at El Golfo"
+        location: elgolfo
+  - type: single
+    images:
+      - url: "Lanzarote-037.jpg"
+        alt: "Sunset at El Golfo"
+        location: elgolfo
 switzerland:
   - type: double
     images:
