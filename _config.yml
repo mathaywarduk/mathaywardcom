@@ -1,6 +1,6 @@
-url: "https://mathayward.com" # the base hostname & protocol for your site, e.g. http://example.com
-title: "Mat Hayward" # the name of your site, e.g. ACME Corp.
-permalink: /journal/:title
+url: "https://mathayward.com"
+title: "Mat Hayward"
+permalink: /instagram/:title/
 plugins:
   - jekyll-postcss
   - jekyll-minifier
@@ -47,7 +47,6 @@ collections:
       - the-four-peaks-of-the-buachaille.md
       - stob-binnein-from-the-south.md
       - accidental-summit-of-ben-ledi.md
-
 image_base: https://mathayward.imgix.net/
 exclude:
   - package-lock.json

@@ -72,7 +72,19 @@ function BlurLoad(el) {
   });
 }
 
+function ImageTags(el) {
+  el.style.cursor = "pointer";
+  const tags = el.querySelectorAll('[data-image-tag]');
+  el.addEventListener("click", function() {
+    tags.forEach(function(item) {
+      item.classList.toggle('opacity-0');
+      item.classList.toggle('opacity-100');
+    });
+  });
+}
+
 window.addEventListener('DOMContentLoaded', (event) => {
   [...document.querySelectorAll("[data-hover-show]")].map((el) => Hoverer(el));
   [...document.querySelectorAll("[data-blur-load]")].map((el) => BlurLoad(el));
+  [...document.querySelectorAll("[data-image-tag-src]")].map((el) => ImageTags(el));
 });

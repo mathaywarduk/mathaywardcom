@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.seo.title }} - Mat Hayward</title>
+    <title>{{ page.seo.title | default: page.title }} - Mat Hayward</title>
     <link rel="preconnect" href="https://use.typekit.net">
     <link rel="stylesheet" href="https://use.typekit.net/ttu5hld.css" rel="preload" as="style">
     
@@ -15,7 +15,11 @@
     <link rel="apple-touch-icon" href="/assets/images/favicon-196.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
     <meta name="description" content="{{ page.seo.description }}">
-    <meta name="robots" content="all">
+    {% if page.seo.hidden %}
+      <meta name="robots" content="none">
+    {% else %}
+      <meta name="robots" content="all">
+    {% endif %}
     <meta content="en_GB" property="og:locale">
     <meta content="Mat Hayward" property="og:site_name">
     <meta content="website" property="og:type">

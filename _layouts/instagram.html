@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+{% assign grid = site.pages | where: "title", "Instagram" | first %}
+{% assign alltags = "" | split: ',' %}
+{% for media in page.media %}
+  {% for tagged in media.tagged %}
+    {% assign alltags = alltags | push: tagged.handle %}
+  {% endfor %}
+{% endfor %}
+{% assign uniqTags = alltags | uniq %}
+
+{% if page.media.size > 1 %}
+  <link rel="stylesheet" href="/assets/css/glide.core.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const opts = {
+        gap: 0,
+        type: 'slider',
+        rewind: false,
+
+      }
+      new Glide('[data-glide]', opts).mount();
+    });
+  </script>
+{% endif %}
+
+
+<div class="pt-10 md:pt-16 pb-24 md:pb-40">
+
+  <div class="w-full px-8 md:px-0 md:w-9/12 md:ml-auto relative flex flex-col gap-8">
+
+    <a href="{{ grid.url }}#{{ page.title | slugify }}" class="hover:underline focus:underline">Back to grid</a>
+
+    <div class="flex flex-col lg:flex-row gap-8 md:pr-12">
+
+      {% if page.media.size > 1 %}
+        <div class="glide relative md:min-w-[400px] md:w-1/2" data-glide>
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              {% for media in page.media %}
+              <li class="glide__slide relative"{% if media.tagged.size %} data-image-tag-src {% endif %}>
+                {% include image.html url=media.url alt=media.alt fit="crop" width=600  %}
+                {% for tagged in media.tagged %}
+                  {% include image-tag.html x=tagged.x y=tagged.y handle=tagged.handle  %}
+                {% endfor %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left absolute left-0 top-1/2 text-white w-12 h-12" data-glide-dir="<"><span><span class="sr-only">prev</span></span></button>
+            <button class="glide__arrow glide__arrow--right absolute right-0 top-1/2 text-white w-12 h-12" data-glide-dir=">"><span><span class="sr-only">next</span></span></button>
+          </div>
+
+          <div class="glide__bullets absolute bottom-2 left-0 right-0 text-white flex justify-center gap-2" data-glide-el="controls[nav]">
+            {% for media in page.media %}
+              <button class="glide__bullet" data-glide-dir="={{ forloop.index | minus: 1 }}"></button>
+            {% endfor %}
+          </div>
+        </div>
+      {% else %}
+
+        <ul class="md:min-w-[400px] md:w-1/2">
+          {% for media in page.media %}
+            <li class="relative"{% if media.tagged.size %} data-image-tag-src {% endif %}>
+              {% include image.html url=media.url alt=media.alt fit="crop" width=600 %}
+              {% for tagged in media.tagged %}
+                {% include image-tag.html x=tagged.x y=tagged.y handle=tagged.handle  %}
+              {% endfor %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      <div class="max-w-prose w-full lg:w-1/2 shrink-0">
+
+        <div class="flex gap-2 items-center mb-4">
+          <div class="rounded-full overflow-hidden w-12 shrink-0 group-hover:opacity-50 group-focus:opacity-50 transition-all duration-300 ease-in-out">
+            {% include image.html url=grid.profile.url alt=grid.profile.alt ar="1:1" fit="crop" width=320 height=320 %}
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold">mathaywarduk</span>
+            <span class="text-sm">{{ page.location }}</span>
+          </div>
+        </div>
+
+        <h1 class="font-sans text-base mt-2 mb-4 pb-0 fade-down">{{ page.title }}</h1>
+
+        {% if uniqTags.size > 0 %}
+          <div class="border-t br-grey pt-4 mt-4 fade-down anim-delay-200">
+            <h2 class="meta mb-0">Tagged</h2>
+            <ul>
+              {% for tag in uniqTags %}
+                {% assign data = site.data.tagged[tag] %}
+                <li>{{ data.name }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+
+
+        {% assign d = page.postdate | default: page.date %}
+        <div class="overflow-hidden border-t br-grey pt-4 mt-4">
+          <h2 class="meta fade-down anim-delay-400"><time datetime="{{ d | date: '%Y-%m-%d' }}">{{ d | date: "%d %B %Y" }}</time></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

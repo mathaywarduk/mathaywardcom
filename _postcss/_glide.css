@@ -1,0 +1,54 @@
+.glide__arrow {
+  @apply
+    p-3
+  ;
+
+  > span {
+    @apply
+      bg-no-repeat  
+      bg-center
+      -mt-6
+      rounded-full
+      w-6
+      h-6
+      block
+    ;
+    background-image: url("/assets/images/icons/chevron.svg");
+    background-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+
+  }
+/*  */
+}
+
+.glide__arrow--left > span {
+  @apply
+    rotate-180
+  ;
+}
+
+.glide__arrow--disabled {
+  @apply
+    opacity-20
+    cursor-not-allowed
+  ;
+}
+
+
+.glide__bullet {
+  @apply
+    rounded-full
+    w-2
+    h-2
+    b-white
+    opacity-50
+  ;
+
+  font: 0/0 a;
+}
+
+.glide__bullet.glide__bullet--active {
+  @apply
+    opacity-100
+  ;
+}
