@@ -74,7 +74,13 @@ function BlurLoad(el) {
 
 function ImageTags(el) {
   el.style.cursor = "pointer";
-  const tags = el.querySelectorAll('[data-image-tag]');
+  const type = el.dataset.imageTagSrc;
+  let tags;
+  if (type == 'container') {
+    tags = el.querySelectorAll('[data-image-tag]');
+  } else if (type == 'button') {
+    tags = el.parentNode.querySelectorAll('[data-image-tag]');
+  }
   el.addEventListener("click", function() {
     tags.forEach(function(item) {
       item.classList.toggle('opacity-0');

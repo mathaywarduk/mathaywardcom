@@ -39,10 +39,16 @@ layout: default
       {% if page.type == "reel" %}
       <div class="relative md:min-w-[400px] md:w-1/2">
         {% for media in page.media %}
-        <div class="reel active">
+        <div class="reel active" data-media>
           <video src="{{ site.image_base }}{{ media.video }}" poster="{{ site.image_base}}{{ media.poster }}" data-reel autoplay loop muted></video>
           <div class="absolute bottom-5 right-5 reel-mute" data-reel-mute><span class="sr-only">Toggle sound</span></div>
           <div class="reel-play" data-reel-play><span class="sr-only">Play / pause video</span></div>
+          {% if uniqTags.size > 0 %}
+            <div class="absolute bottom-5 left-5 reel-tagged" data-image-tag-src="button"><span class="sr-only">See tagged people</span></div>
+            {% for tagged in media.tagged %}
+              {% include image-tag.html x=tagged.x y=tagged.y handle=tagged.handle  %}
+            {% endfor %}
+          {% endif %}
         </div>
         {% endfor %}
       </div>
@@ -52,7 +58,7 @@ layout: default
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               {% for media in page.media %}
-              <li class="glide__slide relative"{% if media.tagged.size %} data-image-tag-src {% endif %}>
+              <li class="glide__slide relative"{% if media.tagged.size %} data-image-tag-src="container" {% endif %}>
                 {% include image.html url=media.url alt=media.alt fit="crop" width=600  %}
                 {% for tagged in media.tagged %}
                   {% include image-tag.html x=tagged.x y=tagged.y handle=tagged.handle  %}

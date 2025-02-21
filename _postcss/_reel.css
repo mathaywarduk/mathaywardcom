@@ -66,3 +66,20 @@
     background-image: url("/assets/images/icons/play.svg");
     background-size: 1.25rem;
 }
+
+.reel-tagged {
+    @apply
+      bg-no-repeat  
+      bg-center
+      rounded-full
+      w-6
+      h-6
+      p-3
+      block
+      cursor-pointer
+    ;
+
+    background-image: url("/assets/images/icons/user.svg");
+    background-size: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
