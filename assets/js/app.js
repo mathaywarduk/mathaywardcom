@@ -83,8 +83,37 @@ function ImageTags(el) {
   });
 }
 
+function playPauseVideo(video) {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
+
+function Reels(el) {
+  const muteButton = el.parentNode.querySelector('[data-reel-mute]');
+  const playButton = el.parentNode.querySelector('[data-reel-play]');
+
+  el.addEventListener("click", function() {
+    playPauseVideo(el);
+    el.parentNode.classList.toggle('active');
+  }); 
+
+  playButton.addEventListener("click", function() {
+    playPauseVideo(el);
+    el.parentNode.classList.toggle('active');
+  });
+  
+  muteButton.addEventListener("click", function() {
+    el.muted = !el.muted;
+    this.classList.toggle('active');
+  });
+}
+
 window.addEventListener('DOMContentLoaded', (event) => {
   [...document.querySelectorAll("[data-hover-show]")].map((el) => Hoverer(el));
   [...document.querySelectorAll("[data-blur-load]")].map((el) => BlurLoad(el));
   [...document.querySelectorAll("[data-image-tag-src]")].map((el) => ImageTags(el));
+  [...document.querySelectorAll("[data-reel]")].map((el) => Reels(el));
 });

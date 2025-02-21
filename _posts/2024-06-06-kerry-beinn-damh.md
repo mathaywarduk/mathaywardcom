@@ -1,6 +1,6 @@
 ---
 layout: instagram
-title:  "Kerry on Beinn Damph"
+title:  "Kerry on Beinn Dàmh"
 media:
   - url: "instagram/457720770_1019031499879923_4159037452474362280_n_17956213772815706.jpg"
     alt: ""
@@ -11,6 +11,6 @@ media:
 type: "post"
 seo:
   hidden: true
-location: Beinn Damph
+location: Torridon
 postdate: 2024-04-17
 ---

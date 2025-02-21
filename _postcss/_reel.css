@@ -1,0 +1,68 @@
+.reel {
+  @apply relative;
+}
+
+.reel-play {
+  content: "";
+  background-image: url("/assets/images/icons/play.svg");
+  background-size: 6rem;
+
+  @apply
+    z-10
+    bg-no-repeat  
+    bg-center
+    w-24
+    h-24
+    absolute
+    top-1/2
+    left-1/2
+    -mt-12
+    -ml-12
+    opacity-100
+    transition-all
+    duration-200
+    ease-in-out
+    cursor-pointer
+  ;
+
+}
+
+.active .reel-play {
+    @apply opacity-0;
+}
+
+.reel-mute {
+    @apply
+      bg-no-repeat  
+      bg-center
+      rounded-full
+      w-6
+      h-6
+      p-3
+      block
+      cursor-pointer
+    ;
+
+    background-image: url("/assets/images/icons/mute.svg");
+    background-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reel-mute.active {
+    background-image: url("/assets/images/icons/volume.svg");
+}
+
+
+
+.reel-play-icon {
+    @apply
+      bg-no-repeat  
+      bg-center
+      block
+      w-6
+      h-6
+    ;
+
+    background-image: url("/assets/images/icons/play.svg");
+    background-size: 1.25rem;
+}

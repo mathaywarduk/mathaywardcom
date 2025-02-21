@@ -11,6 +11,6 @@ media:
 type: "post"
 seo:
   hidden: true
-location: Clashnessie Beach
+location: Assynt
 postdate: 2024-09-03
 ---

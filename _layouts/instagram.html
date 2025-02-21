@@ -36,7 +36,18 @@ layout: default
 
     <div class="flex flex-col lg:flex-row gap-8 md:pr-12">
 
-      {% if page.media.size > 1 %}
+      {% if page.type == "reel" %}
+      <div class="relative md:min-w-[400px] md:w-1/2">
+        {% for media in page.media %}
+        <div class="reel active">
+          <video src="{{ site.image_base }}{{ media.video }}" poster="{{ site.image_base}}{{ media.poster }}" data-reel autoplay loop muted></video>
+          <div class="absolute bottom-5 right-5 reel-mute" data-reel-mute><span class="sr-only">Toggle sound</span></div>
+          <div class="reel-play" data-reel-play><span class="sr-only">Play / pause video</span></div>
+        </div>
+        {% endfor %}
+      </div>
+
+      {% elsif page.media.size > 1 %}
         <div class="glide relative md:min-w-[400px] md:w-1/2" data-glide>
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
