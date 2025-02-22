@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+{% assign grid = site.pages | where: "title", "Instagram" | first %}
+{% assign data = site.data.tagged[page.tag] %}
+
+{% assign taggedposts = "" | split: ',' %}
+{% for post in site.posts %}
+  {% for media in post.media %}
+    {% for tag in media.tagged %}
+      {% if (tag.handle == page.tag) %}
+        {% assign taggedposts = taggedposts | push: post %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+{% assign uniqPosts = taggedposts | uniq %}
+
+<div class="pt-8 md:pt-12 lg:pt-16 pb-24 md:pb-40">
+
+  <div class="w-full md:w-9/12 md:ml-auto relative">
+    <div class="mb-8 md:mb-12 flex gap-8 items-start md:items-center px-8 md:px-0">
+      <div class="rounded-full overflow-hidden w-16 md:w-40 shrink-0">
+        {% include image.html url=data.profile.url alt=data.profile.alt ar="1:1" fit="crop" width=320 height=320 %}
+      </div>
+      <div class="lg:pr-12 lg:flex-grow">
+        <div class="overflow-hidden">
+          <h2 class="meta text-slide-down anim-delay-400">{{ page.tag }}</h2>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4 justify-between lg:items-end">
+          <div class="fade-down anim-delay-200 max-w-prose">
+            <h1 class="font-display text-xl md:text-3xl leading-none tracking-wider fade-up">Tagged posts of {{ data.name }}</h1>
+          </div>
+          <div>
+            <a href="{{ grid.url }}" class="hover:underline focus:underline">Back to grid</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="grid grid-cols-3 gap-1 md:pr-12">
+    {% for post in uniqPosts %}
+      {% for media in post.media %}
+        {% assign i = forloop.index %}
+        {% for t in media.tagged %}
+          {% if t.handle == page.tag %}
+            <li id="{{ post.slug }}">
+                <a href="{{ post.url }}#media-{{ i }}" data-insta-modal data-modal-image="{{ media.url }}" data-modal-alt="{{ media.alt }}" data-modal-title="{{ post.title }}" data-modal-content="{{ post.description }}" class="relative group">
+                  {% include image.html url=media.url alt=media.alt ar="1:1" fit="crop" width=320 height=320 %}
+                  <div class="absolute z-20 inset-0 flex items-center justify-center gap-2 text-white bg-black/30 hidden text-xs md:text-sm uppercase tracking-wider font-bold group-hover:flex group-focus:flex">
+                    <img src="/assets/images/icons/pin-solid.svg" class="w-3" role="presentation" width="16" height="16">
+                    {{ post.location }}
+                  </div>
+                  {% if post.type == "reel" %}
+                  <div class="absolute top-5 right-5 reel-play-icon"><span class="sr-only">Video</span></div>
+                  {% endif %}
+                </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </div>
+</div>
