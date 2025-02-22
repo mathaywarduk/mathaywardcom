@@ -8,10 +8,16 @@ media:
       - handle: "kerryahayward"
         x: 45
         y: 53
+      - handle: "rudi"
+        x: 45
+        y: 53
   - url: "instagram/457857626_427644217095223_325701027684050475_n_18051571981850514.jpg"
     alt: ""
     tagged:
       - handle: "kerryahayward"
+        x: 44
+        y: 45
+      - handle: "rudi"
         x: 44
         y: 45
 type: "post"

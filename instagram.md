@@ -1,9 +1,6 @@
 ---
 layout: instagrid
 title:  "Instagram"
-profile: 
-    url: mh-hero.jpg
-    alt: "Silhouette of a man with a camera. He is on a beach with a sea stack in the distance. The sky is orange."
 seo:
     hidden: true
     title: "Mat Hayward (not) on Instagram"

@@ -8,6 +8,9 @@ media:
       - handle: "kerryahayward"
         x: 25
         y: 63
+      - handle: "rudi"
+        x: 55
+        y: 73
 type: "post"
 seo:
   hidden: true

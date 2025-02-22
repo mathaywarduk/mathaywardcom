@@ -10,6 +10,9 @@ media:
       - handle: "kerryahayward"
         x: 40
         y: 65
+      - handle: "rudi"
+        x: 60
+        y: 65
 type: "reel"
 seo:
   hidden: true

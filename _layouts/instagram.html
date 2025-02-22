@@ -14,25 +14,15 @@ layout: default
 {% if page.media.size > 1 %}
   <link rel="stylesheet" href="/assets/css/glide.core.min.css">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', (event) => {
-      const opts = {
-        gap: 0,
-        type: 'slider',
-        rewind: false,
-
-      }
-      new Glide('[data-glide]', opts).mount();
-    });
-  </script>
 {% endif %}
 
 
 <div class="pt-10 md:pt-16 pb-24 md:pb-40">
 
-  <div class="w-full px-8 md:px-0 md:w-9/12 md:ml-auto relative flex flex-col gap-8">
-
-    <a href="{{ grid.url }}#{{ page.title | slugify }}" class="hover:underline focus:underline">Back to grid</a>
+  <div class="w-full md:w-9/12 md:ml-auto relative flex flex-col gap-8">
+    <div class="px-8 md:px-0">
+      <a href="{{ grid.url }}#{{ page.slug }}" class="hover:underline focus:underline">Back to grid</a>
+    </div>
 
     <div class="flex flex-col lg:flex-row gap-8 md:pr-12">
 
@@ -43,7 +33,7 @@ layout: default
           <video src="{{ site.image_base }}{{ media.video }}" poster="{{ site.image_base}}{{ media.poster }}" data-reel autoplay loop muted></video>
           <div class="absolute bottom-5 right-5 reel-mute" data-reel-mute><span class="sr-only">Toggle sound</span></div>
           <div class="reel-play" data-reel-play><span class="sr-only">Play / pause video</span></div>
-          {% if uniqTags.size > 0 %}
+          {% if media.tagged.size > 0 %}
             <div class="absolute bottom-5 left-5 reel-tagged" data-image-tag-src="button"><span class="sr-only">See tagged people</span></div>
             {% for tagged in media.tagged %}
               {% include image-tag.html x=tagged.x y=tagged.y handle=tagged.handle  %}
@@ -59,10 +49,27 @@ layout: default
             <ul class="glide__slides">
               {% for media in page.media %}
               <li class="glide__slide relative"{% if media.tagged.size %} data-image-tag-src="container" {% endif %}>
-                {% include image.html url=media.url alt=media.alt fit="crop" width=600  %}
-                {% for tagged in media.tagged %}
-                  {% include image-tag.html x=tagged.x y=tagged.y handle=tagged.handle  %}
-                {% endfor %}
+                {% if media.video %}
+                  <div class="reel" data-media>
+                    <video src="{{ site.image_base }}{{ media.video }}" poster="{{ site.image_base }}{{ media.poster }}" data-reel loop muted></video>
+                    <div class="absolute bottom-5 right-5 reel-mute" data-reel-mute><span class="sr-only">Toggle sound</span></div>
+                    <div class="reel-play" data-reel-play><span class="sr-only">Play / pause video</span></div>
+                    {% if media.tagged.size > 0 %}
+                      <div class="absolute bottom-5 left-5 reel-tagged" data-image-tag-src="button"><span class="sr-only">See tagged people</span></div>
+                      {% for tagged in media.tagged %}
+                        {% include image-tag.html x=tagged.x y=tagged.y handle=tagged.handle  %}
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+                {% else %}
+                  {% include image.html url=media.url alt=media.alt fit="crop" width=600  %}
+                {% endif %}
+                {% if media.tagged.size > 0 %}
+                  {% for tagged in media.tagged %}
+                    {% include image-tag.html x=tagged.x y=tagged.y handle=tagged.handle  %}
+                  {% endfor %}
+                  <div class="absolute bottom-5 left-5 reel-tagged" data-image-tag-src="button"><span class="sr-only">See tagged people</span></div>
+                {% endif %}
               </li>
               {% endfor %}
             </ul>
@@ -82,21 +89,24 @@ layout: default
 
         <ul class="md:min-w-[400px] md:w-1/2">
           {% for media in page.media %}
-            <li class="relative"{% if media.tagged.size %} data-image-tag-src {% endif %}>
+            <li class="relative"{% if media.tagged.size %} data-image-tag-src="container" {% endif %}>
               {% include image.html url=media.url alt=media.alt fit="crop" width=600 %}
-              {% for tagged in media.tagged %}
-                {% include image-tag.html x=tagged.x y=tagged.y handle=tagged.handle  %}
-              {% endfor %}
+              {% if media.tagged.size > 0 %}
+                {% for tagged in media.tagged %}
+                  {% include image-tag.html x=tagged.x y=tagged.y handle=tagged.handle  %}
+                {% endfor %}
+                <div class="absolute bottom-5 left-5 reel-tagged" data-image-tag-src="button"><span class="sr-only">See tagged people</span></div>
+              {% endif %}
             </li>
           {% endfor %}
         </ul>
       {% endif %}
 
-      <div class="max-w-prose w-full lg:w-1/2 shrink-0">
+      <div class="max-w-prose w-full lg:w-1/2 shrink-0 px-8 md:px-0">
 
         <div class="flex gap-2 items-center mb-4">
           <div class="rounded-full overflow-hidden w-12 shrink-0 group-hover:opacity-50 group-focus:opacity-50 transition-all duration-300 ease-in-out">
-            {% include image.html url=grid.profile.url alt=grid.profile.alt ar="1:1" fit="crop" width=320 height=320 %}
+            {% include image.html url=site.data.instagram.profile.url alt=site.data.instagram.profile.alt ar="1:1" fit="crop" width=320 height=320 %}
           </div>
           <div class="flex flex-col">
             <span class="font-bold">mathaywarduk</span>
@@ -104,7 +114,7 @@ layout: default
           </div>
         </div>
 
-        <h1 class="font-sans text-base mt-2 mb-4 pb-0 fade-down">{{ page.title }}</h1>
+        <h1 class="font-sans text-base mt-2 mb-4 pb-0 fade-down max-w-prose">{{ page.title }}</h1>
 
         {% if uniqTags.size > 0 %}
           <div class="border-t br-grey pt-4 mt-4 fade-down anim-delay-200">
@@ -112,7 +122,7 @@ layout: default
             <ul>
               {% for tag in uniqTags %}
                 {% assign data = site.data.tagged[tag] %}
-                <li>{{ data.name }}</li>
+                <li><a href="/instagram/tagged/{{ tag }}" class="inline-block mb-2 nav-item">{{ data.name }}</a></li>
               {% endfor %}
             </ul>
           </div>

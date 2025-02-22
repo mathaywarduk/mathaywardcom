@@ -1,6 +1,7 @@
 ---
 layout: instagram
 title:  "🏠🐦‍⬛"
+slug: "house-bird"
 media:
   - url: "instagram/457671787_1053850806136435_3299283495043818386_n_18028157138071879.jpg"
     alt: ""

@@ -6,6 +6,9 @@ media:
     alt: ""
     tagged:
       - handle: "kerryahayward"
+        x: 50
+        y: 65
+      - handle: "rudi"
         x: 45
         y: 80
 type: "post"
